@@ -2,16 +2,6 @@
 
 面向心智揣测（Theory of Mind, ToM）的超级对齐监督框架。用于评估和增强大模型在心智揣测任务上的能力。
 
-## 目标模型
-
-三个指标实验均针对以下三类主流大模型进行测试：
-
-| 模型 | 参数量 |
-|------|--------|
-| Llama-3.1-8B-Instruct | 8B |
-| Qwen2.5-7B-Instruct | 7B |
-| Qwen2.5-72B-Instruct | 72B |
-
 ## 项目结构
 
 ```
@@ -27,7 +17,7 @@
 
 ## 指标1：适配主流心智揣测模型（≥ 3 类）
 
-针对 Llama-3.1-8B、Qwen2.5-7B、Qwen2.5-72B 三类主流大模型，分别通过三种 ToM 任务类型（Hi-ToM / SimpleToM / ToMChallenges）进行基线评测，验证框架对主流 ToM 任务的适配能力。
+分别通过三种 ToM 任务类型（Hi-ToM / SimpleToM / ToMChallenges）进行基线评测，验证框架对主流 ToM 任务的适配能力。
 
 ### 1.1 Hi-ToM（分层 ToM）
 
