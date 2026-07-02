@@ -240,15 +240,6 @@ cd Defense
 bash run_experiments.sh
 python3 summarize_results.py
 ```
-
-**三种防御算法：**
-
-| 防御策略 | 核心思路 |
-|------|------|
-| **信念巩固 (Consolidation)** | 先列出 3 条支持自己答案的事实，再评估攻击论证 |
-| **信念多次验证 (Multi-Validation)** | 对同一攻击重新考虑 3 次，多数投票决定最终答案 |
-| **信念加密 (Encryption)** | 先提取结构化信念证书，攻击论证仅与证书比对 |
-
 ---
 
 ## 考核指标
@@ -262,8 +253,3 @@ python3 summarize_results.py
 
 ---
 
-## 前置条件
-
-- **指标1**：PyTorch + transformers + datasets，模型可通过 `--use_local` 本地加载或 HuggingFace 远程下载
-- **指标2**：OpenAI 兼容 API（用于 Qwen2.5-72B 远程调用）或本地 PyTorch 环境
-- **指标3**：Ollama 服务运行于 `localhost:11434`，需安装 `llama3.1:8b`、`qwen3.5:latest` 等模型
