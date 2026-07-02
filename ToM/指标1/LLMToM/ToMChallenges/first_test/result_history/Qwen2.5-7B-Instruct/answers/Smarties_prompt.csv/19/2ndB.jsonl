@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 19,
+        "question_type": "2ndB",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nKeri found a cupboard in the garden. The label on the cupboard says casette. Keri couldn’t see what was inside the cupboard. Keri opened the cupboard and found a cap. There is no casette in the cupboard. Keri closed the cupboard and put it back. Clio entered the garden and saw the cupboard. After Clio opened the cupboard, what would Clio think Keri would expect to find in the cupboard?\nA. cap\nB. casette\nAnswer:",
+        "short_answer": "casette",
+        "answer": "B",
+        "system_input": "\nThe story is about Person A found a container. The label on the container says item X, but there’s no item X in the\ncontainer. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n\n[Story]\nNeila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back. Where was supposed to be in the bag?\n\n[Candidate Answers]\nA. vest\nB. plate\n\n[Output]\nPerson A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The container is ... Item X is ... Item Y is ...\n        \n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 426,
+        "user_input": "\n[Story]\nKeri found a cupboard in the garden. The label on the cupboard says casette. Keri couldn’t see what was inside the cupboard. Keri opened the cupboard and found a cap. There is no casette in the cupboard. Keri closed the cupboard and put it back. Clio entered the garden and saw the cupboard. After Clio opened the cupboard, what would Clio think Keri would expect to find in the cupboard?\n\n[Candidate Answers]\nB. cap\nG. casette\n",
+        "output": "--)\r\nuser\r\n\r\nPerson A is Keri. Person B is Clio. The container is cupboard. Item X is casette. Item Y is cap.\r\nSo the answer is [G].",
+        "map": {
+            "B": "A",
+            "G": "B"
+        }
+    },
+    {
+        "token_size": 426,
+        "user_input": "\n[Story]\nKeri found a cupboard in the garden. The label on the cupboard says casette. Keri couldn’t see what was inside the cupboard. Keri opened the cupboard and found a cap. There is no casette in the cupboard. Keri closed the cupboard and put it back. Clio entered the garden and saw the cupboard. After Clio opened the cupboard, what would Clio think Keri would expect to find in the cupboard?\n\n[Candidate Answers]\nH. cap\nR. casette\n",
+        "output": "--)\r\nuser\r\n\r\nPerson A is Keri. Person B is Clio. The container is cupboard. Item X is casette. Item Y is cap.\r\nSo the answer is [R].",
+        "map": {
+            "H": "A",
+            "R": "B"
+        }
+    },
+    {
+        "token_size": 485,
+        "user_input": "\n[Story]\nKeri found a cupboard in the garden. The label on the cupboard says casette. Keri couldn’t see what was inside the cupboard. Keri opened the cupboard and found a cap. There is no casette in the cupboard. Keri closed the cupboard and put it back. Clio entered the garden and saw the cupboard. After Clio opened the cupboard, what would Clio think Keri would expect to find in the cupboard?\n\n[Candidate Answers]\nC. cap\nO. casette\n",
+        "output": "\"label on the cupboard says casette\" indicates that Item X is \"casette\". Even though Keri found a cap instead of a casette, when Clio opens the cupboard, she would see the cap and likely think that Keri expected to find a casette based on the label.\n\n[Output]\nPerson A is Keri. Person B is Clio. The container is cupboard. Item X is casette. Item Y is cap.\nso the answer is [O]",
+        "map": {
+            "C": "A",
+            "O": "B"
+        }
+    },
+    {
+        "token_size": 502,
+        "user_input": "\n[Story]\nKeri found a cupboard in the garden. The label on the cupboard says casette. Keri couldn’t see what was inside the cupboard. Keri opened the cupboard and found a cap. There is no casette in the cupboard. Keri closed the cupboard and put it back. Clio entered the garden and saw the cupboard. After Clio opened the cupboard, what would Clio think Keri would expect to find in the cupboard?\n\n[Candidate Answers]\nV. casette\nW. cap\n",
+        "output": "\"label on the cupboard says casette\" means that according to the label, the expected item (Item X) should be a casette. However, when Keri opened the cupboard, she found a cap instead (Item Y). When Clio opens the cupboard, she would see the cap and know that this is not what Keri expected to find based on the label.\n\nFollowing the provided format:\n\nPerson A is Keri. Person B is Clio. The container is cupboard. Item X is casette. Item Y is cap.\nSo the answer is [V]",
+        "map": {
+            "W": "A",
+            "V": "B"
+        }
+    },
+    {
+        "token_size": 426,
+        "user_input": "\n[Story]\nKeri found a cupboard in the garden. The label on the cupboard says casette. Keri couldn’t see what was inside the cupboard. Keri opened the cupboard and found a cap. There is no casette in the cupboard. Keri closed the cupboard and put it back. Clio entered the garden and saw the cupboard. After Clio opened the cupboard, what would Clio think Keri would expect to find in the cupboard?\n\n[Candidate Answers]\nH. casette\nM. cap\n",
+        "output": "--)\r\nuser\r\n\r\nPerson A is Keri. Person B is Clio. The container is cupboard. Item X is casette. Item Y is cap.\r\nSo the answer is [H].",
+        "map": {
+            "M": "A",
+            "H": "B"
+        }
+    }
+]

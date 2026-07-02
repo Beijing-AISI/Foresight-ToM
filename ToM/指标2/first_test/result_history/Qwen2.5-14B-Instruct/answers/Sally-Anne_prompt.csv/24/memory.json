@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 24,
+        "question_type": "memory",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nLian and Norina were hanging out in the hall. They saw a safe and a carryall. They found a jar in the safe. Norina left the hall. Lian moved the jar to the carryall. Where was the jar previously\n\nA. carryall\nB. safe\n\nAnswer:",
+        "short_answer": "safe",
+        "answer": "B",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 364,
+        "user_input": "\n[Story]\nLian and Norina were hanging out in the hall. They saw a safe and a carryall. They found a jar in the safe. Norina left the hall. Lian moved the jar to the carryall. Where was the jar previously\n\n[Candidate Answers]\nA. safe\nC. carryall\n",
+        "output": "<Person A is Lian. Person B is Norina. The item is jar. The location X is safe. The location Y is carryall.\nso the answer is [A]",
+        "map": {
+            "C": "A",
+            "A": "B"
+        }
+    },
+    {
+        "token_size": 367,
+        "user_input": "\n[Story]\nLian and Norina were hanging out in the hall. They saw a safe and a carryall. They found a jar in the safe. Norina left the hall. Lian moved the jar to the carryall. Where was the jar previously\n\n[Candidate Answers]\nB. carryall\nL. safe\n",
+        "output": "system\nPerson A is Lian. Person B is Norina. The item is jar. The location X is safe. The location Y is carryall.\nso the answer is [L]",
+        "map": {
+            "B": "A",
+            "L": "B"
+        }
+    },
+    {
+        "token_size": 367,
+        "user_input": "\n[Story]\nLian and Norina were hanging out in the hall. They saw a safe and a carryall. They found a jar in the safe. Norina left the hall. Lian moved the jar to the carryall. Where was the jar previously\n\n[Candidate Answers]\nA. carryall\nW. safe\n",
+        "output": "system\nPerson A is Lian. Person B is Norina. The item is jar. The location X is safe. The location Y is carryall.\nso the answer is [W]",
+        "map": {
+            "A": "A",
+            "W": "B"
+        }
+    },
+    {
+        "token_size": 367,
+        "user_input": "\n[Story]\nLian and Norina were hanging out in the hall. They saw a safe and a carryall. They found a jar in the safe. Norina left the hall. Lian moved the jar to the carryall. Where was the jar previously\n\n[Candidate Answers]\nF. carryall\nV. safe\n",
+        "output": "system\nPerson A is Lian. Person B is Norina. The item is jar. The location X is safe. The location Y is carryall.\nso the answer is [V]",
+        "map": {
+            "F": "A",
+            "V": "B"
+        }
+    },
+    {
+        "token_size": 420,
+        "user_input": "\n[Story]\nLian and Norina were hanging out in the hall. They saw a safe and a carryall. They found a jar in the safe. Norina left the hall. Lian moved the jar to the carryall. Where was the jar previously\n\n[Candidate Answers]\nQ. safe\nU. carryall\n",
+        "output": ".ApplyResources()\nคณะกรรม�试着遵循你的指示，我会按照你给的例子格式来回答这个问题：\n\nPerson A是Lian。Person B是Norina。物品是jar。位置X是safe。位置Y是carryall。\n所以答案是 [Q]",
+        "map": {
+            "U": "A",
+            "Q": "B"
+        }
+    }
+]

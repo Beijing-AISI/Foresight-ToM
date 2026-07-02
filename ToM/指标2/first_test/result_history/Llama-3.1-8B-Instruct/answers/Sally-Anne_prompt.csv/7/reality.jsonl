@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 7,
+        "question_type": "reality",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nNorina and Jobina were hanging out in the loft. They saw a hamper and a bag. They found a plum in the hamper. Jobina left the loft. Norina moved the plum to the bag. Where is the plum currently?\n\nA. bag\nB. hamper\n\nAnswer:",
+        "short_answer": "bag",
+        "answer": "A",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 388,
+        "user_input": "\n[Story]\nNorina and Jobina were hanging out in the loft. They saw a hamper and a bag. They found a plum in the hamper. Jobina left the loft. Norina moved the plum to the bag. Where is the plum currently?\n\n[Candidate Answers]\nJ. hamper\nX. bag\n",
+        "output": "assistant\n\nPerson A is Norina. Person B is Jobina. The item is plum. The location X is hamper. The location Y is bag.\nSo, the answer is [X].",
+        "map": {
+            "X": "A",
+            "J": "B"
+        }
+    },
+    {
+        "token_size": 388,
+        "user_input": "\n[Story]\nNorina and Jobina were hanging out in the loft. They saw a hamper and a bag. They found a plum in the hamper. Jobina left the loft. Norina moved the plum to the bag. Where is the plum currently?\n\n[Candidate Answers]\nX. bag\nZ. hamper\n",
+        "output": "assistant\n\nPerson A is Norina. Person B is Jobina. The item is plum. The location X is hamper. The location Y is bag.\nSo, the answer is [X].",
+        "map": {
+            "X": "A",
+            "Z": "B"
+        }
+    },
+    {
+        "token_size": 388,
+        "user_input": "\n[Story]\nNorina and Jobina were hanging out in the loft. They saw a hamper and a bag. They found a plum in the hamper. Jobina left the loft. Norina moved the plum to the bag. Where is the plum currently?\n\n[Candidate Answers]\nE. hamper\nZ. bag\n",
+        "output": "assistant\n\nPerson A is Norina. Person B is Jobina. The item is plum. The location X is hamper. The location Y is bag.\nSo, the answer is [Z].",
+        "map": {
+            "Z": "A",
+            "E": "B"
+        }
+    },
+    {
+        "token_size": 388,
+        "user_input": "\n[Story]\nNorina and Jobina were hanging out in the loft. They saw a hamper and a bag. They found a plum in the hamper. Jobina left the loft. Norina moved the plum to the bag. Where is the plum currently?\n\n[Candidate Answers]\nJ. hamper\nY. bag\n",
+        "output": "assistant\n\nPerson A is Norina. Person B is Jobina. The item is plum. The location X is hamper. The location Y is bag.\nSo, the answer is [Y].",
+        "map": {
+            "Y": "A",
+            "J": "B"
+        }
+    },
+    {
+        "token_size": 388,
+        "user_input": "\n[Story]\nNorina and Jobina were hanging out in the loft. They saw a hamper and a bag. They found a plum in the hamper. Jobina left the loft. Norina moved the plum to the bag. Where is the plum currently?\n\n[Candidate Answers]\nB. hamper\nY. bag\n",
+        "output": "assistant\n\nPerson A is Norina. Person B is Jobina. The item is plum. The location X is hamper. The location Y is bag.\nSo, the answer is [Y].",
+        "map": {
+            "Y": "A",
+            "B": "B"
+        }
+    }
+]

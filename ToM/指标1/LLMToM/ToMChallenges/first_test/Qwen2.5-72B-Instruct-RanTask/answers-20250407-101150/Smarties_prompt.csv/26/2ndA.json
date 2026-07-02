@@ -1,0 +1,242 @@
+[
+    {
+        "story_index": 26,
+        "question_type": "2ndA",
+        "story": "Clem found a bin in the shower room. The label on the bin says bulb. Clem couldn’t see what was inside the bin. Clem opened the bin and found a sweater. There is no bulb in the bin. Clem closed the bin and put it back. Vera entered the shower room and saw the bin.",
+        "short_answer": "bulb",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nAfter Vera opened the shower, what would Clem think Vera would expect to find in the bin?\n\n[Candidate Answers]\nH. sweater\nI. bulb\n",
+        "output": "Person A is Clem. Person B is Vera. The item is bulb. The location X is the shower room. The location Y is the bin.\nSo, the answer is [I].",
+        "map": {
+            "H": "A",
+            "I": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nClem found a bin in the shower room. The label on the bin says bulb. Clem couldn’t see what was inside the bin. Clem opened the bin and found a sweater. There is no bulb in the bin. Clem closed the bin and put it back. Vera entered the shower room and saw the bin.\n\n[Question]\nWhere does the phrase 'to be or not to be' come from?\n\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIn which year was the ancient Chinese poet Li Bai born?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Li Bai, the ancient Chinese poet, was born in the year 701."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIs 2111159 a prime number?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "2111159 is a prime number."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Vera opened the shower, what would Clem think Vera would expect to find in the bin?\n\n[Candidate Answers]\nH. sweater\nI. bulb\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Clem. Person B is Vera. The item is bulb. The location X is the shower room. The location Y is the bin.\nSo, the answer is [I]."
+            }
+        ]
+    },
+    {
+        "story_index": 26,
+        "question_type": "2ndA",
+        "story": "Clem found a bin in the shower room. The label on the bin says bulb. Clem couldn’t see what was inside the bin. Clem opened the bin and found a sweater. There is no bulb in the bin. Clem closed the bin and put it back. Vera entered the shower room and saw the bin.",
+        "short_answer": "bulb",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nAfter Vera opened the shower, what would Clem think Vera would expect to find in the bin?\n\n[Candidate Answers]\nH. sweater\nT. bulb\n",
+        "output": "Person A is Clem. Person B is Vera. The container is a bin. Item X is bulb. Item Y is sweater.\nSo, the answer is [T].",
+        "map": {
+            "H": "A",
+            "T": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nClem found a bin in the shower room. The label on the bin says bulb. Clem couldn’t see what was inside the bin. Clem opened the bin and found a sweater. There is no bulb in the bin. Clem closed the bin and put it back. Vera entered the shower room and saw the bin.\n\n[Question]\nWhere is the origin of chocolate?\n\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The origin of chocolate can be traced back to the ancient civilizations of Mesoamerica, particularly the Mayans and Aztecs, who cultivated cacao trees and used the beans to make a bitter drink."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIs 2111159 a prime number?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "To determine if 2111159 is a prime number, we need to check if it has any divisors other than 1 and itself. After performing the necessary calculations, it is found that 2111159 is indeed a prime number."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIn which year was the ancient Chinese poet Li Bai born?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The ancient Chinese poet Li Bai was born in the year 701."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Vera opened the shower, what would Clem think Vera would expect to find in the bin?\n\n[Candidate Answers]\nH. sweater\nT. bulb\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Clem. Person B is Vera. The container is a bin. Item X is bulb. Item Y is sweater.\nSo, the answer is [T]."
+            }
+        ]
+    },
+    {
+        "story_index": 26,
+        "question_type": "2ndA",
+        "story": "Clem found a bin in the shower room. The label on the bin says bulb. Clem couldn’t see what was inside the bin. Clem opened the bin and found a sweater. There is no bulb in the bin. Clem closed the bin and put it back. Vera entered the shower room and saw the bin.",
+        "short_answer": "bulb",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nAfter Vera opened the shower, what would Clem think Vera would expect to find in the bin?\n\n[Candidate Answers]\nA. sweater\nG. bulb\n",
+        "output": "Person A is Clem. Person B is Vera. The item is sweater. The location X is shower room. The location Y is bin.\nSo, the answer is [G].",
+        "map": {
+            "A": "A",
+            "G": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nClem found a bin in the shower room. The label on the bin says bulb. Clem couldn’t see what was inside the bin. Clem opened the bin and found a sweater. There is no bulb in the bin. Clem closed the bin and put it back. Vera entered the shower room and saw the bin.\n\n[Question]\nIn which year was the ancient Chinese poet Li Bai born?\n\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The ancient Chinese poet Li Bai was born in the year 701."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n17592+56781=?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "17592 + 56781 = 74373"
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhere does the phrase 'to be or not to be' come from?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Vera opened the shower, what would Clem think Vera would expect to find in the bin?\n\n[Candidate Answers]\nA. sweater\nG. bulb\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Clem. Person B is Vera. The item is sweater. The location X is shower room. The location Y is bin.\nSo, the answer is [G]."
+            }
+        ]
+    },
+    {
+        "story_index": 26,
+        "question_type": "2ndA",
+        "story": "Clem found a bin in the shower room. The label on the bin says bulb. Clem couldn’t see what was inside the bin. Clem opened the bin and found a sweater. There is no bulb in the bin. Clem closed the bin and put it back. Vera entered the shower room and saw the bin.",
+        "short_answer": "bulb",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nAfter Vera opened the shower, what would Clem think Vera would expect to find in the bin?\n\n[Candidate Answers]\nC. bulb\nK. sweater\n",
+        "output": "Person A is Clem. Person B is Vera. The item is bulb. The location X is the shower room. The location Y is the bin.\nSo, the answer is [C]",
+        "map": {
+            "K": "A",
+            "C": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nClem found a bin in the shower room. The label on the bin says bulb. Clem couldn’t see what was inside the bin. Clem opened the bin and found a sweater. There is no bulb in the bin. Clem closed the bin and put it back. Vera entered the shower room and saw the bin.\n\n[Question]\n17592+56781=?\n\n"
+            },
+            {
+                "role": "assistant",
+                "content": "17592 + 56781 = 74373"
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n28992+99581=?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "28992 + 99581 = 128573"
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIn which year was the ancient Chinese poet Li Bai born?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The ancient Chinese poet Li Bai was born in the year 701."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Vera opened the shower, what would Clem think Vera would expect to find in the bin?\n\n[Candidate Answers]\nC. bulb\nK. sweater\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Clem. Person B is Vera. The item is bulb. The location X is the shower room. The location Y is the bin.\nSo, the answer is [C]"
+            }
+        ]
+    },
+    {
+        "story_index": 26,
+        "question_type": "2ndA",
+        "story": "Clem found a bin in the shower room. The label on the bin says bulb. Clem couldn’t see what was inside the bin. Clem opened the bin and found a sweater. There is no bulb in the bin. Clem closed the bin and put it back. Vera entered the shower room and saw the bin.",
+        "short_answer": "bulb",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nAfter Vera opened the shower, what would Clem think Vera would expect to find in the bin?\n\n[Candidate Answers]\nD. bulb\nW. sweater\n",
+        "output": "Person A is Clem. Person B is Vera. The container is a bin. Item X is bulb. Item Y is sweater.\nSo, the answer is [D].",
+        "map": {
+            "W": "A",
+            "D": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nClem found a bin in the shower room. The label on the bin says bulb. Clem couldn’t see what was inside the bin. Clem opened the bin and found a sweater. There is no bulb in the bin. Clem closed the bin and put it back. Vera entered the shower room and saw the bin.\n\n[Question]\nWhere is the origin of chocolate?\n\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The origin of chocolate can be traced back to the ancient civilizations of Mesoamerica, particularly the Maya and Aztec cultures. These civilizations cultivated cacao trees and used the beans to make a bitter drink, which was highly valued and even used as a form of currency. The word \"chocolate\" itself is derived from the Aztec word \"xocolatl,\" meaning \"bitter water.\""
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n28992+99581=?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "28992 + 99581 = 128573"
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat could be the possible causes of toothache?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Toothache can be caused by several factors, including:\n\n1. **Cavities (Tooth Decay)**: Bacteria in the mouth produce acids that can erode tooth enamel, leading to cavities.\n2. **Gum Disease**: Inflammation or infection of the gums can cause pain and sensitivity.\n3. **Tooth Fracture**: A cracked or broken tooth can expose the sensitive inner layers of the tooth.\n4. **Infected Tooth Pulp (Pulpitis)**: Inflammation or infection of the pulp inside the tooth can cause severe pain.\n5. **Tooth Sensitivity**: Exposure to hot, cold, or sweet foods and drinks can cause discomfort.\n6. **Impacted Wisdom Teeth**: Teeth that don’t have enough room to come in properly can cause pain and other dental issues.\n7. **Sinus Infection**: Pressure from a sinus infection can sometimes cause tooth pain, especially in the upper teeth.\n8. **Bruxism (Teeth Grinding)**: Grinding or clenching teeth can lead to tooth pain and jaw soreness.\n9. **Poor Dental Hygiene**: Inadequate brushing and flossing can lead to a buildup of plaque and tartar, causing tooth and gum problems.\n10. **Injury or Trauma**: Any physical trauma to the mouth can result in tooth pain.\n\nIf you experience a toothache, it’s important to consult a dentist to determine the exact cause and receive appropriate treatment."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Vera opened the shower, what would Clem think Vera would expect to find in the bin?\n\n[Candidate Answers]\nD. bulb\nW. sweater\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Clem. Person B is Vera. The container is a bin. Item X is bulb. Item Y is sweater.\nSo, the answer is [D]."
+            }
+        ]
+    }
+]

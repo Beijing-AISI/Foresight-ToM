@@ -1,0 +1,242 @@
+[
+    {
+        "story_index": 13,
+        "question_type": "memory",
+        "story": "Sabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket.",
+        "short_answer": "bin",
+        "answer": "B",
+        "system_input": "\n    The story is about two people (Person A and Person B) found an item in location X. Person B left the room and\n    Person A moved the item to location Y.\n    \n    [Story]\n    Neila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    After Juanita came back to the attic, where was the towel previously?\n        \n    [Candidate Answers]\n    A. cabinet\n    B. closet\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\n    So, the answer is [B]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhere was the papaya previously\n\n[Candidate Answers]\nR. bucket\nV. bin\n",
+        "output": "Person A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nSo, the answer is [V].",
+        "map": {
+            "R": "A",
+            "V": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket.\n\n[Question]\nWhat is typically stored in a bucket in a household setting?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "In a household setting, a bucket is typically used to store or carry water, cleaning supplies, or other liquids and tools."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Sabra and Hillary talk about while in the lounge?"
+            },
+            {
+                "role": "assistant",
+                "content": "Sabra and Hillary might talk about a variety of topics while in the lounge, such as their day, plans for the weekend, recent news, shared interests, or personal updates."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat other fruits might have been in the bin besides the papaya?"
+            },
+            {
+                "role": "assistant",
+                "content": "The bin might have contained other fruits such as apples, bananas, oranges, grapes, or strawberries."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhere was the papaya previously\n\n[Candidate Answers]\nR. bucket\nV. bin\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nSo, the answer is [V]."
+            }
+        ]
+    },
+    {
+        "story_index": 13,
+        "question_type": "memory",
+        "story": "Sabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket.",
+        "short_answer": "bin",
+        "answer": "B",
+        "system_input": "\n    The story is about two people (Person A and Person B) found an item in location X. Person B left the room and\n    Person A moved the item to location Y.\n    \n    [Story]\n    Neila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    After Juanita came back to the attic, where was the towel previously?\n        \n    [Candidate Answers]\n    A. cabinet\n    B. closet\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\n    So, the answer is [B]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhere was the papaya previously\n\n[Candidate Answers]\nB. bin\nC. bucket\n",
+        "output": "Person A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nSo, the answer is [B].",
+        "map": {
+            "C": "A",
+            "B": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket.\n\n[Question]\nWhat could be the reason for having a bin and a bucket in the lounge?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "A bin and a bucket in the lounge could serve various purposes. The bin is likely used for collecting trash or recyclables, keeping the lounge tidy and organized. The bucket might be used for holding cleaning supplies, carrying items, or even as an additional container for overflow waste. Both items help maintain the cleanliness and functionality of the lounge."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might have been the reaction of others in the lounge to the papaya being moved?"
+            },
+            {
+                "role": "assistant",
+                "content": "The reaction of others in the lounge to the papaya being moved could vary. Some might not notice the change at all, while others might be curious about why the papaya was moved. If the papaya was part of a shared snack or a specific arrangement, someone might ask about it or look for it in its original place. Overall, the reaction would depend on the context and the significance of the papaya to the people in the lounge."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might have been the reason for Hillary leaving the lounge?"
+            },
+            {
+                "role": "assistant",
+                "content": "Hillary might have left the lounge for various reasons. She could have needed to attend to a personal matter, such as a phone call or a meeting. Alternatively, she might have been going to get something from another room, take a break, or simply felt like moving to a different space. The specific reason would depend on her immediate needs or plans at the time."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhere was the papaya previously\n\n[Candidate Answers]\nB. bin\nC. bucket\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nSo, the answer is [B]."
+            }
+        ]
+    },
+    {
+        "story_index": 13,
+        "question_type": "memory",
+        "story": "Sabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket.",
+        "short_answer": "bin",
+        "answer": "B",
+        "system_input": "\n    The story is about two people (Person A and Person B) found an item in location X. Person B left the room and\n    Person A moved the item to location Y.\n    \n    [Story]\n    Neila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    After Juanita came back to the attic, where was the towel previously?\n        \n    [Candidate Answers]\n    A. cabinet\n    B. closet\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\n    So, the answer is [B]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhere was the papaya previously\n\n[Candidate Answers]\nP. bin\nQ. bucket\n",
+        "output": "Person A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nSo, the answer is [P].",
+        "map": {
+            "Q": "A",
+            "P": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket.\n\n[Question]\nWhat might Sabra and Hillary have been doing in the lounge?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Sabra and Hillary might have been relaxing, chatting, or engaging in some leisure activity in the lounge. It's a common space where people often gather to spend time together."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Sabra do next after moving the papaya?"
+            },
+            {
+                "role": "assistant",
+                "content": "Sabra might continue exploring the lounge, look for Hillary to tell her about moving the papaya, or perhaps start a new activity with the papaya, like preparing a snack or a dish."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhy did Sabra decide to move the papaya from the bin to the bucket?"
+            },
+            {
+                "role": "assistant",
+                "content": "Sabra might have decided to move the papaya from the bin to the bucket for better organization, to keep the bin tidy, or perhaps because the bucket was a more suitable place to store the papaya."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhere was the papaya previously\n\n[Candidate Answers]\nP. bin\nQ. bucket\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nSo, the answer is [P]."
+            }
+        ]
+    },
+    {
+        "story_index": 13,
+        "question_type": "memory",
+        "story": "Sabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket.",
+        "short_answer": "bin",
+        "answer": "B",
+        "system_input": "\n    The story is about two people (Person A and Person B) found an item in location X. Person B left the room and\n    Person A moved the item to location Y.\n    \n    [Story]\n    Neila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    After Juanita came back to the attic, where was the towel previously?\n        \n    [Candidate Answers]\n    A. cabinet\n    B. closet\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\n    So, the answer is [B]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhere was the papaya previously\n\n[Candidate Answers]\nB. bucket\nV. bin\n",
+        "output": "Person A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nSo, the answer is [V]",
+        "map": {
+            "B": "A",
+            "V": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket.\n\n[Question]\nHow often do people usually hang out in the lounge?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "People usually hang out in the lounge frequently, as it is a common space designed for relaxation and socializing. The frequency can vary depending on the setting, such as a workplace, school, or home, but it is generally a place where people gather to spend time together."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might have been the reason for Sabra to move the papaya?"
+            },
+            {
+                "role": "assistant",
+                "content": "Sabra might have moved the papaya to the bucket for various reasons, such as organizing the items in the lounge, making space in the bin, or simply preferring to keep the papaya in a different location. Without more context, it's difficult to pinpoint the exact reason, but these are plausible explanations."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nHow did Sabra and Hillary feel about finding the papaya?"
+            },
+            {
+                "role": "assistant",
+                "content": "Without specific information about their reactions, it's hard to say exactly how Sabra and Hillary felt about finding the papaya. However, it's reasonable to assume they might have felt curious or surprised, as finding a fruit in an unexpected place like a bin in a lounge could be an interesting discovery. They might have also felt a bit amused or intrigued by the situation."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhere was the papaya previously\n\n[Candidate Answers]\nB. bucket\nV. bin\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nSo, the answer is [V]"
+            }
+        ]
+    },
+    {
+        "story_index": 13,
+        "question_type": "memory",
+        "story": "Sabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket.",
+        "short_answer": "bin",
+        "answer": "B",
+        "system_input": "\n    The story is about two people (Person A and Person B) found an item in location X. Person B left the room and\n    Person A moved the item to location Y.\n    \n    [Story]\n    Neila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    After Juanita came back to the attic, where was the towel previously?\n        \n    [Candidate Answers]\n    A. cabinet\n    B. closet\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\n    So, the answer is [B]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhere was the papaya previously\n\n[Candidate Answers]\nR. bin\nY. bucket\n",
+        "output": "Person A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nSo, the answer is [R].",
+        "map": {
+            "Y": "A",
+            "R": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket.\n\n[Question]\nHow did Sabra feel after Hillary left the lounge?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The story does not provide specific information about Sabra's feelings after Hillary left the lounge. Without additional context, it's not possible to accurately determine how Sabra felt."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat other activities might Sabra and Hillary enjoy doing together?"
+            },
+            {
+                "role": "assistant",
+                "content": "Sabra and Hillary might enjoy a variety of activities together, such as watching movies, playing board games, cooking a meal, or going for a walk. They could also try activities like reading books, listening to music, or engaging in a creative hobby like painting or writing."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat other items might be found in a bin in a lounge?"
+            },
+            {
+                "role": "assistant",
+                "content": "A bin in a lounge might contain various items such as trash, recyclables, old magazines, empty cans, used napkins, or even misplaced personal items like keys or phones. It could also have items that need to be donated or items being collected for a specific purpose, like a charity drive."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhere was the papaya previously\n\n[Candidate Answers]\nR. bin\nY. bucket\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nSo, the answer is [R]."
+            }
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "story_index": 10,
+        "question_type": "1stA",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nSabra and Melania were hanging out in the balcony. They saw a barrel and a refrigerator. They found a knife in the barrel. Melania left the balcony. Sabra moved the knife to the refrigerator. After Melania came back to the balcony, where would Sabra look for the knife?\n\nA. refrigerator\nB. barrel\n\nAnswer:",
+        "short_answer": "refrigerator",
+        "answer": "A",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "user_input": "\n[Story]\nSabra and Melania were hanging out in the balcony. They saw a barrel and a refrigerator. They found a knife in the barrel. Melania left the balcony. Sabra moved the knife to the refrigerator. After Melania came back to the balcony, where would Sabra look for the knife?\n\n[Candidate Answers]\nS. barrel\nV. refrigerator\n",
+        "output": "Person A is Sabra. Person B is Melania. The item is knife. The location X is barrel. The location Y is refrigerator.\nSo, the answer is [V]",
+        "map": {
+            "V": "A",
+            "S": "B"
+        }
+    },
+    {
+        "user_input": "\n[Story]\nSabra and Melania were hanging out in the balcony. They saw a barrel and a refrigerator. They found a knife in the barrel. Melania left the balcony. Sabra moved the knife to the refrigerator. After Melania came back to the balcony, where would Sabra look for the knife?\n\n[Candidate Answers]\nP. refrigerator\nU. barrel\n",
+        "output": "Person A is Sabra. Person B is Melania. The item is knife. The location X is barrel. The location Y is refrigerator.\nSo, the answer is [P]",
+        "map": {
+            "P": "A",
+            "U": "B"
+        }
+    },
+    {
+        "user_input": "\n[Story]\nSabra and Melania were hanging out in the balcony. They saw a barrel and a refrigerator. They found a knife in the barrel. Melania left the balcony. Sabra moved the knife to the refrigerator. After Melania came back to the balcony, where would Sabra look for the knife?\n\n[Candidate Answers]\nF. refrigerator\nX. barrel\n",
+        "output": "Person A is Sabra. Person B is Melania. The item is knife. The location X is barrel. The location Y is refrigerator.\nSo, the answer is [F]",
+        "map": {
+            "F": "A",
+            "X": "B"
+        }
+    },
+    {
+        "user_input": "\n[Story]\nSabra and Melania were hanging out in the balcony. They saw a barrel and a refrigerator. They found a knife in the barrel. Melania left the balcony. Sabra moved the knife to the refrigerator. After Melania came back to the balcony, where would Sabra look for the knife?\n\n[Candidate Answers]\nO. barrel\nU. refrigerator\n",
+        "output": "Person A is Sabra. Person B is Melania. The item is knife. The location X is barrel. The location Y is refrigerator.\nSo, the answer is [U]",
+        "map": {
+            "U": "A",
+            "O": "B"
+        }
+    },
+    {
+        "user_input": "\n[Story]\nSabra and Melania were hanging out in the balcony. They saw a barrel and a refrigerator. They found a knife in the barrel. Melania left the balcony. Sabra moved the knife to the refrigerator. After Melania came back to the balcony, where would Sabra look for the knife?\n\n[Candidate Answers]\nE. refrigerator\nN. barrel\n",
+        "output": "Person A is Sabra. Person B is Melania. The item is knife. The location X is barrel. The location Y is refrigerator.\nSo, the answer is [E]",
+        "map": {
+            "E": "A",
+            "N": "B"
+        }
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 30,
+        "question_type": "memory",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nNeila and Karalynn were hanging out in the recreation room. They saw a chest and a carryall. They found a knife in the chest. Karalynn left the recreation room. Neila moved the knife to the carryall. Where was the knife previously\n\nA. carryall\nB. chest\n\nAnswer:",
+        "short_answer": "chest",
+        "answer": "B",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 372,
+        "user_input": "\n[Story]\nNeila and Karalynn were hanging out in the recreation room. They saw a chest and a carryall. They found a knife in the chest. Karalynn left the recreation room. Neila moved the knife to the carryall. Where was the knife previously\n\n[Candidate Answers]\nX. carryall\nZ. chest\n",
+        "output": "system\nPerson A is Neila. Person B is Karalynn. The item is knife. The location X is chest. The location Y is carryall.\nso the answer is [Z]",
+        "map": {
+            "X": "A",
+            "Z": "B"
+        }
+    },
+    {
+        "token_size": 604,
+        "user_input": "\n[Story]\nNeila and Karalynn were hanging out in the recreation room. They saw a chest and a carryall. They found a knife in the chest. Karalynn left the recreation room. Neila moved the knife to the carryall. Where was the knife previously\n\n[Candidate Answers]\nQ. carryall\nY. chest\n",
+        "output": ".ApplyResources(\"\",[XY])\nคณะกรรม�试试重新按照指示格式回答问题。根据给出的故事和选项，提取关键信息并填入指定的模板中。\n\n故事中的两个人是Neila 和Karalynn，他们发现了一把刀放在一个箱子（chest）里。当Karalynn离开房间后，Neila将这把刀移到了手提包（carryall）里。题目询问的是在Karalynn回来之前，刀子原来的位置在哪里。\n\n根据上述说明，答案应为：\nPerson A is Neila. Person B is Karalynn. The item is knife. The location X is chest. The location Y is carryall.\nso the answer is [Y]",
+        "map": {
+            "Q": "A",
+            "Y": "B"
+        }
+    },
+    {
+        "token_size": 415,
+        "user_input": "\n[Story]\nNeila and Karalynn were hanging out in the recreation room. They saw a chest and a carryall. They found a knife in the chest. Karalynn left the recreation room. Neila moved the knife to the carryall. Where was the knife previously\n\n[Candidate Answers]\nL. carryall\nV. chest\n",
+        "output": ".ApplyResources()\nคณะกรรม樯\n\nPerson A is Neila. Person B is Karalynn. The item is knife. The location X is chest. The location Y is carryall.\nso the answer is [V]",
+        "map": {
+            "L": "A",
+            "V": "B"
+        }
+    },
+    {
+        "token_size": 415,
+        "user_input": "\n[Story]\nNeila and Karalynn were hanging out in the recreation room. They saw a chest and a carryall. They found a knife in the chest. Karalynn left the recreation room. Neila moved the knife to the carryall. Where was the knife previously\n\n[Candidate Answers]\nK. chest\nN. carryall\n",
+        "output": ".ApplyResources()\nคณะกรรม樯:\n\nPerson A is Neila. Person B is Karalynn. The item is knife. The location X is chest. The location Y is carryall.\nso the answer is [K]",
+        "map": {
+            "N": "A",
+            "K": "B"
+        }
+    },
+    {
+        "token_size": 372,
+        "user_input": "\n[Story]\nNeila and Karalynn were hanging out in the recreation room. They saw a chest and a carryall. They found a knife in the chest. Karalynn left the recreation room. Neila moved the knife to the carryall. Where was the knife previously\n\n[Candidate Answers]\nG. carryall\nK. chest\n",
+        "output": "<Person>A\n\nPerson A is Neila. Person B is Karalynn. The item is knife. The location X is chest. The location Y is carryall.\nso the answer is [K]",
+        "map": {
+            "G": "A",
+            "K": "B"
+        }
+    }
+]

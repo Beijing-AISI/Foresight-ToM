@@ -1,0 +1,242 @@
+[
+    {
+        "story_index": 21,
+        "question_type": "assumption",
+        "story": "Keri found a safe in the office. The label on the safe says coat. Keri couldn’t see what was inside the safe. Keri opened the safe and found a magnet. There is no coat in the safe. Keri closed the safe and put it back. Lian entered the office and saw the safe.",
+        "short_answer": "coat",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhat was supposed to be in the safe?\n\n[Candidate Answers]\nR. magnet\nS. coat\n",
+        "output": "Person A is Keri. Person B is Lian. The item is coat. The location X is the safe. The location Y is the office.\nSo, the answer is [S]",
+        "map": {
+            "R": "A",
+            "S": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nKeri found a safe in the office. The label on the safe says coat. Keri couldn’t see what was inside the safe. Keri opened the safe and found a magnet. There is no coat in the safe. Keri closed the safe and put it back. Lian entered the office and saw the safe.\n\n[Question]\nWhat other items could be inside the safe that Keri didn't notice?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "It's possible that there could be other items inside the safe that Keri didn't notice, such as documents, money, or other small objects. However, based on the information provided, we only know that there is a magnet inside the safe and no coat. Without further inspection, it's impossible to determine what other items might be inside."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhy was the safe in the office in the first place?"
+            },
+            {
+                "role": "assistant",
+                "content": "The safe was likely in the office to store valuable items, important documents, or other items that needed to be kept secure. Safes are commonly used in offices to protect sensitive information and assets from theft or unauthorized access."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Keri have expected to find inside the safe based on its label?"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Keri. Person B is Lian. The container is a safe. Item X is coat. Item Y is magnet.\nSo, the answer is [B]\n\nHowever, to directly answer the question: Based on the label on the safe, Keri might have expected to find a coat inside the safe."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the safe?\n\n[Candidate Answers]\nR. magnet\nS. coat\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Keri. Person B is Lian. The item is coat. The location X is the safe. The location Y is the office.\nSo, the answer is [S]"
+            }
+        ]
+    },
+    {
+        "story_index": 21,
+        "question_type": "assumption",
+        "story": "Keri found a safe in the office. The label on the safe says coat. Keri couldn’t see what was inside the safe. Keri opened the safe and found a magnet. There is no coat in the safe. Keri closed the safe and put it back. Lian entered the office and saw the safe.",
+        "short_answer": "coat",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhat was supposed to be in the safe?\n\n[Candidate Answers]\nL. magnet\nY. coat\n",
+        "output": "Person A is Keri. Person B is Lian. The item is coat. The location X is the office. The location Y is inside the safe.\nSo, the answer is [Y].",
+        "map": {
+            "L": "A",
+            "Y": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nKeri found a safe in the office. The label on the safe says coat. Keri couldn’t see what was inside the safe. Keri opened the safe and found a magnet. There is no coat in the safe. Keri closed the safe and put it back. Lian entered the office and saw the safe.\n\n[Question]\nWhy did Keri put the safe back after opening it?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Keri put the safe back after opening it because she had already checked the contents and found that it did not contain the item labeled on the safe (a coat). After confirming that the safe contained a magnet instead, she likely decided to return it to its original place to maintain the order of the office and avoid drawing unnecessary attention to it."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat did Keri expect to find inside the safe?"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Keri. Person B is Lian. The item is coat. The location X is the office. The location Y is inside the safe.\nSo, the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat could be the significance of the magnet in the safe?"
+            },
+            {
+                "role": "assistant",
+                "content": "The significance of the magnet in the safe could be that it was placed there intentionally for a specific purpose, such as being used in a security system, a hidden mechanism, or as part of a puzzle or code. Alternatively, it might have been stored there for practical use or as a personal item. Without more context, it's difficult to determine the exact significance, but the magnet likely has a specific role or function."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the safe?\n\n[Candidate Answers]\nL. magnet\nY. coat\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Keri. Person B is Lian. The item is coat. The location X is the office. The location Y is inside the safe.\nSo, the answer is [Y]."
+            }
+        ]
+    },
+    {
+        "story_index": 21,
+        "question_type": "assumption",
+        "story": "Keri found a safe in the office. The label on the safe says coat. Keri couldn’t see what was inside the safe. Keri opened the safe and found a magnet. There is no coat in the safe. Keri closed the safe and put it back. Lian entered the office and saw the safe.",
+        "short_answer": "coat",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhat was supposed to be in the safe?\n\n[Candidate Answers]\nE. coat\nK. magnet\n",
+        "output": "Person A is Keri. Person B is Lian. The item is coat. The location X is the office. The location Y is the safe.\nSo, the answer is [E]",
+        "map": {
+            "K": "A",
+            "E": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nKeri found a safe in the office. The label on the safe says coat. Keri couldn’t see what was inside the safe. Keri opened the safe and found a magnet. There is no coat in the safe. Keri closed the safe and put it back. Lian entered the office and saw the safe.\n\n[Question]\nWhy was there a magnet inside the safe instead of a coat?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The story does not provide a specific reason why there was a magnet inside the safe instead of a coat. It only states that the label on the safe said \"coat,\" but when Keri opened it, she found a magnet. The label might have been incorrect, or the contents of the safe might have been changed without updating the label. Without additional context, the exact reason remains unknown."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat could Lian have thought when she saw the safe?"
+            },
+            {
+                "role": "assistant",
+                "content": "Lian might have been curious or confused when she saw the safe. Since the label on the safe said \"coat,\" she might have expected to find a coat inside. Upon seeing the safe, she could have wondered why there was a safe in the office and what its contents were, especially if the label seemed out of place. She might have been intrigued enough to want to open it and check the contents herself."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might happen next in the office?"
+            },
+            {
+                "role": "assistant",
+                "content": "Several things might happen next in the office. Lian could decide to open the safe to see what's inside, just as Keri did. She might be curious about why the safe contains a magnet instead of a coat. Alternatively, Lian could report the discrepancy to someone in authority, such as a supervisor or the office manager, to clarify the contents of the safe and why the label is incorrect. Another possibility is that Lian might simply ignore the safe and continue with her tasks, assuming it's not her responsibility to investigate further."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the safe?\n\n[Candidate Answers]\nE. coat\nK. magnet\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Keri. Person B is Lian. The item is coat. The location X is the office. The location Y is the safe.\nSo, the answer is [E]"
+            }
+        ]
+    },
+    {
+        "story_index": 21,
+        "question_type": "assumption",
+        "story": "Keri found a safe in the office. The label on the safe says coat. Keri couldn’t see what was inside the safe. Keri opened the safe and found a magnet. There is no coat in the safe. Keri closed the safe and put it back. Lian entered the office and saw the safe.",
+        "short_answer": "coat",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhat was supposed to be in the safe?\n\n[Candidate Answers]\nF. magnet\nX. coat\n",
+        "output": "Person A is Keri. Person B is Lian. The item is coat. The location X is office. The location Y is safe.\nSo, the answer is [X].",
+        "map": {
+            "F": "A",
+            "X": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nKeri found a safe in the office. The label on the safe says coat. Keri couldn’t see what was inside the safe. Keri opened the safe and found a magnet. There is no coat in the safe. Keri closed the safe and put it back. Lian entered the office and saw the safe.\n\n[Question]\nWhat other items could Keri have expected to find in the safe?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Keri could have expected to find items such as money, documents, jewelry, or important keys in the safe, given that safes are typically used to store valuable and secure items."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might be the reason for the label on the safe saying \"coat\"?"
+            },
+            {
+                "role": "assistant",
+                "content": "The label on the safe saying \"coat\" might be a misleading label used to deter potential thieves or to hide the true contents of the safe. It could also be a leftover label from a previous use or a mistake."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhy did Keri close the safe and put it back?"
+            },
+            {
+                "role": "assistant",
+                "content": "Keri closed the safe and put it back to maintain the original state of the safe, possibly to avoid drawing attention to the fact that it had been opened. This could be to ensure the safety and security of the contents or to avoid any potential consequences of tampering with it."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the safe?\n\n[Candidate Answers]\nF. magnet\nX. coat\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Keri. Person B is Lian. The item is coat. The location X is office. The location Y is safe.\nSo, the answer is [X]."
+            }
+        ]
+    },
+    {
+        "story_index": 21,
+        "question_type": "assumption",
+        "story": "Keri found a safe in the office. The label on the safe says coat. Keri couldn’t see what was inside the safe. Keri opened the safe and found a magnet. There is no coat in the safe. Keri closed the safe and put it back. Lian entered the office and saw the safe.",
+        "short_answer": "coat",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhat was supposed to be in the safe?\n\n[Candidate Answers]\nA. magnet\nH. coat\n",
+        "output": "Person A is Keri. Person B is Lian. The container is a safe. Item X is coat. Item Y is magnet.\nSo, the answer is [H].",
+        "map": {
+            "A": "A",
+            "H": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nKeri found a safe in the office. The label on the safe says coat. Keri couldn’t see what was inside the safe. Keri opened the safe and found a magnet. There is no coat in the safe. Keri closed the safe and put it back. Lian entered the office and saw the safe.\n\n[Question]\nWhy was the safe labeled \"coat\" if there was no coat inside?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The safe was labeled \"coat\" for reasons that are not explicitly stated in the story. It could be that the label was a mistake, or it was intentionally misleading, or perhaps the contents of the safe were changed after the label was placed on it. Without more information, the exact reason for the misleading label is unclear."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCould the magnet inside the safe have a specific purpose?"
+            },
+            {
+                "role": "assistant",
+                "content": "The magnet inside the safe could have a specific purpose, though the story doesn't provide explicit details. It might be used for various reasons, such as being part of a security system, a tool for picking up metal objects, or even a personal item with sentimental value. Without more context, the exact purpose of the magnet remains uncertain."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat did Keri do after finding the magnet inside the safe?"
+            },
+            {
+                "role": "assistant",
+                "content": "Keri closed the safe and put it back after finding the magnet inside."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the safe?\n\n[Candidate Answers]\nA. magnet\nH. coat\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Keri. Person B is Lian. The container is a safe. Item X is coat. Item Y is magnet.\nSo, the answer is [H]."
+            }
+        ]
+    }
+]

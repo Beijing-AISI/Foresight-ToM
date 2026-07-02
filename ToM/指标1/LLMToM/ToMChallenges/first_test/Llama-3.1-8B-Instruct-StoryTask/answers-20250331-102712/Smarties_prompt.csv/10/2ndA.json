@@ -1,0 +1,407 @@
+[
+    {
+        "story_index": 10,
+        "question_type": "2ndA",
+        "story": "Sabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.",
+        "short_answer": "binder",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 1136,
+        "user_input": "\n[Question]\nAfter Melania opened the locker, what would Sabra think Melania would expect to find in the locker?\n\n[Candidate Answers]\nR. mug\nX. binder\n",
+        "output": "Person A is Sabra. Person B is Melania. The item is mug. The location X is locker. The location Y is balcony. \nSo, the answer is [X].",
+        "map": {
+            "R": "A",
+            "X": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\nCan you guess why Sabra decided to close the locker after finding the mug?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "It seems that Sabra decided to close the locker because she initially thought the locker contained something else (a binder), but when she opened it, she found something different (a mug). She might have wanted to restore the original state of the locker before others saw it, like Melania who later entered the balcony."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWas Sabra surprised to find a mug inside the locker instead of a binder?"
+            },
+            {
+                "role": "assistant",
+                "content": "Yes, Sabra was likely surprised to find a mug inside the locker instead of a binder since the label said \"binder\" and she didn't expect to find anything else."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhy did Sabra initially think there was something called a 'binder' inside the locker?"
+            },
+            {
+                "role": "assistant",
+                "content": "Sabra initially thought there was something called a 'binder' inside the locker because the label on the locker said \"binder\". This led her to believe that the actual contents of the locker matched its label."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat does the label on the locker indicate about its contents?"
+            },
+            {
+                "role": "assistant",
+                "content": "The label on the locker indicates that it supposedly contains a \"binder\", suggesting that this is what the person who placed the label expected to be inside. However, as it turned out, the actual content was a mug."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCould Sabra have used the information from the label to make any predictions about what she'd find inside the locker?"
+            },
+            {
+                "role": "assistant",
+                "content": "No, based on the information provided, Sabra couldn't use the label to make accurate predictions about what she'd find inside the locker. The label said \"binder,\" but when she opened the locker, she found a mug, which was completely unexpected."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Sabra have done if she had seen the actual contents of the locker before opening it?"
+            },
+            {
+                "role": "assistant",
+                "content": "If Sabra had seen the actual contents of the locker before opening it, she would have known that it contained a mug, not a binder. In that case, she probably wouldn't have opened the locker at all, as there would have been no reason for her to do so."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat kind of situation would lead someone to find a locker in a balcony?"
+            },
+            {
+                "role": "assistant",
+                "content": "It's unlikely to find a locker in a typical balcony setting. Lockers are usually found in schools, gyms, or other places where people store personal items. A balcony is typically an outdoor space attached to a building, often used for relaxation or storage of outdoor furniture and decorations. It's possible that the story is using a non-traditional or fictional setting for the sake of the narrative."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Melania opened the locker, what would Sabra think Melania would expect to find in the locker?\n\n[Candidate Answers]\nR. mug\nX. binder\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Sabra. Person B is Melania. The item is mug. The location X is locker. The location Y is balcony. \nSo, the answer is [X]."
+            }
+        ]
+    },
+    {
+        "story_index": 10,
+        "question_type": "2ndA",
+        "story": "Sabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.",
+        "short_answer": "binder",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 1443,
+        "user_input": "\n[Question]\nAfter Melania opened the locker, what would Sabra think Melania would expect to find in the locker?\n\n[Candidate Answers]\nH. binder\nZ. mug\n",
+        "output": "Based on the initial labeling of the locker as \"binder\", Sabra would likely assume that Melania would expect to find a binder or similar organizational material inside the locker.\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [H].",
+        "map": {
+            "Z": "A",
+            "H": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\nWas Sabra surprised to find a mug inside the locker instead of a binder?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Since we don't have any information that suggests Sabra was expecting something else, let alone a binder, when she opened the locker, it can be inferred that Sabra might have been surprised by finding a mug instead of nothing at all. However, whether she was specifically looking for a binder is unclear. \n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [No specific answer provided as per note (1)]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWould you expect to find a mug in a typical locker labeled as 'binder'?"
+            },
+            {
+                "role": "assistant",
+                "content": "Generally, a locker labeled as 'binder' would suggest that it contains school supplies such as notebooks, folders, or other organizational materials. It would be unusual to find a mug in a typical locker labeled as 'binder'. \n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [No].\n\nHowever, since this is an open-ended question without candidate answers, I'll rephrase my response according to your request:\n\nSo, the answer is [1]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIs it common for lockers to be labeled with their contents?"
+            },
+            {
+                "role": "assistant",
+                "content": "It's more common for lockers to be assigned numbers or names rather than being labeled with their contents. Labeling a locker with its contents could potentially give away sensitive or personal information.\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [No]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat kind of situation would lead someone to find a locker in a balcony?"
+            },
+            {
+                "role": "assistant",
+                "content": "Typically, lockers are found in schools, gyms, or workplaces where people store their belongings. Balconies are usually outdoor spaces attached to buildings, often used for relaxation or observation. It's unlikely to find a locker in a standard balcony setting.\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [No specific answer provided as per note (1)]"
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat does the label on the locker indicate about its contents?"
+            },
+            {
+                "role": "assistant",
+                "content": "The label on the locker says \"binder,\" which suggests that the expected contents of the locker are related to organization or storage, possibly school supplies like notebooks or papers. However, the actual contents were a mug, indicating that the label was incorrect.\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [No specific answer provided as per note (1)]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nGenerally speaking, what else might be stored in a locker labeled as 'binder'?"
+            },
+            {
+                "role": "assistant",
+                "content": "In addition to school supplies like notebooks or papers, a locker labeled as 'binder' might also contain office supplies, documents, or other organizational materials. This could include binders themselves, folders, files, or other items used for storing and managing paperwork.\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [No specific answer provided as per note (1)]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nHow might Melania react when seeing the locker in the balcony?"
+            },
+            {
+                "role": "assistant",
+                "content": "Melania might be confused or puzzled upon seeing a locker in the balcony, especially if she didn't know it was there before. She might wonder why a locker is located in a non-traditional space like a balcony, or what it's doing there.\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [No specific answer provided as per note (1)]."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Melania opened the locker, what would Sabra think Melania would expect to find in the locker?\n\n[Candidate Answers]\nH. binder\nZ. mug\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Based on the initial labeling of the locker as \"binder\", Sabra would likely assume that Melania would expect to find a binder or similar organizational material inside the locker.\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [H]."
+            }
+        ]
+    },
+    {
+        "story_index": 10,
+        "question_type": "2ndA",
+        "story": "Sabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.",
+        "short_answer": "binder",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 1311,
+        "user_input": "\n[Question]\nAfter Melania opened the locker, what would Sabra think Melania would expect to find in the locker?\n\n[Candidate Answers]\nI. mug\nU. binder\n",
+        "output": "Person A is Sabra. Person B is Melania. The item is mug. The location X is locker. The location Y is balcony.\nSo, the answer is [I].",
+        "map": {
+            "I": "A",
+            "U": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\nWhat might Sabra have done if she had seen the actual contents of the locker before opening it?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "If Sabra had seen the actual contents of the locker before opening it, she might have decided not to open it, as the label said \"binder\" and that's what she expected to find. She could have assumed that someone else had placed a mug in the wrong locker by mistake, and left it alone. Alternatively, she might have tried to investigate further to figure out why a mug was in a locker labeled for a binder."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWould you expect to find a mug in a typical locker labeled as 'binder'?"
+            },
+            {
+                "role": "assistant",
+                "content": "No, I would not expect to find a mug in a typical locker labeled as 'binder'. Lockers labeled as 'binder' usually contain school supplies such as notebooks, folders, and binders, not kitchenware like mugs."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might happen next in the balcony where Sabra and Melania are present?"
+            },
+            {
+                "role": "assistant",
+                "content": "It's possible that Melania will notice the discrepancy between the label on the locker and its actual contents when she sees it. If she asks Sabra about it, Sabra might explain the situation, and they could both wonder who put the mug in the wrong locker and why. They might also decide to investigate further to try to resolve the mystery."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nGenerally speaking, what else might be stored in a locker labeled as 'binder'?"
+            },
+            {
+                "role": "assistant",
+                "content": "In general, a locker labeled as 'binder' might store items related to organization, paperwork, or office supplies, such as:\n\n- Binders themselves\n- Folders\n- Notebooks\n- Pens and pencils\n- Paper clips\n- Stapler\n- Highlighters\n- Calculators\n- Other stationery items\n\nThese types of items are commonly used for note-taking, record-keeping, and other organizational purposes."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat kind of situation would lead someone to find a locker in a balcony?"
+            },
+            {
+                "role": "assistant",
+                "content": "A person might find a locker in a balcony in situations such as:\n\n- Renovation or construction work: During building renovations, lockers might be temporarily relocated to balconies or other areas while the main storage space is being renovated.\n- Storage overflow: If a building has limited storage space, lockers might be placed in balconies to accommodate excess storage needs.\n- Event or exhibition setup: For events or exhibitions, lockers might be brought into balconies to provide secure storage for equipment, supplies, or personal belongings.\n- Temporary use: In some cases, lockers might be placed in balconies for temporary use, such as during a short-term project or event."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIs it common for lockers to be labeled with their contents?"
+            },
+            {
+                "role": "assistant",
+                "content": "No, it's not very common for lockers to be labeled with their contents. Typically, lockers are assigned to individuals or groups, and the owner knows what's inside. Labeling the contents of a locker is more often associated with shared storage spaces, such as file cabinets or shelves in a communal area, rather than individual lockers."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhy did Sabra initially think there was something called a 'binder' inside the locker?"
+            },
+            {
+                "role": "assistant",
+                "content": "Sabra likely thought there was something called a 'binder' inside the locker because the label on the locker said \"binder\". This suggests that the locker was intended for storing items related to a binder, such as papers, notes, or other documents that would typically be kept in a binder."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Melania opened the locker, what would Sabra think Melania would expect to find in the locker?\n\n[Candidate Answers]\nI. mug\nU. binder\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Sabra. Person B is Melania. The item is mug. The location X is locker. The location Y is balcony.\nSo, the answer is [I]."
+            }
+        ]
+    },
+    {
+        "story_index": 10,
+        "question_type": "2ndA",
+        "story": "Sabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.",
+        "short_answer": "binder",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 1411,
+        "user_input": "\n[Question]\nAfter Melania opened the locker, what would Sabra think Melania would expect to find in the locker?\n\n[Candidate Answers]\nP. binder\nR. mug\n",
+        "output": "Since the label on the locker says \"binder\", Sabra would likely assume that Melania would expect to find a binder in the locker, not the mug that Sabra found.\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [P].",
+        "map": {
+            "R": "A",
+            "P": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\nIs it common for lockers to be labeled with their contents?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "It's not very common for lockers to be labeled with their contents. Typically, labels on lockers indicate who owns them or have other identifying information, rather than describing what's inside. \n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWould you expect to find a mug in a typical locker labeled as 'binder'?"
+            },
+            {
+                "role": "assistant",
+                "content": "No, you would not typically expect to find a mug in a locker labeled as 'binder'. This situation seems unusual because the content of the locker (a mug) doesn't match the label (binder). \n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Sabra have done if she had seen the actual contents of the locker before opening it?"
+            },
+            {
+                "role": "assistant",
+                "content": "If Sabra had seen the actual contents of the locker before opening it, she probably wouldn't have opened it, assuming that the label \"binder\" didn't match what she saw. She might have left the locker alone, thinking it wasn't hers or that someone else must have misplaced something.\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nHow might Melania react when seeing the locker in the balcony?"
+            },
+            {
+                "role": "assistant",
+                "content": "When Melania sees the locker in the balcony, she might be confused by the fact that the label says \"binder\", but upon closer inspection, she'll notice that it actually contains a mug. Her reaction could range from curiosity to amusement, depending on her personality. She might wonder why the locker was labeled incorrectly or think it's an interesting mistake.\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nGenerally speaking, what else might be stored in a locker labeled as 'binder'?"
+            },
+            {
+                "role": "assistant",
+                "content": "In general, a locker labeled as 'binder' might contain a binder, which is a book-like container used to hold papers, documents, or other materials. It could also potentially store other office supplies related to binding, such as binders clips, tape, or glue.\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat does the label on the locker indicate about its contents?"
+            },
+            {
+                "role": "assistant",
+                "content": "The label on the locker indicates that its contents should be a binder, according to the person who labeled it. However, this label is incorrect since the actual contents of the locker are a mug.\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCan you guess why Sabra decided to close the locker after finding the mug?"
+            },
+            {
+                "role": "assistant",
+                "content": "Yes, I can make an educated guess. Since the label on the locker said \"binder\" and Sabra found a mug instead, it's likely that Sabra thought the locker belonged to someone else or that the label was incorrect. To avoid disturbing the owner or leaving the locker in disarray, Sabra probably decided to close the locker and leave it as she found it.\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Melania opened the locker, what would Sabra think Melania would expect to find in the locker?\n\n[Candidate Answers]\nP. binder\nR. mug\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Since the label on the locker says \"binder\", Sabra would likely assume that Melania would expect to find a binder in the locker, not the mug that Sabra found.\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [P]."
+            }
+        ]
+    },
+    {
+        "story_index": 10,
+        "question_type": "2ndA",
+        "story": "Sabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.",
+        "short_answer": "binder",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 1243,
+        "user_input": "\n[Question]\nAfter Melania opened the locker, what would Sabra think Melania would expect to find in the locker?\n\n[Candidate Answers]\nI. mug\nJ. binder\n",
+        "output": "Person A is Sabra. Person B is Melania. The item is binder. The location X is locker. The location Y is mug. \nSo, the answer is [J].",
+        "map": {
+            "I": "A",
+            "J": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\nWhat kind of situation would lead someone to find a locker in a balcony?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "It seems that finding a locker in a balcony might be an unusual or unexpected situation, possibly due to misplacement or being left behind by someone. It could also be related to a specific event, such as a school or office setting where lockers are commonly used, but they were moved to the balcony for some reason. Without more context, it's difficult to determine the exact circumstances leading to this situation."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat does the label on the locker indicate about its contents?"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Sabra. Person B is Melania. The item is binder. The location X is locker. The location Y is mug. \nSo, the answer is [1]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCan you guess why Sabra decided to close the locker after finding the mug?"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Sabra. Person B is Melania. The item is binder. The location X is locker. The location Y is mug. \nSo, the answer is [1].\n\nIt appears that Sabra decided to close the locker because she had already checked its contents and found something different than what the label indicated. She likely didn't feel the need to investigate further since her curiosity was satisfied."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Sabra have done if she had seen the actual contents of the locker before opening it?"
+            },
+            {
+                "role": "assistant",
+                "content": "If Sabra had seen the actual contents of the locker before opening it, she might have avoided opening it altogether, especially if she knew that the contents did not match the label. Alternatively, she might have been curious about how the incorrect label ended up on the locker and tried to investigate further. However, based on the information provided, it seems that Sabra simply opened the locker out of curiosity when she found it."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCould Sabra have used the information from the label to make any predictions about what she'd find inside the locker?"
+            },
+            {
+                "role": "assistant",
+                "content": "Based on the information provided, it doesn't seem like Sabra made any predictions about what she'd find inside the locker based on the label. The label said \"binder\", which is a type of notebook or folder, but Sabra still found a mug inside instead. This suggests that the label was incorrect, and Sabra didn't use it to make any informed guesses about the contents."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhy did Sabra initially think there was something called a 'binder' inside the locker?"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Sabra. Person B is Melania. The item is binder. The location X is locker. The location Y is mug. \nSo, the answer is [1].\n\nSabra initially thought there was something called a 'binder' inside the locker because the label on the locker said \"binder\"."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIs it common for lockers to be labeled with their contents?"
+            },
+            {
+                "role": "assistant",
+                "content": "No, it's not common for lockers to be labeled with their contents. Typically, lockers are labeled with a number or name to identify them, not with a description of what's inside. In this case, the label saying \"binder\" seems to be an anomaly or an error."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Melania opened the locker, what would Sabra think Melania would expect to find in the locker?\n\n[Candidate Answers]\nI. mug\nJ. binder\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Sabra. Person B is Melania. The item is binder. The location X is locker. The location Y is mug. \nSo, the answer is [J]."
+            }
+        ]
+    }
+]

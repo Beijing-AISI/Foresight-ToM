@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 21,
+        "question_type": "reality",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nKeri and Lian were hanging out in the office. They saw a knapsack and a tray. They found a knife in the knapsack. Lian left the office. Keri moved the knife to the tray. Where is the knife currently?\n\nA. tray\nB. knapsack\n\nAnswer:",
+        "short_answer": "tray",
+        "answer": "A",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 370,
+        "user_input": "\n[Story]\nKeri and Lian were hanging out in the office. They saw a knapsack and a tray. They found a knife in the knapsack. Lian left the office. Keri moved the knife to the tray. Where is the knife currently?\n\n[Candidate Answers]\nA. tray\nP. knapsack\n",
+        "output": " ifndef\nPerson A is Keri. Person B is Lian. The item is knife. The location X is knapsack. The location Y is tray.\nSo the answer is [A]",
+        "map": {
+            "A": "A",
+            "P": "B"
+        }
+    },
+    {
+        "token_size": 370,
+        "user_input": "\n[Story]\nKeri and Lian were hanging out in the office. They saw a knapsack and a tray. They found a knife in the knapsack. Lian left the office. Keri moved the knife to the tray. Where is the knife currently?\n\n[Candidate Answers]\nD. knapsack\nL. tray\n",
+        "output": " ifndef\nPerson A is Keri. Person B is Lian. The item is knife. The location X is knapsack. The location Y is tray.\nSo the answer is [L]",
+        "map": {
+            "L": "A",
+            "D": "B"
+        }
+    },
+    {
+        "token_size": 370,
+        "user_input": "\n[Story]\nKeri and Lian were hanging out in the office. They saw a knapsack and a tray. They found a knife in the knapsack. Lian left the office. Keri moved the knife to the tray. Where is the knife currently?\n\n[Candidate Answers]\nL. knapsack\nT. tray\n",
+        "output": " ifndef\nPerson A is Keri. Person B is Lian. The item is knife. The location X is knapsack. The location Y is tray.\nSo the answer is [T]",
+        "map": {
+            "T": "A",
+            "L": "B"
+        }
+    },
+    {
+        "token_size": 371,
+        "user_input": "\n[Story]\nKeri and Lian were hanging out in the office. They saw a knapsack and a tray. They found a knife in the knapsack. Lian left the office. Keri moved the knife to the tray. Where is the knife currently?\n\n[Candidate Answers]\nC. tray\nZ. knapsack\n",
+        "output": "nni\n\nPerson A is Keri. Person B is Lian. The item is knife. The location X is knapsack. The location Y is tray.\nSo the answer is [C]",
+        "map": {
+            "C": "A",
+            "Z": "B"
+        }
+    },
+    {
+        "token_size": 370,
+        "user_input": "\n[Story]\nKeri and Lian were hanging out in the office. They saw a knapsack and a tray. They found a knife in the knapsack. Lian left the office. Keri moved the knife to the tray. Where is the knife currently?\n\n[Candidate Answers]\nI. knapsack\nS. tray\n",
+        "output": " ifndef\nPerson A is Keri. Person B is Lian. The item is knife. The location X is knapsack. The location Y is tray.\nSo the answer is [S]",
+        "map": {
+            "S": "A",
+            "I": "B"
+        }
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 12,
+        "question_type": "2ndA",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nFelicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate. After Hillary came back to the conservatory, where would Felicity think Hillary would look for the guava?\n\nA. crate\nB. bin\n\nAnswer:",
+        "short_answer": "bin",
+        "answer": "B",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 381,
+        "user_input": "\n[Story]\nFelicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate. After Hillary came back to the conservatory, where would Felicity think Hillary would look for the guava?\n\n[Candidate Answers]\nK. crate\nY. bin\n",
+        "output": "foundland\n\nPerson A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nso the answer is [Y]",
+        "map": {
+            "K": "A",
+            "Y": "B"
+        }
+    },
+    {
+        "token_size": 513,
+        "user_input": "\n[Story]\nFelicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate. After Hillary came back to the conservatory, where would Felicity think Hillary would look for the guava?\n\n[Candidate Answers]\nJ. crate\nY. bin\n",
+        "output": "foundland offsetof(struct { int x; }, x)\n\nBased on the provided guidelines, here's how we can approach this:\n\n- We need to identify Person A, Person B, the item, and locations X and Y from the story.\n- Following the format of one-step reasoning as shown in the example.\n\nLet's break down the story:\n\n- **Person A**: Felicity\n- **Person B**: Hillary\n- **Item**: Guava\n- **Location X** (where the item was initially): Bin\n- **Location Y** (where the item was moved by Person A): Crate\n\nNow let's formulate our response according to the required format:\n\n---\n\nPerson A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nso the answer is [Y]",
+        "map": {
+            "J": "A",
+            "Y": "B"
+        }
+    },
+    {
+        "token_size": 511,
+        "user_input": "\n[Story]\nFelicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate. After Hillary came back to the conservatory, where would Felicity think Hillary would look for the guava?\n\n[Candidate Answers]\nK. bin\nU. crate\n",
+        "output": "foundland offsetof(struct { int a; }, a)\n\nBased on the provided guidelines, here's how we can approach this:\n\n- We need to identify Person A, Person B, the item, and locations X and Y from the story.\n- Following the format of one-step reasoning as shown in the example.\n\nLet's break down the story:\n\n- **Person A**: Felicity\n- **Person B**: Hillary\n- **Item**: Guava\n- **Location X** (where the item was initially): Bin\n- **Location Y** (where the item was moved by Person A): Crate\n\nNow let's formulate it according to the required format:\n\nPerson A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nso the answer is [K]",
+        "map": {
+            "U": "A",
+            "K": "B"
+        }
+    },
+    {
+        "token_size": 381,
+        "user_input": "\n[Story]\nFelicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate. After Hillary came back to the conservatory, where would Felicity think Hillary would look for the guava?\n\n[Candidate Answers]\nL. bin\nX. crate\n",
+        "output": "foundland\n\nPerson A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nso the answer is [L]",
+        "map": {
+            "X": "A",
+            "L": "B"
+        }
+    },
+    {
+        "token_size": 381,
+        "user_input": "\n[Story]\nFelicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate. After Hillary came back to the conservatory, where would Felicity think Hillary would look for the guava?\n\n[Candidate Answers]\nK. bin\nP. crate\n",
+        "output": "foundland\n\nPerson A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nso the answer is [K]",
+        "map": {
+            "P": "A",
+            "K": "B"
+        }
+    }
+]

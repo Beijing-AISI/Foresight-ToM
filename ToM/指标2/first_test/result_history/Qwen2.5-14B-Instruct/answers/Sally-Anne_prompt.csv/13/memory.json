@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 13,
+        "question_type": "memory",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nSabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket. Where was the papaya previously\n\nA. bucket\nB. bin\n\nAnswer:",
+        "short_answer": "bin",
+        "answer": "B",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 443,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket. Where was the papaya previously\n\n[Candidate Answers]\nT. bin\nW. bucket\n",
+        "output": ".ApplyResources(\"\",[0,1])\nคณะกรรม員:\n\nPerson A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nso the answer is [0]",
+        "map": {
+            "W": "A",
+            "T": "B"
+        }
+    },
+    {
+        "token_size": 364,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket. Where was the papaya previously\n\n[Candidate Answers]\nJ. bucket\nK. bin\n",
+        "output": "system\nPerson A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nso the answer is [K]",
+        "map": {
+            "J": "A",
+            "K": "B"
+        }
+    },
+    {
+        "token_size": 364,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket. Where was the papaya previously\n\n[Candidate Answers]\nB. bucket\nU. bin\n",
+        "output": "system\nPerson A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nso the answer is [U]",
+        "map": {
+            "B": "A",
+            "U": "B"
+        }
+    },
+    {
+        "token_size": 364,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket. Where was the papaya previously\n\n[Candidate Answers]\nJ. bucket\nS. bin\n",
+        "output": "<Person>A\n\nPerson A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nso the answer is [S]",
+        "map": {
+            "J": "A",
+            "S": "B"
+        }
+    },
+    {
+        "token_size": 364,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket. Where was the papaya previously\n\n[Candidate Answers]\nH. bucket\nI. bin\n",
+        "output": "system\nPerson A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nso the answer is [I]",
+        "map": {
+            "H": "A",
+            "I": "B"
+        }
+    }
+]

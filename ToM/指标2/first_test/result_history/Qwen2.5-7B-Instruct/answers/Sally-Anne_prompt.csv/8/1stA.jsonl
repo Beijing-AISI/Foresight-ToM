@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 8,
+        "question_type": "1stA",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nKaralynn and Clio were hanging out in the kitchen. They saw a refrigerator and a cabinet. They found a towel in the refrigerator. Clio left the kitchen. Karalynn moved the towel to the cabinet. After Clio came back to the kitchen, where would Karalynn look for the towel?\n\nA. cabinet\nB. refrigerator\n\nAnswer:",
+        "short_answer": "cabinet",
+        "answer": "A",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 384,
+        "user_input": "\n[Story]\nKaralynn and Clio were hanging out in the kitchen. They saw a refrigerator and a cabinet. They found a towel in the refrigerator. Clio left the kitchen. Karalynn moved the towel to the cabinet. After Clio came back to the kitchen, where would Karalynn look for the towel?\n\n[Candidate Answers]\nF. refrigerator\nT. cabinet\n",
+        "output": ".Forms of Answer:\nA. Person A is Karalynn. Person B is Clio. The item is towel. The location X is refrigerator. The location Y is cabinet.\nB. So the answer is [T].",
+        "map": {
+            "T": "A",
+            "F": "B"
+        }
+    },
+    {
+        "token_size": 477,
+        "user_input": "\n[Story]\nKaralynn and Clio were hanging out in the kitchen. They saw a refrigerator and a cabinet. They found a towel in the refrigerator. Clio left the kitchen. Karalynn moved the towel to the cabinet. After Clio came back to the kitchen, where would Karalynn look for the towel?\n\n[Candidate Answers]\nD. refrigerator\nF. cabinet\n",
+        "output": ".Forms of Answer:\nA. [Thought] Person A is Karalynn. Person B is Clio. The item is towel. The location X is refrigerator. The location Y is cabinet. So the answer is [D]. \nB. [Thought] Person A is Karalynn. Person B is Clio. The item is towel. The location X is refrigerator. The location Y is cabinet. So the answer is [F]. \nC. [Thought] Person A is Karalynn. Person B is Clio. The item is towel. The location X is refrigerator. The location Y is cabinet. So the answer is []. \n\nThe correct answer is [B].",
+        "map": {
+            "F": "A",
+            "D": "B"
+        }
+    },
+    {
+        "token_size": 378,
+        "user_input": "\n[Story]\nKaralynn and Clio were hanging out in the kitchen. They saw a refrigerator and a cabinet. They found a towel in the refrigerator. Clio left the kitchen. Karalynn moved the towel to the cabinet. After Clio came back to the kitchen, where would Karalynn look for the towel?\n\n[Candidate Answers]\nI. refrigerator\nZ. cabinet\n",
+        "output": " ifndef\nPerson A is Karalynn. Person B is Clio. The item is towel. The location X is refrigerator. The location Y is cabinet.\nSo the answer is [I]\n",
+        "map": {
+            "Z": "A",
+            "I": "B"
+        }
+    },
+    {
+        "token_size": 381,
+        "user_input": "\n[Story]\nKaralynn and Clio were hanging out in the kitchen. They saw a refrigerator and a cabinet. They found a towel in the refrigerator. Clio left the kitchen. Karalynn moved the towel to the cabinet. After Clio came back to the kitchen, where would Karalynn look for the towel?\n\n[Candidate Answers]\nM. refrigerator\nS. cabinet\n",
+        "output": ":last step reasoning\nPerson A is Karalynn. Person B is Clio. The item is towel. The location X is refrigerator. The location Y is cabinet.\nSo, the answer is [S]",
+        "map": {
+            "S": "A",
+            "M": "B"
+        }
+    },
+    {
+        "token_size": 379,
+        "user_input": "\n[Story]\nKaralynn and Clio were hanging out in the kitchen. They saw a refrigerator and a cabinet. They found a towel in the refrigerator. Clio left the kitchen. Karalynn moved the towel to the cabinet. After Clio came back to the kitchen, where would Karalynn look for the towel?\n\n[Candidate Answers]\nW. refrigerator\nZ. cabinet\n",
+        "output": " ifndef\nPerson A is Karalynn. Person B is Clio. The item is towel. The location X is refrigerator. The location Y is cabinet.\nSo the answer is [Z]\nendif",
+        "map": {
+            "Z": "A",
+            "W": "B"
+        }
+    }
+]

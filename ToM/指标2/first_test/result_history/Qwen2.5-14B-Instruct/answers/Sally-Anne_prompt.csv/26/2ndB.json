@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 26,
+        "question_type": "2ndB",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nClem and Vera were hanging out in the shower room. They saw a refrigerator and a rack. They found a lock in the refrigerator. Vera left the shower room. Clem moved the lock to the rack. After Vera came back to the shower room, where would Vera think Clem would look for the lock?\n\nA. rack\nB. refrigerator\n\nAnswer:",
+        "short_answer": "refrigerator",
+        "answer": "B",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 373,
+        "user_input": "\n[Story]\nClem and Vera were hanging out in the shower room. They saw a refrigerator and a rack. They found a lock in the refrigerator. Vera left the shower room. Clem moved the lock to the rack. After Vera came back to the shower room, where would Vera think Clem would look for the lock?\n\n[Candidate Answers]\nE. rack\nJ. refrigerator\n",
+        "output": "foundland\n\nPerson A is Clem. Person B is Vera. The item is lock. The location X is refrigerator. The location Y is rack.\nso the answer is [J]",
+        "map": {
+            "E": "A",
+            "J": "B"
+        }
+    },
+    {
+        "token_size": 373,
+        "user_input": "\n[Story]\nClem and Vera were hanging out in the shower room. They saw a refrigerator and a rack. They found a lock in the refrigerator. Vera left the shower room. Clem moved the lock to the rack. After Vera came back to the shower room, where would Vera think Clem would look for the lock?\n\n[Candidate Answers]\nD. refrigerator\nM. rack\n",
+        "output": "foundland\nPerson A is Clem. Person B is Vera. The item is lock. The location X is refrigerator. The location Y is rack.\nso the answer is [D]",
+        "map": {
+            "M": "A",
+            "D": "B"
+        }
+    },
+    {
+        "token_size": 621,
+        "user_input": "\n[Story]\nClem and Vera were hanging out in the shower room. They saw a refrigerator and a rack. They found a lock in the refrigerator. Vera left the shower room. Clem moved the lock to the rack. After Vera came back to the shower room, where would Vera think Clem would look for the lock?\n\n[Candidate Answers]\nP. refrigerator\nQ. rack\n",
+        "output": "-LASTPLUGINคณะกรรม�试着理解这个故事，并按照示例的格式输出答案。这里的故事是：\n\nClem 和 Vera 在淋浴间里闲逛，他们看到了一个冰箱和一个架子。他们在冰箱里找到了一把锁。Vera 离开了淋浴间。Clem 把锁移到了架子上。当 Vera 回到淋浴间时，她会认为 Clem 会在哪里找这把锁？\n\n根据题目要求，我们只需要一步推理：\nPerson A 是 Clem。Person B 是 Vera。物品是锁。位置 X 是 冰箱。位置 Y 是 架子。\n所以答案是 [P]。\n\n但是，根据问题“Vera 会认为 Clem 会在哪里找这把锁？”由于 Vera 不知道锁被移动到了架子上，因此她会认为锁还在原来的位置——冰箱里。所以正确答案应该是 [P]。\n\n综上所述，最终的答案是：so the answer is [P]。",
+        "map": {
+            "Q": "A",
+            "P": "B"
+        }
+    },
+    {
+        "token_size": 373,
+        "user_input": "\n[Story]\nClem and Vera were hanging out in the shower room. They saw a refrigerator and a rack. They found a lock in the refrigerator. Vera left the shower room. Clem moved the lock to the rack. After Vera came back to the shower room, where would Vera think Clem would look for the lock?\n\n[Candidate Answers]\nD. rack\nF. refrigerator\n",
+        "output": "foundland\n\nPerson A is Clem. Person B is Vera. The item is lock. The location X is refrigerator. The location Y is rack.\nso the answer is [F]",
+        "map": {
+            "D": "A",
+            "F": "B"
+        }
+    },
+    {
+        "token_size": 373,
+        "user_input": "\n[Story]\nClem and Vera were hanging out in the shower room. They saw a refrigerator and a rack. They found a lock in the refrigerator. Vera left the shower room. Clem moved the lock to the rack. After Vera came back to the shower room, where would Vera think Clem would look for the lock?\n\n[Candidate Answers]\nE. refrigerator\nT. rack\n",
+        "output": "foundland\n\nPerson A is Clem. Person B is Vera. The item is lock. The location X is refrigerator. The location Y is rack.\nso the answer is [E]",
+        "map": {
+            "T": "A",
+            "E": "B"
+        }
+    }
+]

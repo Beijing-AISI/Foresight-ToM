@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 18,
+        "question_type": "2ndB",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nDaphene found a case in the market. The label on the case says peach. Daphene couldn’t see what was inside the case. Daphene opened the case and found a cardigan. There is no peach in the case. Daphene closed the case and put it back. Melania entered the market and saw the case. After Melania opened the case, what would Melania think Daphene would expect to find in the case?\nA. cardigan\nB. peach\nAnswer:",
+        "short_answer": "peach",
+        "answer": "B",
+        "system_input": "\nThe story is about Person A found a container. The label on the container says item X, but there’s no item X in the\ncontainer. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n\n[Story]\nNeila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back. Where was supposed to be in the bag?\n\n[Candidate Answers]\nA. vest\nB. plate\n\n[Output]\nPerson A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The container is ... Item X is ... Item Y is ...\n        \n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 498,
+        "user_input": "\n[Story]\nDaphene found a case in the market. The label on the case says peach. Daphene couldn’t see what was inside the case. Daphene opened the case and found a cardigan. There is no peach in the case. Daphene closed the case and put it back. Melania entered the market and saw the case. After Melania opened the case, what would Melania think Daphene would expect to find in the case?\n\n[Candidate Answers]\nJ. cardigan\nZ. peach\n",
+        "output": "\"label on the case says peach\" means that according to the label, the expected item (Item X) is a peach. Even though the actual content of the case when opened by Daphene turned out to be a cardigan (Item Y), the question asks what Melania would think Daphene would expect to find based on the label.\n\nFollowing the provided format:\n\nPerson A is Daphene. Person B is Melania. The container is a case. Item X is peach. Item Y is cardigan.\nSo the answer is [Z]",
+        "map": {
+            "J": "A",
+            "Z": "B"
+        }
+    },
+    {
+        "token_size": 428,
+        "user_input": "\n[Story]\nDaphene found a case in the market. The label on the case says peach. Daphene couldn’t see what was inside the case. Daphene opened the case and found a cardigan. There is no peach in the case. Daphene closed the case and put it back. Melania entered the market and saw the case. After Melania opened the case, what would Melania think Daphene would expect to find in the case?\n\n[Candidate Answers]\nH. peach\nI. cardigan\n",
+        "output": "--)\r\nuser\r\n\r\nPerson A is Daphene. Person B is Melania. The container is a case. Item X is peach. Item Y is cardigan.\r\nSo the answer is [H].",
+        "map": {
+            "I": "A",
+            "H": "B"
+        }
+    },
+    {
+        "token_size": 468,
+        "user_input": "\n[Story]\nDaphene found a case in the market. The label on the case says peach. Daphene couldn’t see what was inside the case. Daphene opened the case and found a cardigan. There is no peach in the case. Daphene closed the case and put it back. Melania entered the market and saw the case. After Melania opened the case, what would Melania think Daphene would expect to find in the case?\n\n[Candidate Answers]\nC. cardigan\nV. peach\n",
+        "output": "\"label on the case says peach\" indicates that Item X (the expected item) is peach, while \"found a cardigan\" means Item Y (the actual item) is a cardigan. Following the provided format:\n\nPerson A is Daphene. Person B is Melania. The container is a case. Item X is peach. Item Y is cardigan.\nSo the answer is [V]",
+        "map": {
+            "C": "A",
+            "V": "B"
+        }
+    },
+    {
+        "token_size": 466,
+        "user_input": "\n[Story]\nDaphene found a case in the market. The label on the case says peach. Daphene couldn’t see what was inside the case. Daphene opened the case and found a cardigan. There is no peach in the case. Daphene closed the case and put it back. Melania entered the market and saw the case. After Melania opened the case, what would Melania think Daphene would expect to find in the case?\n\n[Candidate Answers]\nO. cardigan\nV. peach\n",
+        "output": "\"label chain\":\nPerson A is Daphene. Person B is Melania. The container is case. Item X is peach. Item Y is cardigan.\n\"thought chain\":\nMelania would think that Daphene expected to find peach in the case because that's what the label said, even though Daphene actually found a cardigan inside.\n\nSo, the answer is [V].",
+        "map": {
+            "O": "A",
+            "V": "B"
+        }
+    },
+    {
+        "token_size": 505,
+        "user_input": "\n[Story]\nDaphene found a case in the market. The label on the case says peach. Daphene couldn’t see what was inside the case. Daphene opened the case and found a cardigan. There is no peach in the case. Daphene closed the case and put it back. Melania entered the market and saw the case. After Melania opened the case, what would Melania think Daphene would expect to find in the case?\n\n[Candidate Answers]\nN. peach\nU. cardigan\n",
+        "output": "\"label on the case says peach\" indicates that according to the label, the expected item (Item X) is a peach. However, when Daphene opened the case, she found a cardigan instead (Item Y). Therefore, if Melania opens the case after Daphene, she would likely think that Daphene expected to find a peach based on the label.\n\nFollowing the provided format:\n\nPerson A is Daphene. Person B is Melania. The container is a case. Item X is peach. Item Y is cardigan.\n\nSo, the answer is [N].",
+        "map": {
+            "U": "A",
+            "N": "B"
+        }
+    }
+]

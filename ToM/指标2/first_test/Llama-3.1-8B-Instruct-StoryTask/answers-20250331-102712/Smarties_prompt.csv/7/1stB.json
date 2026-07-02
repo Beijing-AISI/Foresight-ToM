@@ -1,0 +1,407 @@
+[
+    {
+        "story_index": 7,
+        "question_type": "1stB",
+        "story": "Norina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.",
+        "short_answer": "ruler",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 1174,
+        "user_input": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nL. ruler\nP. coconut\n",
+        "output": "Person A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo, the answer is [P].",
+        "map": {
+            "P": "A",
+            "L": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nNorina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.\n\n[Question]\nDoes the chest belong to Norina or someone else?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Since Norina found the chest and later put it back, it can be inferred that she doesn't own the chest. Therefore, the chest belongs to someone else, possibly Jobina since she entered the loft and saw the chest."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCould there be other objects besides a coconut inside the chest?"
+            },
+            {
+                "role": "assistant",
+                "content": "There could be other objects besides a coconut inside the chest. Although Norina only mentioned finding a coconut when she opened the chest, it doesn't necessarily mean that nothing else was inside. It's possible that the coconut was just one of several items, and Norina didn't mention the others."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nDid Jobina know about the chest before entering the loft?"
+            },
+            {
+                "role": "assistant",
+                "content": "There is no information provided in the story that suggests Jobina knew about the chest before entering the loft. In fact, the story implies that Jobina entered the loft and saw the chest, which suggests that she discovered it at that time."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat would happen if Jobina opens the chest?"
+            },
+            {
+                "role": "assistant",
+                "content": "If Jobina opens the chest, she will likely find a coconut inside, as that is what Norina found when she opened it earlier. However, it's also possible that there may be other objects inside the chest, as I mentioned earlier. If Jobina finds something different than a coconut, it might suggest that the contents of the chest have changed since Norina last looked inside."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCan you find a chest with a misleading label in real life?"
+            },
+            {
+                "role": "assistant",
+                "content": "Yes, it's possible to find a chest or container with a misleading label in real life. This can occur due to various reasons such as:\n\n- Mislabeling during manufacturing or packaging\n- Label switching or tampering\n- Old or outdated labels that haven't been updated\n- Human error during labeling or inventory management\n\nIn many cases, these mislabeled containers are harmless, but in some instances, they can lead to confusion, inconvenience, or even safety issues."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIs it common for chests to contain coconuts?"
+            },
+            {
+                "role": "assistant",
+                "content": "No, it's not common for chests to contain coconuts. Coconuts are typically stored in tropical regions where they grow, often in outdoor environments or specialized storage facilities designed for perishable goods. Chests are more commonly used for storing dry goods, clothing, or other household items, making it unusual for them to contain coconuts."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhy did Norina think the chest said 'ruler' when she first saw it?"
+            },
+            {
+                "role": "assistant",
+                "content": "There is no information provided in the story that explains why Norina thought the chest said \"ruler\" when she first saw it. It simply states that the label on the chest says \"ruler\", without providing any context or explanation for how this came to be."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nL. ruler\nP. coconut\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo, the answer is [P]."
+            }
+        ]
+    },
+    {
+        "story_index": 7,
+        "question_type": "1stB",
+        "story": "Norina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.",
+        "short_answer": "ruler",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 1100,
+        "user_input": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nA. coconut\nS. ruler\n",
+        "output": "Person A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo, the answer is [A].",
+        "map": {
+            "A": "A",
+            "S": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nNorina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.\n\n[Question]\nHow big is the chest according to the story?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "We cannot determine the size of the chest according to the story. The story only mentions that Norina found a chest with a label saying \"ruler\" and later found a coconut inside, but it doesn't provide any information about the size of the chest."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhy did Norina think the chest said 'ruler' when she first saw it?"
+            },
+            {
+                "role": "assistant",
+                "content": "There is no indication in the story that Norina thought the chest said 'ruler'. It simply states that the label on the chest says 'ruler', implying that someone else had written or placed the label there."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWould you expect to find a ruler in a chest labeled as such?"
+            },
+            {
+                "role": "assistant",
+                "content": "It seems unlikely that a chest would contain a ruler, especially if its label explicitly says \"ruler\". Rulers are typically flat objects used for measuring lengths, whereas chests are usually containers for storing three-dimensional items. This discrepancy suggests that something might be amiss with the chest's contents or labeling."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIs there any connection between Norina and Jobina?"
+            },
+            {
+                "role": "assistant",
+                "content": "According to the story, Jobina entered the loft and saw the chest after Norina had already opened and closed it. However, there is no indication that they have any direct relationship or interaction beyond this brief encounter. They seem to be two separate individuals who coincidentally interacted in the same space at different times."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nDid Jobina know about the chest before entering the loft?"
+            },
+            {
+                "role": "assistant",
+                "content": "No, the story does not suggest that Jobina knew about the chest beforehand. It implies that Jobina entered the loft and saw the chest, indicating that she discovered it at that moment."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCould there be other objects besides a coconut inside the chest?"
+            },
+            {
+                "role": "assistant",
+                "content": "Yes, based on the story, it is possible that there could be other objects besides a coconut inside the chest. The fact that the label says \"ruler\" but a coconut is actually inside suggests that the contents of the chest do not match its label, leaving open the possibility that other unexpected items may also be present."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat would happen if Jobina opens the chest?"
+            },
+            {
+                "role": "assistant",
+                "content": "Based on the pattern established by Norina, if Jobina opens the chest, she might find an object that has nothing to do with the label on the chest. Since the label says \"ruler\", Jobina might find another unrelated object instead of a ruler."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nA. coconut\nS. ruler\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo, the answer is [A]."
+            }
+        ]
+    },
+    {
+        "story_index": 7,
+        "question_type": "1stB",
+        "story": "Norina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.",
+        "short_answer": "ruler",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 1148,
+        "user_input": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nG. coconut\nV. ruler\n",
+        "output": "Person A is Norina. Person B is Jobina. The item is coconut. The location X is chest. The location Y is loft.\nSo, the answer is [G].",
+        "map": {
+            "G": "A",
+            "V": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nNorina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.\n\n[Question]\nWhat could be written on the actual label of the chest if it doesn't say 'ruler'?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Since the chest actually contains a coconut, it's possible that the actual label on the chest says \"coconut\". However, this contradicts the initial statement that the label says \"ruler\".\n\nAnother possibility is that the label is incorrect or outdated, and someone else might have written something else on the label. But based on the information provided, we can only speculate.\n\nIf I had to choose an alternative label, I would suggest that the actual label on the chest says \"treasure\" or \"unknown contents\", as these labels are more fitting for a mysterious chest containing a coconut."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIs the loft used for storage purposes?"
+            },
+            {
+                "role": "assistant",
+                "content": "Based on the context of the story, it appears that the loft is being used for storage purposes. The fact that Norina found a chest in the loft suggests that the loft is being used to store items, possibly old or unused ones."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIs there any connection between Norina and Jobina?"
+            },
+            {
+                "role": "assistant",
+                "content": "There is no direct connection mentioned between Norina and Jobina in the story. They seem to be two separate individuals who interact with the same object (the chest), but their relationship or any other connection is not specified."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nDid Jobina know about the chest before entering the loft?"
+            },
+            {
+                "role": "assistant",
+                "content": "No, according to the story, Jobina did not know about the chest before entering the loft. It is stated that she \"entered the loft and saw the chest\", implying that she discovered it unexpectedly."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat would happen if Jobina opens the chest?"
+            },
+            {
+                "role": "assistant",
+                "content": "Based on the story, if Jobina opens the chest, she will likely find a coconut inside, just like Norina did earlier. There is no indication that the contents of the chest have changed since Norina last opened it."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWould you expect to find a ruler in a chest labeled as such?"
+            },
+            {
+                "role": "assistant",
+                "content": "No, it's unlikely that you would expect to find a ruler in a chest labeled as a \"ruler\". The labeling seems to be inconsistent with the actual contents of the chest. If the chest were actually meant to hold a ruler, it would probably be labeled as something more general, such as \"tools\" or \"office supplies\", rather than specifically as a \"ruler\"."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nDoes the chest belong to Norina or someone else?"
+            },
+            {
+                "role": "assistant",
+                "content": "The story doesn't specify whether the chest belongs to Norina or someone else. It simply states that Norina found the chest in the loft, which implies that she may have been exploring or cleaning out the space, but it doesn't indicate ownership."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nG. coconut\nV. ruler\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Norina. Person B is Jobina. The item is coconut. The location X is chest. The location Y is loft.\nSo, the answer is [G]."
+            }
+        ]
+    },
+    {
+        "story_index": 7,
+        "question_type": "1stB",
+        "story": "Norina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.",
+        "short_answer": "ruler",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 1372,
+        "user_input": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nW. ruler\nX. coconut\n",
+        "output": "Since the chest is labeled as containing a \"ruler\" and Jobina hasn't yet opened it, she would likely expect to find a ruler inside the chest based on the label.\n\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo, the answer is [W].",
+        "map": {
+            "X": "A",
+            "W": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nNorina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.\n\n[Question]\nCould there be other objects besides a coconut inside the chest?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Yes, since Norina only opened the chest and found a coconut, it doesn't mean that there can't be any other objects inside the chest. It's possible that there could be other items hidden among the coconut. However, according to the information provided, we do know that there is no ruler in the chest."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat would happen if Jobina opens the chest?"
+            },
+            {
+                "role": "assistant",
+                "content": "If Jobina opens the chest, she will likely find a coconut inside, just like Norina did. Since Norina already checked the contents of the chest and didn't find a ruler, it's unlikely that Jobina will find one either. \n\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo, the answer is [Item Y]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWas the coconut inside the chest before or after Norina opened it?"
+            },
+            {
+                "role": "assistant",
+                "content": "According to the story, the coconut was inside the chest after Norina opened it. Before opening the chest, Norina couldn't see what was inside, implying that the coconut wasn't there initially.\n\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo, the answer is [after]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIs it common for chests to contain coconuts?"
+            },
+            {
+                "role": "assistant",
+                "content": "No, it's not common for chests to contain coconuts. Chests are typically used to store clothing, linens, or other household items, whereas coconuts are often associated with tropical regions and outdoor storage. The presence of a coconut in this chest seems unusual and might suggest that the chest has been moved or its contents have been altered in some way.\n\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo, the answer is [no]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWould you expect to find a ruler in a chest labeled as such?"
+            },
+            {
+                "role": "assistant",
+                "content": "Based on the typical use of chests, it's more likely that a chest labeled as containing a \"ruler\" would actually hold a ruler, rather than something like a coconut. This suggests that the labeling on the chest may be incorrect or misleading.\n\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo, the answer is [yes]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCan you find a chest with a misleading label in real life?"
+            },
+            {
+                "role": "assistant",
+                "content": "Yes, it's possible to find a chest with a misleading label in real life. People may mislabel or incorrectly identify the contents of a chest due to various reasons such as forgetfulness, confusion, or even intentional deception. Additionally, second-hand or thrift stores may sell chests with unknown or unclear labels, which can lead to unexpected surprises when the chest is opened.\n\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo, the answer is [yes]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nDid Jobina know about the chest before entering the loft?"
+            },
+            {
+                "role": "assistant",
+                "content": "There is no indication in the story that Jobina knew about the chest before entering the loft. The story simply states that Jobina \"entered the loft and saw the chest,\" suggesting that she discovered it by chance.\n\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo, the answer is [no]."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nW. ruler\nX. coconut\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Since the chest is labeled as containing a \"ruler\" and Jobina hasn't yet opened it, she would likely expect to find a ruler inside the chest based on the label.\n\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo, the answer is [W]."
+            }
+        ]
+    },
+    {
+        "story_index": 7,
+        "question_type": "1stB",
+        "story": "Norina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.",
+        "short_answer": "ruler",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 1036,
+        "user_input": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nD. ruler\nQ. coconut\n",
+        "output": "Person A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo, the answer is [B].",
+        "map": {
+            "Q": "A",
+            "D": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nNorina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.\n\n[Question]\nIs it common for chests to contain coconuts?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "It's unlikely for chests to commonly contain coconuts, as coconuts are typically associated with tropical regions and outdoor storage, rather than indoor chests. Chests are often used to store clothing, linens, or other household items, making the presence of a coconut an unusual occurrence."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat would happen if Jobina opens the chest?"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo, the answer is [2]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nDoes the chest belong to Norina or someone else?"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo, the answer is [1]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCould there be other objects besides a coconut inside the chest?"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo, the answer is [1]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWould you expect to find a ruler in a chest labeled as such?"
+            },
+            {
+                "role": "assistant",
+                "content": "Yes, it would be expected to find a ruler in a chest labeled as \"ruler\", assuming the label accurately reflects its contents. However, in this case, the chest actually contains a coconut, indicating that the label may be incorrect."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat could be written on the actual label of the chest if it doesn't say 'ruler'?"
+            },
+            {
+                "role": "assistant",
+                "content": "Since the chest actually contains a coconut, it's possible that the correct label might indicate something related to tropical or exotic items, such as \"treasure\" or \"souvenir\". Alternatively, it could simply state the true contents, like \"coconut\"."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIs there any connection between Norina and Jobina?"
+            },
+            {
+                "role": "assistant",
+                "content": "Based on the provided information, Norina and Jobina appear to be acquaintances or possibly coworkers, as they both have access to the same loft where the chest is located. However, their relationship is not explicitly stated."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nD. ruler\nQ. coconut\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo, the answer is [B]."
+            }
+        ]
+    }
+]

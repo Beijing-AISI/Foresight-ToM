@@ -1,0 +1,242 @@
+[
+    {
+        "story_index": 6,
+        "question_type": "assumption",
+        "story": "Hillary found a cabinet in the basement. The label on the cabinet says mask. Hillary couldn’t see what was inside the cabinet. Hillary opened the cabinet and found a tape. There is no mask in the cabinet. Hillary closed the cabinet and put it back. Kathryne entered the basement and saw the cabinet.",
+        "short_answer": "mask",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhat was supposed to be in the cabinet?\n\n[Candidate Answers]\nE. mask\nI. tape\n",
+        "output": "Person A is Hillary. Person B is Kathryne. The container is a cabinet. Item X is mask. Item Y is tape.\nSo, the answer is [E].",
+        "map": {
+            "I": "A",
+            "E": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nHillary found a cabinet in the basement. The label on the cabinet says mask. Hillary couldn’t see what was inside the cabinet. Hillary opened the cabinet and found a tape. There is no mask in the cabinet. Hillary closed the cabinet and put it back. Kathryne entered the basement and saw the cabinet.\n\n[Question]\nWhy couldn't Hillary see what was inside the cabinet at first?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Hillary couldn't see what was inside the cabinet at first because the cabinet was closed."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat other items might be found in a basement?"
+            },
+            {
+                "role": "assistant",
+                "content": "A basement can contain various items such as tools, old furniture, storage containers, sports equipment, cleaning supplies, and appliances."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhy did Hillary close the cabinet and put it back?"
+            },
+            {
+                "role": "assistant",
+                "content": "Hillary closed the cabinet and put it back because she had finished checking its contents and wanted to return it to its original state."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the cabinet?\n\n[Candidate Answers]\nE. mask\nI. tape\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Hillary. Person B is Kathryne. The container is a cabinet. Item X is mask. Item Y is tape.\nSo, the answer is [E]."
+            }
+        ]
+    },
+    {
+        "story_index": 6,
+        "question_type": "assumption",
+        "story": "Hillary found a cabinet in the basement. The label on the cabinet says mask. Hillary couldn’t see what was inside the cabinet. Hillary opened the cabinet and found a tape. There is no mask in the cabinet. Hillary closed the cabinet and put it back. Kathryne entered the basement and saw the cabinet.",
+        "short_answer": "mask",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhat was supposed to be in the cabinet?\n\n[Candidate Answers]\nD. mask\nJ. tape\n",
+        "output": "Person A is Hillary. Person B is Kathryne. The container is a cabinet. Item X is mask. Item Y is tape.\nSo, the answer is [D].",
+        "map": {
+            "J": "A",
+            "D": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nHillary found a cabinet in the basement. The label on the cabinet says mask. Hillary couldn’t see what was inside the cabinet. Hillary opened the cabinet and found a tape. There is no mask in the cabinet. Hillary closed the cabinet and put it back. Kathryne entered the basement and saw the cabinet.\n\n[Question]\nWhat might be the reason for the label on the cabinet saying \"mask\" if there was no mask inside?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The label on the cabinet might say \"mask\" for several reasons. It could be that the cabinet was previously used to store masks, and the label hasn't been changed. Alternatively, the label might have been placed there by mistake, or someone might have moved the contents without updating the label. Another possibility is that the label was intended for a different cabinet, and it was accidentally placed on this one."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhy couldn't Hillary see what was inside the cabinet at first?"
+            },
+            {
+                "role": "assistant",
+                "content": "Hillary couldn't see what was inside the cabinet at first because the cabinet was likely closed, and the contents were not visible from the outside."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat other items might be found in a basement?"
+            },
+            {
+                "role": "assistant",
+                "content": "A basement can contain a variety of items, such as old furniture, storage boxes, tools, sports equipment, seasonal decorations, appliances, and cleaning supplies. It might also have a workbench, a washing machine, a dryer, or a water heater. Depending on the use of the space, there could be recreational items like a pool table or a home gym setup."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the cabinet?\n\n[Candidate Answers]\nD. mask\nJ. tape\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Hillary. Person B is Kathryne. The container is a cabinet. Item X is mask. Item Y is tape.\nSo, the answer is [D]."
+            }
+        ]
+    },
+    {
+        "story_index": 6,
+        "question_type": "assumption",
+        "story": "Hillary found a cabinet in the basement. The label on the cabinet says mask. Hillary couldn’t see what was inside the cabinet. Hillary opened the cabinet and found a tape. There is no mask in the cabinet. Hillary closed the cabinet and put it back. Kathryne entered the basement and saw the cabinet.",
+        "short_answer": "mask",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhat was supposed to be in the cabinet?\n\n[Candidate Answers]\nK. mask\nU. tape\n",
+        "output": "Person A is Hillary. Person B is Kathryne. The container is a cabinet. Item X is mask. Item Y is tape.\nSo, the answer is [K].",
+        "map": {
+            "U": "A",
+            "K": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nHillary found a cabinet in the basement. The label on the cabinet says mask. Hillary couldn’t see what was inside the cabinet. Hillary opened the cabinet and found a tape. There is no mask in the cabinet. Hillary closed the cabinet and put it back. Kathryne entered the basement and saw the cabinet.\n\n[Question]\nWhy was Hillary unable to see what was inside the cabinet at first?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Hillary was unable to see what was inside the cabinet at first because the cabinet was closed."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat could be the significance of the label on the cabinet?"
+            },
+            {
+                "role": "assistant",
+                "content": "The label on the cabinet could indicate what is supposed to be inside the cabinet, but in this case, the label is misleading because there is no mask inside. The label might have been placed there by someone who intended to store a mask or who previously stored a mask in the cabinet. The label could also serve as a reminder or a placeholder for future use."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhy was the cabinet labeled 'mask' if there were no masks inside?"
+            },
+            {
+                "role": "assistant",
+                "content": "The cabinet was labeled 'mask' if there were no masks inside because the label might have been placed there by someone who intended to store a mask or who previously stored a mask in the cabinet. It could also be a mistake or an oversight, or the contents of the cabinet might have been changed without updating the label."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the cabinet?\n\n[Candidate Answers]\nK. mask\nU. tape\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Hillary. Person B is Kathryne. The container is a cabinet. Item X is mask. Item Y is tape.\nSo, the answer is [K]."
+            }
+        ]
+    },
+    {
+        "story_index": 6,
+        "question_type": "assumption",
+        "story": "Hillary found a cabinet in the basement. The label on the cabinet says mask. Hillary couldn’t see what was inside the cabinet. Hillary opened the cabinet and found a tape. There is no mask in the cabinet. Hillary closed the cabinet and put it back. Kathryne entered the basement and saw the cabinet.",
+        "short_answer": "mask",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhat was supposed to be in the cabinet?\n\n[Candidate Answers]\nM. tape\nT. mask\n",
+        "output": "Person A is Hillary. Person B is Kathryne. The container is a cabinet. Item X is mask. Item Y is tape.\nSo, the answer is [T].",
+        "map": {
+            "M": "A",
+            "T": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nHillary found a cabinet in the basement. The label on the cabinet says mask. Hillary couldn’t see what was inside the cabinet. Hillary opened the cabinet and found a tape. There is no mask in the cabinet. Hillary closed the cabinet and put it back. Kathryne entered the basement and saw the cabinet.\n\n[Question]\nDid Kathryne open the cabinet to check its contents?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The story does not mention Kathryne opening the cabinet. It only states that Kathryne entered the basement and saw the cabinet. Therefore, based on the information provided, we cannot conclude that Kathryne opened the cabinet to check its contents."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat other items might be found in a basement?"
+            },
+            {
+                "role": "assistant",
+                "content": "A basement can contain a variety of items, such as tools, old furniture, storage containers, sports equipment, cleaning supplies, a workbench, a washer and dryer, a freezer, seasonal decorations, and various household items that are not frequently used."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat did Hillary do with the tape she found in the cabinet?"
+            },
+            {
+                "role": "assistant",
+                "content": "The story does not mention what Hillary did with the tape she found in the cabinet. It only states that Hillary opened the cabinet, found the tape, and then closed the cabinet and put it back. Therefore, based on the information provided, we do not know what Hillary did with the tape."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the cabinet?\n\n[Candidate Answers]\nM. tape\nT. mask\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Hillary. Person B is Kathryne. The container is a cabinet. Item X is mask. Item Y is tape.\nSo, the answer is [T]."
+            }
+        ]
+    },
+    {
+        "story_index": 6,
+        "question_type": "assumption",
+        "story": "Hillary found a cabinet in the basement. The label on the cabinet says mask. Hillary couldn’t see what was inside the cabinet. Hillary opened the cabinet and found a tape. There is no mask in the cabinet. Hillary closed the cabinet and put it back. Kathryne entered the basement and saw the cabinet.",
+        "short_answer": "mask",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhat was supposed to be in the cabinet?\n\n[Candidate Answers]\nA. mask\nT. tape\n",
+        "output": "Person A is Hillary. Person B is Kathryne. The item is mask. The location X is the cabinet. The location Y is the basement.\nSo, the answer is [A].",
+        "map": {
+            "T": "A",
+            "A": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nHillary found a cabinet in the basement. The label on the cabinet says mask. Hillary couldn’t see what was inside the cabinet. Hillary opened the cabinet and found a tape. There is no mask in the cabinet. Hillary closed the cabinet and put it back. Kathryne entered the basement and saw the cabinet.\n\n[Question]\nWhat could be the significance of the tape in the context of the story?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The tape found in the cabinet could have various significances depending on the context. It might be a recording with important information, a tape used for sealing or securing items, or even a measuring tape. Without more details, it's open to interpretation, but it suggests that the tape might hold some importance or mystery that could be relevant to the story."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Hillary have been looking for in the basement?"
+            },
+            {
+                "role": "assistant",
+                "content": "Hillary might have been looking for the mask that was labeled on the cabinet. The label suggesting the presence of a mask could have led her to open the cabinet, only to find a tape instead. This discrepancy between the label and the contents might indicate that she was specifically searching for the mask or something related to it."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Hillary and Kathryne discuss about the cabinet?"
+            },
+            {
+                "role": "assistant",
+                "content": "Hillary and Kathryne might discuss the discrepancy between the label on the cabinet and its contents. They could talk about why there is no mask in the cabinet despite the label, and speculate on the significance of the tape found inside. They might also wonder if the tape is related to the missing mask or if someone else has moved or replaced the items in the cabinet. Their conversation could revolve around the mystery and potential reasons for the mismatch."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the cabinet?\n\n[Candidate Answers]\nA. mask\nT. tape\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Hillary. Person B is Kathryne. The item is mask. The location X is the cabinet. The location Y is the basement.\nSo, the answer is [A]."
+            }
+        ]
+    }
+]

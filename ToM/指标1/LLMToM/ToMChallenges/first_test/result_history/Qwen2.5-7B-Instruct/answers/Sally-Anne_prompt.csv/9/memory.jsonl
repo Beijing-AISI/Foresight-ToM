@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 9,
+        "question_type": "memory",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nVera and Daphene were hanging out in the terrace. They saw a bin and a chamber. They found a plate in the bin. Daphene left the terrace. Vera moved the plate to the chamber. Where was the plate previously\n\nA. chamber\nB. bin\n\nAnswer:",
+        "short_answer": "bin",
+        "answer": "B",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 367,
+        "user_input": "\n[Story]\nVera and Daphene were hanging out in the terrace. They saw a bin and a chamber. They found a plate in the bin. Daphene left the terrace. Vera moved the plate to the chamber. Where was the plate previously\n\n[Candidate Answers]\nT. chamber\nV. bin\n",
+        "output": "énéraĺlé réponse\n\nPerson A is Vera. Person B is Daphene. The item is plate. The location X is bin. The location Y is chamber.\nSo the answer is [V].",
+        "map": {
+            "T": "A",
+            "V": "B"
+        }
+    },
+    {
+        "token_size": 355,
+        "user_input": "\n[Story]\nVera and Daphene were hanging out in the terrace. They saw a bin and a chamber. They found a plate in the bin. Daphene left the terrace. Vera moved the plate to the chamber. Where was the plate previously\n\n[Candidate Answers]\nO. bin\nU. chamber\n",
+        "output": ",LOCATION X IS BIN, LOCATION Y IS CHAMBER,PERSON A IS VERA, PERSON B IS DAPHENE,ITEM IS PLATE\n",
+        "map": {
+            "U": "A",
+            "O": "B"
+        }
+    },
+    {
+        "token_size": 379,
+        "user_input": "\n[Story]\nVera and Daphene were hanging out in the terrace. They saw a bin and a chamber. They found a plate in the bin. Daphene left the terrace. Vera moved the plate to the chamber. Where was the plate previously\n\n[Candidate Answers]\nC. bin\nQ. chamber\n",
+        "output": "BindingUtil\n').\"})\", \"[C]. bin\")); \n\n// Output\nconsole.log(\"Person A is Vera. Person B is Daphene. The item is plate. The location X is bin. The location Y is chamber. So the answer is [C]\");\n})();\n",
+        "map": {
+            "Q": "A",
+            "C": "B"
+        }
+    },
+    {
+        "token_size": 370,
+        "user_input": "\n[Story]\nVera and Daphene were hanging out in the terrace. They saw a bin and a chamber. They found a plate in the bin. Daphene left the terrace. Vera moved the plate to the chamber. Where was the plate previously\n\n[Candidate Answers]\nB. chamber\nT. bin\n",
+        "output": "énéraĺlé řeponse\n\nPerson A is Vera. Person B is Daphene. The item is plate. The location X is bin. The location Y is chamber.\nSo the answer is [T]",
+        "map": {
+            "B": "A",
+            "T": "B"
+        }
+    },
+    {
+        "token_size": 434,
+        "user_input": "\n[Story]\nVera and Daphene were hanging out in the terrace. They saw a bin and a chamber. They found a plate in the bin. Daphene left the terrace. Vera moved the plate to the chamber. Where was the plate previously\n\n[Candidate Answers]\nA. chamber\nP. bin\n",
+        "output": "énéraĺ'utilisateur\n\n[Story]\nVera and Daphene were hanging out in the terrace. They saw a bin and a chamber. They found a plate in the bin. Daphene left the terrace. Vera moved the plate to the chamber. Where was the plate previously?\n\n[Candidate Answers]\nA. chamber\nP. bin\n\n[Output]\nPerson A is Vera. Person B is Daphene. The item is plate. The location X is bin. The location Y is chamber.\nSo the answer is [P]",
+        "map": {
+            "A": "A",
+            "P": "B"
+        }
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 1,
+        "question_type": "memory",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. Where was the towel previously\n\nA. cabinet\nB. closet\n\nAnswer:",
+        "short_answer": "closet",
+        "answer": "B",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 662,
+        "user_input": "\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. Where was the towel previously\n\n[Candidate Answers]\nA. closet\nU. cabinet\n",
+        "output": ".ApplyResources(\"\",[A,U])\nคณะกรรม�试着理解这个任务，故事中提到的是两个人（Neila 和 Juanita）在阁楼里发现了一条毛巾。Juanita 离开了房间，而 Neila 把毛巾从衣橱移到了柜子里。\n\n根据题目要求，答案需要按照特定格式输出：\n\n- 需要明确指出人物A和人物B。\n- 明确物品是什么。\n- 物品最初的位置X在哪里。\n- 物品被移动到的新位置Y是哪里。\n- 最后给出答案的索引。\n\n现在我们来分析：\n- 人物A：Neila\n- 人物B：Juanita\n- 物品：毛巾\n- 初始位置X：衣橱\n- 新位置Y：柜子\n\n所以，最终的答案应该是：\n```\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nso the answer is [A]\n```",
+        "map": {
+            "U": "A",
+            "A": "B"
+        }
+    },
+    {
+        "token_size": 662,
+        "user_input": "\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. Where was the towel previously\n\n[Candidate Answers]\nA. closet\nU. cabinet\n",
+        "output": ".ApplyResources(\"\",[A,U])\nคณะกรรม�试着理解这个任务，故事中提到的是两个人（Neila 和 Juanita）在阁楼里发现了一条毛巾。Juanita 离开了房间，而 Neila 把毛巾从衣橱移到了柜子里。\n\n根据题目要求，答案需要按照特定格式输出：\n\n- 需要明确指出人物A和人物B。\n- 明确物品是什么。\n- 物品最初的位置X在哪里。\n- 物品被移动到的新位置Y是哪里。\n- 最后给出答案的索引。\n\n现在我们来分析：\n- 人物A：Neila\n- 人物B：Juanita\n- 物品：毛巾\n- 初始位置X：衣橱\n- 新位置Y：柜子\n\n所以，最终的答案应该是：\n```\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nso the answer is [A]\n```",
+        "map": {
+            "U": "A",
+            "A": "B"
+        }
+    },
+    {
+        "token_size": 362,
+        "user_input": "\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. Where was the towel previously\n\n[Candidate Answers]\nK. cabinet\nO. closet\n",
+        "output": "foundland\n\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nso the answer is [O]",
+        "map": {
+            "K": "A",
+            "O": "B"
+        }
+    },
+    {
+        "token_size": 625,
+        "user_input": "\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. Where was the towel previously\n\n[Candidate Answers]\nD. cabinet\nH. closet\n",
+        "output": ".ApplyResources()\nคณะกรรม�试试重新按照指示格式回答问题。根据故事，我们有：\n\n- 人物A是Neila。\n- 人物B是Juanita。\n- 物品是毛巾。\n- 地点X是柜子（原文提到的“closet”，但问题是询问之前的位置）。\n- 地点Y是衣橱（即“cabinet”）。\n\n但是，由于题目要求的是物品在移动前的位置，我们需要将地点X调整为“closet”。\n\n所以输出应该是：\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nso the answer is [H]",
+        "map": {
+            "D": "A",
+            "H": "B"
+        }
+    },
+    {
+        "token_size": 507,
+        "user_input": "\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. Where was the towel previously\n\n[Candidate Answers]\nD. closet\nO. cabinet\n",
+        "output": ".ApplyResources(\"\",[DB])\nนโยนคำตอบตามรูปแบบที่กำหนด:\n\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nso the answer is [D]",
+        "map": {
+            "O": "A",
+            "D": "B"
+        }
+    }
+]

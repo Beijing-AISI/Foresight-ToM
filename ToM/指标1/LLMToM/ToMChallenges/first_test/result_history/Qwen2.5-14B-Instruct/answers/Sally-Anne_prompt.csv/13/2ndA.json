@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 13,
+        "question_type": "2ndA",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nSabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket. After Hillary came back to the lounge, where would Sabra think Hillary would look for the papaya?\n\nA. bucket\nB. bin\n\nAnswer:",
+        "short_answer": "bin",
+        "answer": "B",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 377,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket. After Hillary came back to the lounge, where would Sabra think Hillary would look for the papaya?\n\n[Candidate Answers]\nA. bucket\nX. bin\n",
+        "output": "foundland\n\nPerson A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nso the answer is [X]",
+        "map": {
+            "A": "A",
+            "X": "B"
+        }
+    },
+    {
+        "token_size": 377,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket. After Hillary came back to the lounge, where would Sabra think Hillary would look for the papaya?\n\n[Candidate Answers]\nS. bin\nX. bucket\n",
+        "output": "foundland\n\nPerson A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nso the answer is [S]",
+        "map": {
+            "X": "A",
+            "S": "B"
+        }
+    },
+    {
+        "token_size": 377,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket. After Hillary came back to the lounge, where would Sabra think Hillary would look for the papaya?\n\n[Candidate Answers]\nD. bin\nN. bucket\n",
+        "output": "foundland\n\nPerson A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nso the answer is [D]",
+        "map": {
+            "N": "A",
+            "D": "B"
+        }
+    },
+    {
+        "token_size": 377,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket. After Hillary came back to the lounge, where would Sabra think Hillary would look for the papaya?\n\n[Candidate Answers]\nV. bin\nZ. bucket\n",
+        "output": "foundland\n\nPerson A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nso the answer is [V]",
+        "map": {
+            "Z": "A",
+            "V": "B"
+        }
+    },
+    {
+        "token_size": 377,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the lounge. They saw a bin and a bucket. They found a papaya in the bin. Hillary left the lounge. Sabra moved the papaya to the bucket. After Hillary came back to the lounge, where would Sabra think Hillary would look for the papaya?\n\n[Candidate Answers]\nP. bucket\nT. bin\n",
+        "output": "foundland\n\nPerson A is Sabra. Person B is Hillary. The item is papaya. The location X is bin. The location Y is bucket.\nso the answer is [T]",
+        "map": {
+            "P": "A",
+            "T": "B"
+        }
+    }
+]

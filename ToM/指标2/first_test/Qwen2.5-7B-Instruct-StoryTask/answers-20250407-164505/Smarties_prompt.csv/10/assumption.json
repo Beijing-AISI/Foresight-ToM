@@ -1,0 +1,247 @@
+[
+    {
+        "story_index": 10,
+        "question_type": "assumption",
+        "story": "Sabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.",
+        "short_answer": "binder",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 738,
+        "user_input": "\n[Question]\nWhat was supposed to be in the locker?\n\n[Candidate Answers]\nC. mug\nT. binder\n",
+        "output": "Assistant\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\n\nSo the answer is [T].",
+        "map": {
+            "C": "A",
+            "T": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\nWhat did Sabra expect to find when she opened the locker labeled 'binder'? \n"
+            },
+            {
+                "role": "assistant",
+                "content": "user\n\nBased on the story, Sabra expected to find a binder when she opened the locker labeled 'binder'. Therefore, the answer is that Sabra expected to find a binder.\n\nSo the answer is [binder]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat did Sabra find inside the locker instead of a binder? "
+            },
+            {
+                "role": "assistant",
+                "content": "zysten\n\nAssistant\nSabra found a mug inside the locker instead of a binder.\n\nSo the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCould there be other items besides a binder in the locker? "
+            },
+            {
+                "role": "assistant",
+                "content": "The story only mentions that Sabra found a mug in the locker labeled 'binder' and there is no indication of any other items. However, based on the information provided, we cannot definitively say whether there could be other items besides a binder in the locker.\n\nSo the answer is [not specified in the story]."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the locker?\n\n[Candidate Answers]\nC. mug\nT. binder\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\n\nSo the answer is [T]."
+            }
+        ]
+    },
+    {
+        "story_index": 10,
+        "question_type": "assumption",
+        "story": "Sabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.",
+        "short_answer": "binder",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 874,
+        "user_input": "\n[Question]\nWhat was supposed to be in the locker?\n\n[Candidate Answers]\nI. binder\nN. mug\n",
+        "output": "Assistant\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\n\nSo the answer is [I].",
+        "map": {
+            "N": "A",
+            "I": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\nHow did Sabra feel after finding a mug instead of a binder? \n"
+            },
+            {
+                "role": "assistant",
+                "content": ".imgur.com\nimgurcomuser\n\nIt seems like you've included an image URL which isn't relevant to the text-based task at hand. Let's focus on the story provided:\n\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\nHow did Sabra feel after finding a mug instead of a binder?\n\n[Output]\nSabra felt surprised and perhaps disappointed after finding a mug instead of a binder.\nSo the answer is [a description based on the feeling]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might be written on the locker if not 'binder'? "
+            },
+            {
+                "role": "assistant",
+                "content": "user\n\n[Question]\nWhat might be written on the locker if not 'binder'? \n\n[Output]\nThe label on the locker might say something else such as notebook, folder, or file.\nSo the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat did Melania think when she saw the locker with nothing inside but a mug? "
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nMelania likely thought that the locker was mislabeled or that someone had placed a mug in the locker instead of the expected binder.\n\n[Output]\nMelania probably thought that the locker was mislabeled or that someone had placed a mug in the locker instead of the expected binder.\nSo the answer is [an explanation based on her thoughts]."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the locker?\n\n[Candidate Answers]\nI. binder\nN. mug\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\n\nSo the answer is [I]."
+            }
+        ]
+    },
+    {
+        "story_index": 10,
+        "question_type": "assumption",
+        "story": "Sabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.",
+        "short_answer": "binder",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 878,
+        "user_input": "\n[Question]\nWhat was supposed to be in the locker?\n\n[Candidate Answers]\nH. mug\nO. binder\n",
+        "output": "深交\nuser\n\n[Question]\nWhat was supposed to be in the locker?\n\n[Candidate Answers]\nH. mug\nO. binder\n\n[Output]\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [O].\n",
+        "map": {
+            "H": "A",
+            "O": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\n\"label on the locker says binder\" suggests there might be something else besides a binder inside. This can lead to questions about what else might be inside the locker. Also, since Sabra couldn't initially see what was inside, we can explore her initial expectations versus reality. Additionally, we can inquire about Melania's reaction upon seeing the locker.\n"
+            },
+            {
+                "role": "assistant",
+                "content": " labelText = \"binder\";\nitemInside = \"mug\";\n\nPerson A is Sabra. Person B is Melania. The label on the locker says [labelText]. The container is a locker. Item X is [labelText]. Item Y is [itemInside].\n\nSo, the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCould there be other items besides a binder in the locker? "
+            },
+            {
+                "role": "assistant",
+                "content": "zyst\nuser\n\n[Question]\nCould there be other items besides a binder in the locker?\n\n[Output]\nBased on the story, the only item mentioned inside the locker is a mug. Therefore, it is possible that other items besides a binder could be in the locker, but we do not have information about them from the given story.\n\nSo, the answer is that there could be other items besides a binder in the locker, but we cannot confirm their presence based on the provided information."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat could be the relationship between Sabra and Melania? "
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\n\nSo, the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the locker?\n\n[Candidate Answers]\nH. mug\nO. binder\n"
+            },
+            {
+                "role": "assistant",
+                "content": "深交\nuser\n\n[Question]\nWhat was supposed to be in the locker?\n\n[Candidate Answers]\nH. mug\nO. binder\n\n[Output]\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [O].\n"
+            }
+        ]
+    },
+    {
+        "story_index": 10,
+        "question_type": "assumption",
+        "story": "Sabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.",
+        "short_answer": "binder",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 874,
+        "user_input": "\n[Question]\nWhat was supposed to be in the locker?\n\n[Candidate Answers]\nG. binder\nX. mug\n",
+        "output": "Assistant\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo the answer is [G].",
+        "map": {
+            "X": "A",
+            "G": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\nWhat did Sabra find inside the locker instead of a binder? \n"
+            },
+            {
+                "role": "assistant",
+                "content": "%\"><!DOCTYPE html><html><head><meta charset=\"UTF-8\"><title>Output</title></head><body><p>Sabra found a mug inside the locker instead of a binder.</p></body></html>\nuser\n\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\nWhat did Sabra find inside the locker instead of a binder? \n\n[Candidate Answers]\nA. binder\nB. mug\n"
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nDid Melania know what was originally supposed to be in the locker? "
+            },
+            {
+                "role": "assistant",
+                "content": " Sunderland\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCould there be other items besides a binder in the locker? "
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nNo, based on the information provided in the story, the only items mentioned in relation to the locker are a binder (which was supposed to be inside) and a mug (which was actually found). Therefore, according to the given context, there were no other items besides a binder and a mug in the locker.\n\nSo, the answer is that no, there could not have been other items besides a binder in the locker, at least not according to the story."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the locker?\n\n[Candidate Answers]\nG. binder\nX. mug\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo the answer is [G]."
+            }
+        ]
+    },
+    {
+        "story_index": 10,
+        "question_type": "assumption",
+        "story": "Sabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.",
+        "short_answer": "binder",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 835,
+        "user_input": "\n[Question]\nWhat was supposed to be in the locker?\n\n[Candidate Answers]\nG. mug\nW. binder\n",
+        "output": "Assistant\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [W].",
+        "map": {
+            "G": "A",
+            "W": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\nWhat might Sabra tell Melania about the locker? \n"
+            },
+            {
+                "role": "assistant",
+                "content": " labelText: The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\nlabelLocationX: balcony\nlabelLocationY: attic\n\n[Output]\nSabra is Person A. Melania is Person B. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat did Sabra find inside the locker instead of a binder? "
+            },
+            {
+                "role": "assistant",
+                "content": "user\n[Question]\nWhat did Sabra find inside the locker instead of a binder?\n\n[Output]\nSabra is Person A. Melania is Person B. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nHow did Sabra feel after finding a mug instead of a binder? "
+            },
+            {
+                "role": "assistant",
+                "content": "Sabra is Person A. Melania is Person B. The container is a locker. Item X is binder. Item Y is mug.\nSabra likely felt surprised or confused after finding a mug instead of a binder. So, the answer is not explicitly stated, but we can infer that Sabra might have felt [B] if we were to choose an option like \"surprised\" or \"confused.\" However, since the options are not provided, we can describe her feeling based on the context.\n\nSo, Sabra felt [B]."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the locker?\n\n[Candidate Answers]\nG. mug\nW. binder\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo, the answer is [W]."
+            }
+        ]
+    }
+]

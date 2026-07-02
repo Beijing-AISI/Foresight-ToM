@@ -1,0 +1,242 @@
+[
+    {
+        "story_index": 15,
+        "question_type": "memory",
+        "story": "Hillary and Clio were hanging out in the library. They saw a cabinet and a knapsack. They found a notebook in the cabinet. Clio left the library. Hillary moved the notebook to the knapsack.",
+        "short_answer": "cabinet",
+        "answer": "B",
+        "system_input": "\n    The story is about two people (Person A and Person B) found an item in location X. Person B left the room and\n    Person A moved the item to location Y.\n    \n    [Story]\n    Neila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    After Juanita came back to the attic, where was the towel previously?\n        \n    [Candidate Answers]\n    A. cabinet\n    B. closet\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\n    So, the answer is [B]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhere was the notebook previously\n\n[Candidate Answers]\nQ. cabinet\nT. knapsack\n",
+        "output": "Person A is Hillary. Person B is Clio. The item is notebook. The location X is cabinet. The location Y is knapsack.\nSo, the answer is [Q].",
+        "map": {
+            "T": "A",
+            "Q": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nHillary and Clio were hanging out in the library. They saw a cabinet and a knapsack. They found a notebook in the cabinet. Clio left the library. Hillary moved the notebook to the knapsack.\n\n[Question]\nWhat other items might be in the cabinet besides the notebook?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The story does not provide specific information about other items in the cabinet besides the notebook. However, in a typical library setting, the cabinet might contain other items such as books, pens, paper, or office supplies."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat could be inside the knapsack besides the notebook?"
+            },
+            {
+                "role": "assistant",
+                "content": "The story does not provide specific information about other items in the knapsack besides the notebook. However, a knapsack could contain various items such as books, folders, a water bottle, or personal items like a phone or keys."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhy did Clio leave the library while Hillary stayed?"
+            },
+            {
+                "role": "assistant",
+                "content": "The story does not provide a specific reason for why Clio left the library while Hillary stayed. Without additional context, it's impossible to know the exact reason. Some possible reasons could be that Clio had another commitment, needed to go somewhere else, or simply decided to leave for personal reasons."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhere was the notebook previously\n\n[Candidate Answers]\nQ. cabinet\nT. knapsack\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Hillary. Person B is Clio. The item is notebook. The location X is cabinet. The location Y is knapsack.\nSo, the answer is [Q]."
+            }
+        ]
+    },
+    {
+        "story_index": 15,
+        "question_type": "memory",
+        "story": "Hillary and Clio were hanging out in the library. They saw a cabinet and a knapsack. They found a notebook in the cabinet. Clio left the library. Hillary moved the notebook to the knapsack.",
+        "short_answer": "cabinet",
+        "answer": "B",
+        "system_input": "\n    The story is about two people (Person A and Person B) found an item in location X. Person B left the room and\n    Person A moved the item to location Y.\n    \n    [Story]\n    Neila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    After Juanita came back to the attic, where was the towel previously?\n        \n    [Candidate Answers]\n    A. cabinet\n    B. closet\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\n    So, the answer is [B]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhere was the notebook previously\n\n[Candidate Answers]\nC. cabinet\nK. knapsack\n",
+        "output": "Person A is Hillary. Person B is Clio. The item is notebook. The location X is cabinet. The location Y is knapsack.\nSo, the answer is [C]",
+        "map": {
+            "K": "A",
+            "C": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nHillary and Clio were hanging out in the library. They saw a cabinet and a knapsack. They found a notebook in the cabinet. Clio left the library. Hillary moved the notebook to the knapsack.\n\n[Question]\nWhat might Clio have been thinking when she left the library?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Clio might have been thinking about other tasks she needed to complete or places she needed to be, not realizing that the notebook would be moved by Hillary. She may have assumed the notebook would remain in the cabinet where they found it."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Hillary and Clio have been doing in the library?"
+            },
+            {
+                "role": "assistant",
+                "content": "Hillary and Clio might have been studying, working on a project, or looking for resources for a class or personal interest. They could have been organizing their materials or preparing for an upcoming exam or assignment."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat kind of notebook was found in the cabinet?"
+            },
+            {
+                "role": "assistant",
+                "content": "The story does not provide specific details about the kind of notebook found in the cabinet. It could have been a regular notebook for taking notes, a journal, a planner, or any other type of notebook. Without more information, we can only speculate based on common types of notebooks."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhere was the notebook previously\n\n[Candidate Answers]\nC. cabinet\nK. knapsack\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Hillary. Person B is Clio. The item is notebook. The location X is cabinet. The location Y is knapsack.\nSo, the answer is [C]"
+            }
+        ]
+    },
+    {
+        "story_index": 15,
+        "question_type": "memory",
+        "story": "Hillary and Clio were hanging out in the library. They saw a cabinet and a knapsack. They found a notebook in the cabinet. Clio left the library. Hillary moved the notebook to the knapsack.",
+        "short_answer": "cabinet",
+        "answer": "B",
+        "system_input": "\n    The story is about two people (Person A and Person B) found an item in location X. Person B left the room and\n    Person A moved the item to location Y.\n    \n    [Story]\n    Neila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    After Juanita came back to the attic, where was the towel previously?\n        \n    [Candidate Answers]\n    A. cabinet\n    B. closet\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\n    So, the answer is [B]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhere was the notebook previously\n\n[Candidate Answers]\nA. cabinet\nB. knapsack\n",
+        "output": "Person A is Hillary. Person B is Clio. The item is notebook. The location X is cabinet. The location Y is knapsack.\nSo, the answer is [A].",
+        "map": {
+            "B": "A",
+            "A": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nHillary and Clio were hanging out in the library. They saw a cabinet and a knapsack. They found a notebook in the cabinet. Clio left the library. Hillary moved the notebook to the knapsack.\n\n[Question]\nHow often do people typically use knapsacks in a library?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "People typically use knapsacks in a library to carry their personal items, books, and notebooks. The frequency can vary, but it is quite common as knapsacks provide a convenient way to transport materials while visiting or studying in the library."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat kind of information might be in the notebook?"
+            },
+            {
+                "role": "assistant",
+                "content": "The notebook could contain a variety of information, such as personal notes, class notes, to-do lists, sketches, or journal entries. It might also include research notes, outlines for papers, or study materials."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Hillary and Clio have planned to do with the notebook?"
+            },
+            {
+                "role": "assistant",
+                "content": "Hillary and Clio might have planned to use the notebook for various purposes, such as taking notes during their study session, organizing their tasks, or collaborating on a project. They could have intended to jot down ideas, sketch diagrams, or keep track of important information they found in the library."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhere was the notebook previously\n\n[Candidate Answers]\nA. cabinet\nB. knapsack\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Hillary. Person B is Clio. The item is notebook. The location X is cabinet. The location Y is knapsack.\nSo, the answer is [A]."
+            }
+        ]
+    },
+    {
+        "story_index": 15,
+        "question_type": "memory",
+        "story": "Hillary and Clio were hanging out in the library. They saw a cabinet and a knapsack. They found a notebook in the cabinet. Clio left the library. Hillary moved the notebook to the knapsack.",
+        "short_answer": "cabinet",
+        "answer": "B",
+        "system_input": "\n    The story is about two people (Person A and Person B) found an item in location X. Person B left the room and\n    Person A moved the item to location Y.\n    \n    [Story]\n    Neila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    After Juanita came back to the attic, where was the towel previously?\n        \n    [Candidate Answers]\n    A. cabinet\n    B. closet\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\n    So, the answer is [B]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhere was the notebook previously\n\n[Candidate Answers]\nC. knapsack\nI. cabinet\n",
+        "output": "Person A is Hillary. Person B is Clio. The item is notebook. The location X is cabinet. The location Y is knapsack.\nSo, the answer is [I].",
+        "map": {
+            "C": "A",
+            "I": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nHillary and Clio were hanging out in the library. They saw a cabinet and a knapsack. They found a notebook in the cabinet. Clio left the library. Hillary moved the notebook to the knapsack.\n\n[Question]\nWhat could be the purpose of the cabinet in the library?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The cabinet in the library could serve several purposes, such as storing books, documents, or other materials that need to be kept organized and protected. It might also be used to store supplies or personal items of library staff or visitors."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Hillary and Clio have been doing in the library?"
+            },
+            {
+                "role": "assistant",
+                "content": "Hillary and Clio might have been studying, researching, reading, or working on a project together in the library. They could also have been looking for specific books or resources, or simply spending time in a quiet place."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat could be the content of the notebook?"
+            },
+            {
+                "role": "assistant",
+                "content": "The notebook could contain a variety of content, such as notes from a class or lecture, personal journal entries, to-do lists, sketches, or drafts of a writing project. It might also include research notes, outlines, or ideas for a specific task or assignment."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhere was the notebook previously\n\n[Candidate Answers]\nC. knapsack\nI. cabinet\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Hillary. Person B is Clio. The item is notebook. The location X is cabinet. The location Y is knapsack.\nSo, the answer is [I]."
+            }
+        ]
+    },
+    {
+        "story_index": 15,
+        "question_type": "memory",
+        "story": "Hillary and Clio were hanging out in the library. They saw a cabinet and a knapsack. They found a notebook in the cabinet. Clio left the library. Hillary moved the notebook to the knapsack.",
+        "short_answer": "cabinet",
+        "answer": "B",
+        "system_input": "\n    The story is about two people (Person A and Person B) found an item in location X. Person B left the room and\n    Person A moved the item to location Y.\n    \n    [Story]\n    Neila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    After Juanita came back to the attic, where was the towel previously?\n        \n    [Candidate Answers]\n    A. cabinet\n    B. closet\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\n    So, the answer is [B]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhere was the notebook previously\n\n[Candidate Answers]\nC. knapsack\nG. cabinet\n",
+        "output": "Person A is Hillary. Person B is Clio. The item is notebook. The location X is cabinet. The location Y is knapsack.\nSo, the answer is [G].",
+        "map": {
+            "C": "A",
+            "G": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nHillary and Clio were hanging out in the library. They saw a cabinet and a knapsack. They found a notebook in the cabinet. Clio left the library. Hillary moved the notebook to the knapsack.\n\n[Question]\nWhy did Clio leave the library?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The story does not provide a specific reason for why Clio left the library. It only states that Clio left the library while Hillary moved the notebook to the knapsack. Without additional context, it is not possible to determine Clio's reason for leaving."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat other items might be found in the library's cabinet?"
+            },
+            {
+                "role": "assistant",
+                "content": "The library's cabinet might contain other items such as books, magazines, pens, highlighters, and other stationery items. It could also hold library management materials like catalogs, records, or administrative supplies."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhy did Hillary move the notebook to the knapsack?"
+            },
+            {
+                "role": "assistant",
+                "content": "The story does not provide a specific reason for why Hillary moved the notebook to the knapsack. It only states that Hillary moved the notebook after Clio left the library. Without additional context, it is not possible to determine Hillary's motivation for moving the notebook."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhere was the notebook previously\n\n[Candidate Answers]\nC. knapsack\nG. cabinet\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Hillary. Person B is Clio. The item is notebook. The location X is cabinet. The location Y is knapsack.\nSo, the answer is [G]."
+            }
+        ]
+    }
+]

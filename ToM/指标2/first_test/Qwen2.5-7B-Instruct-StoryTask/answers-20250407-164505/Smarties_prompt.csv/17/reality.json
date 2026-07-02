@@ -1,0 +1,247 @@
+[
+    {
+        "story_index": 17,
+        "question_type": "reality",
+        "story": "Clio found a drawer in the bar. The label on the drawer says pepper. Clio couldn’t see what was inside the drawer. Clio opened the drawer and found a durian. There is no pepper in the drawer. Clio closed the drawer and put it back. Amata entered the bar and saw the drawer.",
+        "short_answer": "durian",
+        "answer": "A",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 792,
+        "user_input": "\n[Question]\nWhat was in the drawer?\n\n[Candidate Answers]\nA. pepper\nI. durian\n",
+        "output": "%;\">",
+        "map": {
+            "I": "A",
+            "A": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nClio found a drawer in the bar. The label on the drawer says pepper. Clio couldn’t see what was inside the drawer. Clio opened the drawer and found a durian. There is no pepper in the drawer. Clio closed the drawer and put it back. Amata entered the bar and saw the drawer.\n\n[Question]\n4. Was there any smell or sound that gave away the contents of the drawer before opening it? \n"
+            },
+            {
+                "role": "assistant",
+                "content": "ingroup\n\nThe story does not mention any specific smells or sounds that would indicate the contents of the drawer before it was opened. Therefore, based on the information provided, there were no particular smells or sounds that gave away the contents of the drawer.\n\nSo the answer is: No, there were no specific smells or sounds that gave away the contents of the drawer before opening it."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n13. What did Clio do with the durian after putting the drawer back? "
+            },
+            {
+                "role": "assistant",
+                "content": "Based on the story, after Clio found the durian in the drawer, she closed the drawer and put it back. There is no mention of what Clio did with the durian after putting the drawer back.\n\nSo, the answer is: Clio closed the drawer containing the durian and put it back."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n2. Why did Clio close the drawer after finding the durian? "
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nThe story does not explicitly state why Clio closed the drawer after finding the durian. However, it is reasonable to infer that she likely closed it to return it to its original state as described by the label or to simply put it away.\n\nSo, the answer is: Clio closed the drawer to return it to its original state or to put it away."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was in the drawer?\n\n[Candidate Answers]\nA. pepper\nI. durian\n"
+            },
+            {
+                "role": "assistant",
+                "content": "%;\">"
+            }
+        ]
+    },
+    {
+        "story_index": 17,
+        "question_type": "reality",
+        "story": "Clio found a drawer in the bar. The label on the drawer says pepper. Clio couldn’t see what was inside the drawer. Clio opened the drawer and found a durian. There is no pepper in the drawer. Clio closed the drawer and put it back. Amata entered the bar and saw the drawer.",
+        "short_answer": "durian",
+        "answer": "A",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 745,
+        "user_input": "\n[Question]\nWhat was in the drawer?\n\n[Candidate Answers]\nC. durian\nY. pepper\n",
+        "output": "Assistant\nPerson A is Clio. Person B is Amata. The container is a drawer. Item X is pepper. Item Y is durian.\n\nSo the answer is [C].",
+        "map": {
+            "C": "A",
+            "Y": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nClio found a drawer in the bar. The label on the drawer says pepper. Clio couldn’t see what was inside the drawer. Clio opened the drawer and found a durian. There is no pepper in the drawer. Clio closed the drawer and put it back. Amata entered the bar and saw the drawer.\n\n[Question]\n9. Did Clio consider telling Amata about the contents of the drawer? \n"
+            },
+            {
+                "role": "assistant",
+                "content": ".Forms of output:\n\n(1) No, she did not because ...\n\n(2) Yes, she did because ...\n\n"
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n4. Was there any smell or sound that gave away the contents of the drawer before opening it? "
+            },
+            {
+                "role": "assistant",
+                "content": "user\n[Question]\n4. Was there any smell or sound that gave away the contents of the drawer before opening it?\n\n[Output]\nNo, there was no mention of any smell or sound that gave away the contents of the drawer before Clio opened it."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n13. What did Clio do with the durian after putting the drawer back? "
+            },
+            {
+                "role": "assistant",
+                "content": "\n'utilisateur\n[Question]\n13. What did Clio do with the durian after putting the drawer back?\n\n[Output]\nClio did not do anything specific with the durian after putting the drawer back. She simply closed the drawer and put it back."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was in the drawer?\n\n[Candidate Answers]\nC. durian\nY. pepper\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nPerson A is Clio. Person B is Amata. The container is a drawer. Item X is pepper. Item Y is durian.\n\nSo the answer is [C]."
+            }
+        ]
+    },
+    {
+        "story_index": 17,
+        "question_type": "reality",
+        "story": "Clio found a drawer in the bar. The label on the drawer says pepper. Clio couldn’t see what was inside the drawer. Clio opened the drawer and found a durian. There is no pepper in the drawer. Clio closed the drawer and put it back. Amata entered the bar and saw the drawer.",
+        "short_answer": "durian",
+        "answer": "A",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 914,
+        "user_input": "\n[Question]\nWhat was in the drawer?\n\n[Candidate Answers]\nD. durian\nV. pepper\n",
+        "output": "Assistant\nPerson A is Clio.\nPerson B is Amata.\nThe container is a drawer.\nItem X is pepper.\nItem Y is durian.\n\nSo the answer is [D].",
+        "map": {
+            "D": "A",
+            "V": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nClio found a drawer in the bar. The label on the drawer says pepper. Clio couldn’t see what was inside the drawer. Clio opened the drawer and found a durian. There is no pepper in the drawer. Clio closed the drawer and put it back. Amata entered the bar and saw the drawer.\n\n[Question]\n4. Was there any smell or sound that gave away the contents of the drawer before opening it? \n"
+            },
+            {
+                "role": "assistant",
+                "content": "ingroup\n\nThe story does not mention any specific smells or sounds that would indicate the contents of the drawer before it was opened. Therefore, based on the information provided, there were no particular smells or sounds that gave away the contents of the drawer.\n\nSo the answer is: No, there were no specific smells or sounds that gave away the contents of the drawer before opening it."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n6. What did Amata think about the drawer being labeled \"pepper\" but containing a durian? "
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nBased on the story, Amata entered the bar and saw the drawer labeled \"pepper\" but containing a durian. Without additional context about Amata's thoughts, we can infer that she might have been surprised or confused by the discrepancy.\n\nPerson A is Clio.\nPerson B is Amata.\nThe container is a drawer.\nItem X is pepper.\nItem Y is durian.\n\nSo the answer is: Amata likely thought the drawer was labeled incorrectly since it contained a durian instead of pepper. [B]"
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n11. Is there anything unusual about the bar where such a drawer exists? "
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nBased on the story, the existence of a drawer labeled \"pepper\" but containing a durian suggests an unusual element in the bar. This could imply that the bar has items mislabeled or stored in unexpected ways.\n\nPerson A is Clio.\nPerson B is Amata.\nThe container is a drawer.\nItem X is pepper.\nItem Y is durian.\n\nSo the answer is: Yes, there is something unusual about the bar where such a drawer exists because it contains a durian instead of the labeled item, pepper. [A]"
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was in the drawer?\n\n[Candidate Answers]\nD. durian\nV. pepper\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nPerson A is Clio.\nPerson B is Amata.\nThe container is a drawer.\nItem X is pepper.\nItem Y is durian.\n\nSo the answer is [D]."
+            }
+        ]
+    },
+    {
+        "story_index": 17,
+        "question_type": "reality",
+        "story": "Clio found a drawer in the bar. The label on the drawer says pepper. Clio couldn’t see what was inside the drawer. Clio opened the drawer and found a durian. There is no pepper in the drawer. Clio closed the drawer and put it back. Amata entered the bar and saw the drawer.",
+        "short_answer": "durian",
+        "answer": "A",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 708,
+        "user_input": "\n[Question]\nWhat was in the drawer?\n\n[Candidate Answers]\nA. durian\nW. pepper\n",
+        "output": " vej:\";\r\nuser\r\n\r\nAssistant\r\nPerson A is Clio. Person B is Amata. The drawer is labeled \"pepper\". Item X is pepper. Item Y is durian.\r\n\r\nSo the answer is [A].",
+        "map": {
+            "A": "A",
+            "W": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nClio found a drawer in the bar. The label on the drawer says pepper. Clio couldn’t see what was inside the drawer. Clio opened the drawer and found a durian. There is no pepper in the drawer. Clio closed the drawer and put it back. Amata entered the bar and saw the drawer.\n\n[Question]\n12. How often does Clio visit this bar? \n"
+            },
+            {
+                "role": "assistant",
+                "content": "%;\">"
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n1. What did Clio expect to find when she opened the drawer labeled \"pepper\"? "
+            },
+            {
+                "role": "assistant",
+                "content": "user\n\n[Question]\n1. What did Clio expect to find when she opened the drawer labeled \"pepper\"?\n"
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n14. Did Amata notice anything strange about the drawer besides its contents? "
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\n[Question]\n14. Did Amata notice anything strange about the drawer besides its contents?\n\n[Answer]\nPerson A is Clio. Person B is Amata. The drawer is labeled \"pepper\". The expected item is pepper. The actual item is durian. \n\nSo the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was in the drawer?\n\n[Candidate Answers]\nA. durian\nW. pepper\n"
+            },
+            {
+                "role": "assistant",
+                "content": " vej:\";\r\nuser\r\n\r\nAssistant\r\nPerson A is Clio. Person B is Amata. The drawer is labeled \"pepper\". Item X is pepper. Item Y is durian.\r\n\r\nSo the answer is [A]."
+            }
+        ]
+    },
+    {
+        "story_index": 17,
+        "question_type": "reality",
+        "story": "Clio found a drawer in the bar. The label on the drawer says pepper. Clio couldn’t see what was inside the drawer. Clio opened the drawer and found a durian. There is no pepper in the drawer. Clio closed the drawer and put it back. Amata entered the bar and saw the drawer.",
+        "short_answer": "durian",
+        "answer": "A",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 853,
+        "user_input": "\n[Question]\nWhat was in the drawer?\n\n[Candidate Answers]\nB. durian\nC. pepper\n",
+        "output": "Assistant\nPerson A is Clio. Person B is Amata. The container is a drawer. Item X is pepper. Item Y is durian.\n\nSo, the answer is [B].",
+        "map": {
+            "B": "A",
+            "C": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nClio found a drawer in the bar. The label on the drawer says pepper. Clio couldn’t see what was inside the drawer. Clio opened the drawer and found a durian. There is no pepper in the drawer. Clio closed the drawer and put it back. Amata entered the bar and saw the drawer.\n\n[Question]\n2. Why did Clio close the drawer after finding the durian? \n"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nClio likely closed the drawer after finding the durian to maintain the organization of the bar and ensure that items are stored properly according to their labels. This action also prevents any potential confusion for others who might use the drawer later.\n\nThe reason for closing the drawer is to keep things organized and clear. So, the answer is not directly listed among candidate answers since they were not provided, but the reasoning can be inferred as maintaining order and clarity."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n3. How did Clio know the drawer was labeled \"pepper\"? "
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nClio knew the drawer was labeled \"pepper\" because she observed the label on the drawer before opening it. The label indicated its contents, even though she found something different inside.\n\nSo, the answer is that Clio knew the drawer was labeled \"pepper\" by seeing the label on the drawer."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n6. What did Amata think about the drawer being labeled \"pepper\" but containing a durian? "
+            },
+            {
+                "role": "assistant",
+                "content": "aissance\nAssistant\nAmata likely thought that the drawer was mislabeled or that someone had placed a durian in the drawer instead of pepper. Given that she saw the label and then noticed the unexpected contents, she probably found it confusing or curious.\n\nSo, the answer is that Amata likely thought the drawer was either mislabeled or contained the wrong item. Therefore, the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was in the drawer?\n\n[Candidate Answers]\nB. durian\nC. pepper\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nPerson A is Clio. Person B is Amata. The container is a drawer. Item X is pepper. Item Y is durian.\n\nSo, the answer is [B]."
+            }
+        ]
+    }
+]

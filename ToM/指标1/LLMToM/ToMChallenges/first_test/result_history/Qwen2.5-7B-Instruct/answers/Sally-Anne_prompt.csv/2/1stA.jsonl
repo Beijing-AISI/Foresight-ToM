@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 2,
+        "question_type": "1stA",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nSabra and Hillary were hanging out in the bedroom. They saw a briefcase and a bucket. They found a mitten in the briefcase. Hillary left the bedroom. Sabra moved the mitten to the bucket. After Hillary came back to the bedroom, where would Sabra look for the mitten?\n\nA. bucket\nB. briefcase\n\nAnswer:",
+        "short_answer": "bucket",
+        "answer": "A",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 451,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the bedroom. They saw a briefcase and a bucket. They found a mitten in the briefcase. Hillary left the bedroom. Sabra moved the mitten to the bucket. After Hillary came back to the bedroom, where would Sabra look for the mitten?\n\n[Candidate Answers]\nH. bucket\nO. briefcase\n",
+        "output": "�\nuser;\"><?php echo \"Person A is Sabra. Person B is Hillary. The item is mitten. The location X is briefcase. The location Y is bucket. So the answer is [O]\"; ?></php>\nSo the answer is [O]\n\nSabra is the person who moved the mitten from the briefcase to the bucket. Therefore, if Hillary returns to the bedroom, she would logically look for the mitten in its last known location, which is the bucket. Thus, the correct answer is [O].",
+        "map": {
+            "H": "A",
+            "O": "B"
+        }
+    },
+    {
+        "token_size": 441,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the bedroom. They saw a briefcase and a bucket. They found a mitten in the briefcase. Hillary left the bedroom. Sabra moved the mitten to the bucket. After Hillary came back to the bedroom, where would Sabra look for the mitten?\n\n[Candidate Answers]\nF. briefcase\nO. bucket\n",
+        "output": "�\nuser;\"><?php echo \"Person A is Sabra. Person B is Hillary. The item is mitten. The location X is briefcase. The location Y is bucket. So the answer is [O].\"; ?></php>\nSo the answer is [O].\n\nExplanation: Since Sabra moved the mitten from the briefcase to the bucket when Hillary was not around, after Hillary returned, she would logically look for the mitten in its last known location, which is the bucket.",
+        "map": {
+            "O": "A",
+            "F": "B"
+        }
+    },
+    {
+        "token_size": 378,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the bedroom. They saw a briefcase and a bucket. They found a mitten in the briefcase. Hillary left the bedroom. Sabra moved the mitten to the bucket. After Hillary came back to the bedroom, where would Sabra look for the mitten?\n\n[Candidate Answers]\nN. bucket\nW. briefcase\n",
+        "output": " ifndef\nPerson A is Sabra. Person B is Hillary. The item is mitten. The location X is briefcase. The location Y is bucket.\nSo the answer is [W]",
+        "map": {
+            "N": "A",
+            "W": "B"
+        }
+    },
+    {
+        "token_size": 382,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the bedroom. They saw a briefcase and a bucket. They found a mitten in the briefcase. Hillary left the bedroom. Sabra moved the mitten to the bucket. After Hillary came back to the bedroom, where would Sabra look for the mitten?\n\n[Candidate Answers]\nS. bucket\nV. briefcase\n",
+        "output": "鄄user\n\n[Thought]\nPerson A is Sabra. Person B is Hillary. The item is mitten. The location X is briefcase. The location Y is bucket.\nSo the answer is [V].",
+        "map": {
+            "S": "A",
+            "V": "B"
+        }
+    },
+    {
+        "token_size": 382,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the bedroom. They saw a briefcase and a bucket. They found a mitten in the briefcase. Hillary left the bedroom. Sabra moved the mitten to the bucket. After Hillary came back to the bedroom, where would Sabra look for the mitten?\n\n[Candidate Answers]\nJ. bucket\nT. briefcase\n",
+        "output": ":last step of reasoning\nPerson A is Sabra. Person B is Hillary. The item is mitten. The location X is briefcase. The location Y is bucket.\nSo, the answer is [J]",
+        "map": {
+            "J": "A",
+            "T": "B"
+        }
+    }
+]

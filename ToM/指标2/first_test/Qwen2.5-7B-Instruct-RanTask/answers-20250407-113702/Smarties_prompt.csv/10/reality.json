@@ -1,0 +1,247 @@
+[
+    {
+        "story_index": 10,
+        "question_type": "reality",
+        "story": "Sabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.",
+        "short_answer": "mug",
+        "answer": "A",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 689,
+        "user_input": "\n[Question]\nWhat was in the locker?\n\n[Candidate Answers]\nR. binder\nZ. mug\n",
+        "output": "Assistant\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo the answer is [Z].",
+        "map": {
+            "Z": "A",
+            "R": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\nWhere does the phrase 'to be or not to be' come from?\n\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nThe phrase 'to be or not to be' comes from William Shakespeare's play Hamlet."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat could be the possible causes of toothache?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "user\n\n[Question]\nWhat could be the possible causes of toothache?\n\n[Output]\nPossible causes of toothache include cavities, gum disease, tooth fracture, tooth sensitivity, and jaw problems."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIs 15972 a prime number?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nNo, 15972 is not a prime number. It has divisors other than 1 and itself, such as 2, 3, and others."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was in the locker?\n\n[Candidate Answers]\nR. binder\nZ. mug\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo the answer is [Z]."
+            }
+        ]
+    },
+    {
+        "story_index": 10,
+        "question_type": "reality",
+        "story": "Sabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.",
+        "short_answer": "mug",
+        "answer": "A",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 938,
+        "user_input": "\n[Question]\nWhat was in the locker?\n\n[Candidate Answers]\nR. mug\nV. binder\n",
+        "output": "-awaiting-user-input-after-correct-formatting/\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo the answer is [R].",
+        "map": {
+            "R": "A",
+            "V": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\nIs 2111159 a prime number?\n\n"
+            },
+            {
+                "role": "assistant",
+                "content": "arnation\nThe phrase \"to be or not to be\" comes from William Shakespeare's play Hamlet.\n\nIs 2111159 a prime number?\nTo determine if 2111159 is a prime number, we need to check if it has any divisors other than 1 and itself. Checking divisibility by smaller prime numbers up to approximately the square root of 2111159 (which is around 1453), we find that 2111159 is divisible by 3 (since the sum of its digits, 2+1+1+1+1+5+9=20, is not divisible by 3). Therefore, 2111159 is not a prime number.\n\nSo, the answer is No.\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhere is the origin of chocolate?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "\nuser\n\n[Question]\nWhere is the origin of chocolate?\n\n[Output]\nThe origin of chocolate is South America. Specifically, it comes from the cacao tree, which originated in the rainforests of the Upper Amazon basin, including parts of modern-day Ecuador, Colombia, and Venezuela.\n\nSo the answer is South America."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat could be the possible causes of toothache?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "zysten system\n\n Possible causes of toothache include:\n\n- Tooth decay (cavities)\n- Gum disease\n- Cracked or chipped teeth\n- Infection or abscess in the tooth or gum\n- Tooth sensitivity\n- Bruxism (teeth grinding)\n- Sinus issues (referred pain)\n\nSo the answer is a list of these potential causes."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was in the locker?\n\n[Candidate Answers]\nR. mug\nV. binder\n"
+            },
+            {
+                "role": "assistant",
+                "content": "-awaiting-user-input-after-correct-formatting/\n\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo the answer is [R]."
+            }
+        ]
+    },
+    {
+        "story_index": 10,
+        "question_type": "reality",
+        "story": "Sabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.",
+        "short_answer": "mug",
+        "answer": "A",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 733,
+        "user_input": "\n[Question]\nWhat was in the locker?\n\n[Candidate Answers]\nE. binder\nU. mug\n",
+        "output": "Assistant\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo the answer is [U].",
+        "map": {
+            "U": "A",
+            "E": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\nWhere is the origin of chocolate?\n\n"
+            },
+            {
+                "role": "assistant",
+                "content": "\noutput\nThe origin of chocolate comes from the cacao tree, which is native to Mesoamerica, specifically the regions that include parts of modern-day Mexico, Guatemala, Belize, Honduras, and El Salvador. So the answer is not directly related to the story provided."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIs 15972 a prime number?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "user\n[Question]\nIs 15972 a prime number?\n\n[Output]\nNo, 15972 is not a prime number because it has divisors other than 1 and itself, such as 2, 3, and 4. So the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhere does the phrase 'to be or not to be' come from?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nThe phrase 'to be or not to be' comes from William Shakespeare's play Hamlet. So the answer is [A]."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was in the locker?\n\n[Candidate Answers]\nE. binder\nU. mug\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo the answer is [U]."
+            }
+        ]
+    },
+    {
+        "story_index": 10,
+        "question_type": "reality",
+        "story": "Sabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.",
+        "short_answer": "mug",
+        "answer": "A",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 650,
+        "user_input": "\n[Question]\nWhat was in the locker?\n\n[Candidate Answers]\nB. binder\nX. mug\n",
+        "output": "Assistant\nSabra is the person who found the locker. Melania is the person who entered the balcony and saw the locker. The locker is located in the balcony. Inside the locker, there is a mug. So the answer is [X].",
+        "map": {
+            "X": "A",
+            "B": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\nWhat could be the possible causes of toothache?\n\n"
+            },
+            {
+                "role": "assistant",
+                "content": "%;\"> Output\nThe phrase 'to be or not to be' comes from William Shakespeare's play Hamlet."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIn which year was the ancient Chinese poet Li Bai born?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "terapist\nThe ancient Chinese poet Li Bai was born in 701 AD."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhere is the origin of chocolate?\n"
+            },
+            {
+                "role": "assistant",
+                "content": " mastur\nuser\n[Question]\nWhere is the origin of chocolate?\n"
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was in the locker?\n\n[Candidate Answers]\nB. binder\nX. mug\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nSabra is the person who found the locker. Melania is the person who entered the balcony and saw the locker. The locker is located in the balcony. Inside the locker, there is a mug. So the answer is [X]."
+            }
+        ]
+    },
+    {
+        "story_index": 10,
+        "question_type": "reality",
+        "story": "Sabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.",
+        "short_answer": "mug",
+        "answer": "A",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 768,
+        "user_input": "\n[Question]\nWhat was in the locker?\n\n[Candidate Answers]\nO. mug\nZ. binder\n",
+        "output": "Assistant\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo the answer is [O].",
+        "map": {
+            "O": "A",
+            "Z": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\nIn which year was the ancient Chinese poet Li Bai born?\n\n"
+            },
+            {
+                "role": "assistant",
+                "content": "user\">×</ucchini\nuser\n\n[Story]\nSabra found a locker in the balcony. The label on the locker says binder. Sabra couldn’t see what was inside the locker. Sabra opened the locker and found a mug. There is no binder in the locker. Sabra closed the locker and put it back. Melania entered the balcony and saw the locker.\n\n[Question]\nIn which year was the ancient Chinese poet Li Bai born?\n\n[Output]\nThe ancient Chinese poet Li Bai was born in the year 701 AD."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n17592+56781=?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\n\\[ 17592 + 56781 = 74373 \\]"
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhere is the origin of chocolate?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "\"user\"\n\n[Question]\nWhere is the origin of chocolate?\n\n[Output]\nThe origin of chocolate is in Mesoamerica, specifically in the regions that are now Mexico, Guatemala, and parts of Honduras, El Salvador, and Nicaragua."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was in the locker?\n\n[Candidate Answers]\nO. mug\nZ. binder\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nPerson A is Sabra. Person B is Melania. The container is a locker. Item X is binder. Item Y is mug.\nSo the answer is [O]."
+            }
+        ]
+    }
+]

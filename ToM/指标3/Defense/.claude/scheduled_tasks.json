@@ -1,0 +1,15 @@
+{
+  "tasks": [
+    {
+      "id": "f15c2724",
+      "cron": "58 * * * *",
+      "prompt": "检查按模型并行的120样本测试状态：\n\n运行以下检查：\n```bash\ncd /data1/fanjinyu/ToM/Defense/Defense\necho \"=== 测试状态检查 $(date) ===\"\necho \"\"\necho \"运行进程数:\"\nps aux | grep -E \"(run_all_tests_by_model|main_defense.py)\" | grep -v grep | wc -l\necho \"\"\necho \"已完成任务:\"\nwc -l logs/batch_by_model_*/completed.txt 2>/dev/null || echo \"0\"\necho \"\"\necho \"最近5个完成的任务:\"\ntail -5 logs/batch_by_model_*/completed.txt 2>/dev/null\necho \"\"\necho \"失败任务:\"\ncat logs/batch_by_model_*/failed.txt 2>/dev/null || echo \"无失败任务\"\necho \"\"\necho \"各模型进度:\"\nfor model in glm4_9b qwen2.5_7b llama3.1_8b; do\n    log_file=$(ls logs/batch_by_model_*/${model}_progress.log 2>/dev/null | head -1)\n    if [ -f \"$log_file\" ]; then\n        echo \"  ${model}:\"\n        tail -3 \"$log_file\"\n    fi\ndone\n```\n\n以简洁格式报告状态和进度。",
+      "createdAt": 1782235697215,
+      "lastFiredAt": 1782289577473,
+      "recurring": true,
+      "createdBySessionId": "ae8692db-3fac-4063-aa38-d38497fe71c0",
+      "createdByPid": 353140,
+      "createdByProcStart": "1274929537"
+    }
+  ]
+}

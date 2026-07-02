@@ -1,0 +1,407 @@
+[
+    {
+        "story_index": 12,
+        "question_type": "memory",
+        "story": "Felicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate.",
+        "short_answer": "bin",
+        "answer": "B",
+        "system_input": "\n    The story is about two people (Person A and Person B) found an item in location X. Person B left the room and\n    Person A moved the item to location Y.\n    \n    [Story]\n    Neila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    After Juanita came back to the attic, where was the towel previously?\n        \n    [Candidate Answers]\n    A. cabinet\n    B. closet\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\n    So, the answer is [B]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 1314,
+        "user_input": "\n[Question]\nWhere was the guava previously\n\n[Candidate Answers]\nA. crate\nX. bin\n",
+        "output": "Person A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nSo, the answer is [X].",
+        "map": {
+            "A": "A",
+            "X": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nFelicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate.\n\n[Question]\nWould Hillary have noticed if Felicity moved the guava before she left?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Since Hillary left the conservatory before Felicity moved the guava, it is likely that Hillary would not have noticed the change. She had already departed the scene when the guava was relocated."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might two people do in the conservatory?"
+            },
+            {
+                "role": "assistant",
+                "content": "Two people like Felicity and Hillary might relax, read books, enjoy plants, listen to music, or engage in various leisure activities together in the conservatory. It could also serve as a space for socializing, having conversations, or simply enjoying each other's company while surrounded by natural light and greenery."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nFor an average household, what might be stored in the crate?"
+            },
+            {
+                "role": "assistant",
+                "content": "In an average household, a crate can store a variety of items such as boxes, linens, seasonal decorations, luggage, or even gardening tools. It often serves as a temporary storage space for items that are not frequently used but still need to be kept organized and accessible. In this specific case, after Felicity moved the guava into the crate, it might contain fruit, food items, or other edible goods."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWas the guava ripe when it was found in the bin?"
+            },
+            {
+                "role": "assistant",
+                "content": "There is no information provided in the story about the ripeness of the guava when it was found in the bin. We only know that Felicity and Hillary found a guava in the bin, but we don't have any details about its condition or stage of ripeness."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat kind of plants or flowers could be grown in a conservatory?"
+            },
+            {
+                "role": "assistant",
+                "content": "A conservatory is a warm and humid environment, making it ideal for growing a wide range of plants and flowers. Some examples include:\n\n- Tropical plants like ferns, palms, and orchids\n- Exotic flowers like hibiscus, bougainvillea, and bird of paradise\n- Citrus trees like lemons, limes, and oranges\n- Herbs like basil, mint, and rosemary\n- Cacti and succulents that thrive in bright, sunny conditions\n\nThese are just a few examples of the many types of plants that can be grown in a conservatory. The possibilities are endless, depending on the climate and desired aesthetic."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat kind of experience could living in a house with a conservatory be?"
+            },
+            {
+                "role": "assistant",
+                "content": "Living in a house with a conservatory can be a wonderful experience. The large windows and glass roof allow for an abundance of natural light, creating a bright and airy atmosphere. On sunny days, the conservatory can become a cozy extension of the home, perfect for relaxing, reading, or enjoying a cup of coffee.\n\nDuring colder months, the conservatory can be a lovely spot to curl up with a good book or watch the snow fall outside. The warmth and humidity created by the sunbeams streaming through the glass can make it feel like a tropical oasis, even in the midst of winter.\n\nAdditionally, a conservatory can provide a seamless transition between indoors and outdoors, blurring the lines between the two spaces. This can create a sense of connection to nature and make the home feel more spacious and connected to the surroundings.\n\nOverall, living in a house with a conservatory can be a delightful experience, offering a unique blend of comfort, natural beauty, and flexibility."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nHow did the guava end up in the bin in the first place?"
+            },
+            {
+                "role": "assistant",
+                "content": "Unfortunately, the story doesn't provide any information about how the guava ended up in the bin in the first place. It only mentions that Felicity and Hillary found a guava in the bin, but it doesn't explain who put it there, why it was placed there, or under what circumstances."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhere was the guava previously\n\n[Candidate Answers]\nA. crate\nX. bin\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nSo, the answer is [X]."
+            }
+        ]
+    },
+    {
+        "story_index": 12,
+        "question_type": "memory",
+        "story": "Felicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate.",
+        "short_answer": "bin",
+        "answer": "B",
+        "system_input": "\n    The story is about two people (Person A and Person B) found an item in location X. Person B left the room and\n    Person A moved the item to location Y.\n    \n    [Story]\n    Neila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    After Juanita came back to the attic, where was the towel previously?\n        \n    [Candidate Answers]\n    A. cabinet\n    B. closet\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\n    So, the answer is [B]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 1364,
+        "user_input": "\n[Question]\nWhere was the guava previously\n\n[Candidate Answers]\nG. crate\nN. bin\n",
+        "output": "Person A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nSo the answer is [N].",
+        "map": {
+            "G": "A",
+            "N": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nFelicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate.\n\n[Question]\nWhat kind of plants or flowers could be grown in a conservatory?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Conservatories are often used for growing tropical plants, orchids, ferns, and other exotic species that require a warm and humid environment. They can also be used for growing citrus trees, such as lemons and oranges, as well as flowering plants like begonias and geraniums. In addition, some people use their conservatories for growing vegetables, herbs, and succulents. The specific types of plants that can be grown in a conservatory will depend on the climate and conditions within the space."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat idea might Felicity have had in mind to move the guava to the crate?"
+            },
+            {
+                "role": "assistant",
+                "content": "Since Felicity moved the guava to the crate after Hillary left the conservatory, it's possible that Felicity wanted to keep the guava safe and secure while Hillary was away. Perhaps Felicity thought the crate would be a better place to store the guava, or maybe she wanted to protect it from being accidentally thrown away with the trash in the bin. Without more information, we can only speculate on Felicity's motivations."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat kind of experience could living in a house with a conservatory be?"
+            },
+            {
+                "role": "assistant",
+                "content": "Living in a house with a conservatory can be a unique and enjoyable experience. On one hand, having a conservatory can bring in plenty of natural light and warmth, creating a bright and welcoming space that feels connected to the outdoors. It can also be a great spot for relaxing, reading, or enjoying a cup of coffee or tea. Additionally, conservatories can be used for various activities such as gardening, painting, or practicing yoga. However, they can also be prone to heat buildup during the summer months and may require additional maintenance to ensure they remain energy-efficient and comfortable throughout the year. Overall, living in a house with a conservatory can offer a pleasant and versatile living space that combines indoor and outdoor elements."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might two people do in the conservatory?"
+            },
+            {
+                "role": "assistant",
+                "content": "Two people, such as Felicity and Hillary, might spend time together in the conservatory chatting, laughing, and enjoying each other's company. They could sit on a couch or armchair, look through books or magazines, or simply relax and enjoy the peaceful atmosphere. They might also engage in activities like playing board games, doing puzzles, or working on crafts. Alternatively, they could use the conservatory as a quiet space for studying, reading, or writing. The possibilities are endless, depending on their interests and preferences."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWas the guava ripe when it was found in the bin?"
+            },
+            {
+                "role": "assistant",
+                "content": "There is no indication in the story whether the guava was ripe or not when it was found in the bin. It is mentioned that Felicity and Hillary \"found\" a guava in the bin, which suggests that it was already present there, but its ripeness is not specified."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCould there be other fruits or food items in the bin?"
+            },
+            {
+                "role": "assistant",
+                "content": "It's entirely possible that there could be other fruits or food items in the bin along with the guava. The story doesn't specify what else might be in the bin, but it's common for household bins to contain a variety of waste, including food scraps and other disposable items."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nFor an average household, what might be stored in the crate?"
+            },
+            {
+                "role": "assistant",
+                "content": "In an average household, a crate like the one mentioned in the story might be used to store a variety of items, such as:\n\n* Seasonal decorations, like Christmas ornaments or Halloween decorations\n* Linens, towels, or blankets\n* Cleaning supplies or storage containers\n* Tools or equipment, like gardening tools or sports gear\n* Books, toys, or other household items that need to be kept organized and out of the way\n\nOf course, without more context, it's impossible to say exactly what might be stored in this particular crate. But in general, crates are useful for storing items that need to be kept tidy and accessible."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhere was the guava previously\n\n[Candidate Answers]\nG. crate\nN. bin\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nSo the answer is [N]."
+            }
+        ]
+    },
+    {
+        "story_index": 12,
+        "question_type": "memory",
+        "story": "Felicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate.",
+        "short_answer": "bin",
+        "answer": "B",
+        "system_input": "\n    The story is about two people (Person A and Person B) found an item in location X. Person B left the room and\n    Person A moved the item to location Y.\n    \n    [Story]\n    Neila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    After Juanita came back to the attic, where was the towel previously?\n        \n    [Candidate Answers]\n    A. cabinet\n    B. closet\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\n    So, the answer is [B]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 1310,
+        "user_input": "\n[Question]\nWhere was the guava previously\n\n[Candidate Answers]\nM. crate\nT. bin\n",
+        "output": "Person A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nSo the answer is [T].",
+        "map": {
+            "M": "A",
+            "T": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nFelicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate.\n\n[Question]\nWhat kind of experience could living in a house with a conservatory be?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Living in a house with a conservatory can be a pleasant experience, offering natural light and warmth during the colder months. It can also provide a peaceful space for relaxation and enjoyment of nature, especially if it's filled with plants and has large windows. However, it may require additional maintenance to keep the structure warm and protected from the elements. Overall, having a conservatory can add value and character to a home, making it a desirable feature for many homeowners."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nFor an average household, what might be stored in the crate?"
+            },
+            {
+                "role": "assistant",
+                "content": "For an average household, a crate like the one mentioned in the story could store various items such as:\n\n- Seasonal decorations\n- Outdoor equipment like gardening tools or sports gear\n- Storage boxes for linens, blankets, or other household items\n- Packing materials for moving or shipping\n- Even pet supplies or toys\n\nThese are just a few possibilities, and the actual contents would depend on the specific needs and preferences of the household."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat idea might Felicity have had in mind to move the guava to the crate?"
+            },
+            {
+                "role": "assistant",
+                "content": "Since Felicity moved the guava to the crate after Hillary left the conservatory, it's possible that Felicity wanted to keep the guava safe and secure until Hillary returned. Perhaps she thought the crate would be a better place to store the fruit, protecting it from being knocked over or damaged by anyone else who might enter the conservatory while they were away. Alternatively, Felicity might have simply wanted to tidy up the area and put the guava in its new \"home\" in the crate."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIs it common for people to find fruit in unusual places like bins?"
+            },
+            {
+                "role": "assistant",
+                "content": "It's not uncommon for people to find fruit in unexpected places, including bins. In some cases, fruit might be discarded or forgotten in trash cans, especially if it's past its prime or not properly disposed of. Additionally, in certain cultures or environments, fruit might be stored or sold in unconventional locations, such as street vendors or market stalls. However, finding a fresh, intact guava in a bin, as described in the story, seems less likely unless it was intentionally placed there."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWould Hillary have noticed if Felicity moved the guava before she left?"
+            },
+            {
+                "role": "assistant",
+                "content": "Yes, Hillary would likely have noticed if Felicity moved the guava before she left the conservatory. Since Felicity moved the guava to the crate immediately after Hillary left, it's probable that Hillary would have seen the guava in the bin when she departed. If Felicity had moved the guava beforehand, Hillary would have been aware of the change and possibly even commented on it before leaving."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCan a guava grow in a place without direct sunlight?"
+            },
+            {
+                "role": "assistant",
+                "content": "Guavas typically require full sun to partial shade to grow well. Direct sunlight is essential for photosynthesis, which helps the plant produce energy and grow. While guavas can tolerate some shade, prolonged periods without direct sunlight can lead to reduced growth, lower yields, and increased susceptibility to disease. Therefore, a guava tree growing in a place without direct sunlight would likely struggle to thrive."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCould there be other fruits or food items in the bin?"
+            },
+            {
+                "role": "assistant",
+                "content": "Given that the story mentions a bin and a guava, it's possible that the bin contained other food waste or items. People often dispose of various organic materials, including fruit peels, rinds, cores, and other scraps, in their trash bins. The presence of a guava suggests that the bin might have held other edible items, but without more information, it's difficult to say exactly what else might have been inside."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhere was the guava previously\n\n[Candidate Answers]\nM. crate\nT. bin\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nSo the answer is [T]."
+            }
+        ]
+    },
+    {
+        "story_index": 12,
+        "question_type": "memory",
+        "story": "Felicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate.",
+        "short_answer": "bin",
+        "answer": "B",
+        "system_input": "\n    The story is about two people (Person A and Person B) found an item in location X. Person B left the room and\n    Person A moved the item to location Y.\n    \n    [Story]\n    Neila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    After Juanita came back to the attic, where was the towel previously?\n        \n    [Candidate Answers]\n    A. cabinet\n    B. closet\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\n    So, the answer is [B]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 1189,
+        "user_input": "\n[Question]\nWhere was the guava previously\n\n[Candidate Answers]\nF. crate\nZ. bin\n",
+        "output": "Person A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nSo the answer is [Z].",
+        "map": {
+            "F": "A",
+            "Z": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nFelicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate.\n\n[Question]\nDid Felicity eat the guava after moving it to the crate?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "There is no information provided in the story that Felicity ate the guava after moving it to the crate. It only mentions that she moved the guava to the crate, but there is no mention of her eating it. \n\nHowever, since this is a yes/no type of question, I will rephrase my response according to your note:\n\nNo, there is no indication that Felicity ate the guava after moving it to the crate."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCan a guava grow in a place without direct sunlight?"
+            },
+            {
+                "role": "assistant",
+                "content": "Guavas typically require full sun to partial shade to grow well. While they can tolerate some indirect sunlight, direct sunlight for at least 6 hours a day is ideal for their growth. Therefore, a place without direct sunlight may not be suitable for growing guavas."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nFor an average household, what might be stored in the crate?"
+            },
+            {
+                "role": "assistant",
+                "content": "Based on the context of the story, it seems unlikely that a household would store a guava in a crate. However, crates are often used to store items such as boxes, luggage, or other household goods. In this case, the crate might contain items like linens, blankets, or seasonal decorations."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat kind of experience could living in a house with a conservatory be?"
+            },
+            {
+                "role": "assistant",
+                "content": "Living in a house with a conservatory can be a wonderful experience. Conservatories are essentially glass-enclosed rooms that allow natural light to flood into the space, creating a bright and airy atmosphere. They can be used for various purposes, such as dining, relaxing, or even working. On sunny days, the conservatory can feel like an extension of the outdoors, providing a seamless transition between indoors and outdoors. This can be especially enjoyable during warmer months when the doors can be opened to let in fresh air and enjoy the garden views. Overall, living in a house with a conservatory can be a delightful experience, offering a unique blend of indoor and outdoor living spaces."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWould Hillary have noticed if Felicity moved the guava before she left?"
+            },
+            {
+                "role": "assistant",
+                "content": "Since Hillary left the conservatory before Felicity moved the guava, it is likely that Hillary would not have noticed the change. She had already departed the scene by the time Felicity relocated the fruit."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWas the guava ripe when it was found in the bin?"
+            },
+            {
+                "role": "assistant",
+                "content": "There is no information provided in the story about the ripeness of the guava when it was found in the bin. It simply states that Felicity and Hillary found a guava in the bin, but it doesn't specify whether it was ripe or unripe."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might two people do in the conservatory?"
+            },
+            {
+                "role": "assistant",
+                "content": "Two people, like Felicity and Hillary, might spend time together in the conservatory engaging in various activities such as reading, playing games, having a conversation, enjoying a cup of coffee or tea, or simply relaxing and enjoying the natural light and surroundings. They might also use the conservatory as a peaceful spot to work, study, or practice a hobby. The possibilities are endless!"
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhere was the guava previously\n\n[Candidate Answers]\nF. crate\nZ. bin\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nSo the answer is [Z]."
+            }
+        ]
+    },
+    {
+        "story_index": 12,
+        "question_type": "memory",
+        "story": "Felicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate.",
+        "short_answer": "bin",
+        "answer": "B",
+        "system_input": "\n    The story is about two people (Person A and Person B) found an item in location X. Person B left the room and\n    Person A moved the item to location Y.\n    \n    [Story]\n    Neila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    After Juanita came back to the attic, where was the towel previously?\n        \n    [Candidate Answers]\n    A. cabinet\n    B. closet\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\n    So, the answer is [B]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 1311,
+        "user_input": "\n[Question]\nWhere was the guava previously\n\n[Candidate Answers]\nV. crate\nW. bin\n",
+        "output": "Person A is Hillary. Person B is Felicity. The item is guava. The location X is bin. The location Y is crate.\nSo the answer is [W].",
+        "map": {
+            "V": "A",
+            "W": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nFelicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate.\n\n[Question]\nWas the guava ripe when it was found in the bin?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "There is no information provided in the story about the ripeness of the guava when it was found in the bin. Therefore, we cannot determine its state of ripeness."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat idea might Felicity have had in mind to move the guava to the crate?"
+            },
+            {
+                "role": "assistant",
+                "content": "It seems that Felicity wanted to keep the guava safe or organized by moving it to the crate after Hillary left the conservatory. However, without more context or information, this is just a possible interpretation."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nFor an average household, what might be stored in the crate?"
+            },
+            {
+                "role": "assistant",
+                "content": "In an average household, crates like the one mentioned in the story could store items such as boxes, seasonal decorations, linens, or other household supplies. It really depends on how the household uses their storage space. \n\nHowever, considering the context of the story, which involves finding a fruit (guava), it's also possible that the crate stores fruits or vegetables, especially if they're being kept for later use."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nGenerally speaking, what else might be found in the bin besides a guava?"
+            },
+            {
+                "role": "assistant",
+                "content": "A bin in a household setting often contains trash or waste, including food scraps, packaging materials, paper products, and other disposable items. In addition to the guava, you might find banana peels, coffee grounds, empty cans, plastic bottles, or other discarded objects in the bin."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nCould there be other fruits or food items in the bin?"
+            },
+            {
+                "role": "assistant",
+                "content": "Yes, it's likely that there could be other fruits or food items in the bin along with the guava. People often dispose of various food waste, including fruit peels, vegetable scraps, bread, or even leftover meals. The bin might contain a mix of organic waste, depending on what was consumed or prepared in the household."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat kind of plants or flowers could be grown in a conservatory?"
+            },
+            {
+                "role": "assistant",
+                "content": "Conservatories are ideal for growing a wide variety of plants and flowers due to their warm and sunny conditions. Some popular options include:\n\n- Tropical plants like ferns, palms, and orchids\n- Flowering plants like begonias, geraniums, and fuchsias\n- Cacti and succulents, which thrive in dry environments\n- Herbs like basil, rosemary, and thyme\n- Citrus trees like lemons, limes, and oranges\n- Exotic flowers like hibiscus, bougainvillea, and passionflowers\n\nThese are just a few examples, but the possibilities are endless, and many types of plants can be successfully grown in a conservatory."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat kind of experience could living in a house with a conservatory be?"
+            },
+            {
+                "role": "assistant",
+                "content": "Living in a house with a conservatory can be a wonderful experience. The large windows and doors allow natural light to flood into the home, creating a bright and airy atmosphere. On sunny days, the conservatory can become a cozy extension of the main living space, perfect for relaxing, reading, or enjoying a cup of tea.\n\nDuring colder months, the conservatory can still be used as a peaceful retreat, providing a sense of warmth and comfort. With proper insulation and heating, it can remain a pleasant space even on chilly days.\n\nAdditionally, having a conservatory can make a home feel larger and more connected to nature. It's an excellent spot to enjoy the outdoors while still being indoors, making it ideal for gardening enthusiasts, birdwatchers, or anyone who loves spending time surrounded by greenery.\n\nOverall, living in a house with a conservatory can be a delightful experience, offering a unique blend of indoor-outdoor living and a strong connection to nature."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhere was the guava previously\n\n[Candidate Answers]\nV. crate\nW. bin\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Hillary. Person B is Felicity. The item is guava. The location X is bin. The location Y is crate.\nSo the answer is [W]."
+            }
+        ]
+    }
+]

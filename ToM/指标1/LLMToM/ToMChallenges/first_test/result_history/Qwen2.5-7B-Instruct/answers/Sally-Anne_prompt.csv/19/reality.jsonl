@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 19,
+        "question_type": "reality",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nKeri and Clio were hanging out in the garden. They saw a barrel and a backpack. They found a banana in the barrel. Clio left the garden. Keri moved the banana to the backpack. Where is the banana currently?\n\nA. backpack\nB. barrel\n\nAnswer:",
+        "short_answer": "backpack",
+        "answer": "A",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 366,
+        "user_input": "\n[Story]\nKeri and Clio were hanging out in the garden. They saw a barrel and a backpack. They found a banana in the barrel. Clio left the garden. Keri moved the banana to the backpack. Where is the banana currently?\n\n[Candidate Answers]\nB. barrel\nD. backpack\n",
+        "output": " ifndef SOLUTION_SHOWN\nPerson A is Keri. Person B is Clio. The item is banana. The location X is barrel. The location Y is backpack.\nSo the answer is [D]\nendif",
+        "map": {
+            "D": "A",
+            "B": "B"
+        }
+    },
+    {
+        "token_size": 362,
+        "user_input": "\n[Story]\nKeri and Clio were hanging out in the garden. They saw a barrel and a backpack. They found a banana in the barrel. Clio left the garden. Keri moved the banana to the backpack. Where is the banana currently?\n\n[Candidate Answers]\nI. backpack\nL. barrel\n",
+        "output": " ifndef\nPerson A is Keri. Person B is Clio. The item is banana. The location X is barrel. The location Y is backpack.\nSo the answer is [I]",
+        "map": {
+            "I": "A",
+            "L": "B"
+        }
+    },
+    {
+        "token_size": 362,
+        "user_input": "\n[Story]\nKeri and Clio were hanging out in the garden. They saw a barrel and a backpack. They found a banana in the barrel. Clio left the garden. Keri moved the banana to the backpack. Where is the banana currently?\n\n[Candidate Answers]\nA. barrel\nQ. backpack\n",
+        "output": " ifndef\nPerson A is Keri. Person B is Clio. The item is banana. The location X is barrel. The location Y is backpack.\nSo the answer is [Q].",
+        "map": {
+            "Q": "A",
+            "A": "B"
+        }
+    },
+    {
+        "token_size": 366,
+        "user_input": "\n[Story]\nKeri and Clio were hanging out in the garden. They saw a barrel and a backpack. They found a banana in the barrel. Clio left the garden. Keri moved the banana to the backpack. Where is the banana currently?\n\n[Candidate Answers]\nR. backpack\nZ. barrel\n",
+        "output": " ifndef SOLUTION_SHOWN\nPerson A is Keri. Person B is Clio. The item is banana. The location X is barrel. The location Y is backpack.\nSo the answer is [Z]\n#endif",
+        "map": {
+            "R": "A",
+            "Z": "B"
+        }
+    },
+    {
+        "token_size": 366,
+        "user_input": "\n[Story]\nKeri and Clio were hanging out in the garden. They saw a barrel and a backpack. They found a banana in the barrel. Clio left the garden. Keri moved the banana to the backpack. Where is the banana currently?\n\n[Candidate Answers]\nO. backpack\nS. barrel\n",
+        "output": " ifndef SOLUTION_SHOWN\nPerson A is Keri. Person B is Clio. The item is banana. The location X is barrel. The location Y is backpack.\nSo the answer is [O]\nendif",
+        "map": {
+            "O": "A",
+            "S": "B"
+        }
+    }
+]

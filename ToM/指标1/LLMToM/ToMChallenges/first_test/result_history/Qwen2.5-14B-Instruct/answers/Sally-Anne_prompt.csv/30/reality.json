@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 30,
+        "question_type": "reality",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nNeila and Karalynn were hanging out in the recreation room. They saw a chest and a carryall. They found a knife in the chest. Karalynn left the recreation room. Neila moved the knife to the carryall. Where is the knife currently?\n\nA. carryall\nB. chest\n\nAnswer:",
+        "short_answer": "carryall",
+        "answer": "A",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 372,
+        "user_input": "\n[Story]\nNeila and Karalynn were hanging out in the recreation room. They saw a chest and a carryall. They found a knife in the chest. Karalynn left the recreation room. Neila moved the knife to the carryall. Where is the knife currently?\n\n[Candidate Answers]\nL. carryall\nV. chest\n",
+        "output": "system\nPerson A is Neila. Person B is Karalynn. The item is knife. The location X is chest. The location Y is carryall.\nso the answer is [L]",
+        "map": {
+            "L": "A",
+            "V": "B"
+        }
+    },
+    {
+        "token_size": 371,
+        "user_input": "\n[Story]\nNeila and Karalynn were hanging out in the recreation room. They saw a chest and a carryall. They found a knife in the chest. Karalynn left the recreation room. Neila moved the knife to the carryall. Where is the knife currently?\n\n[Candidate Answers]\nQ. carryall\nW. chest\n",
+        "output": "foundland\n\nPerson A is Neila. Person B is Karalynn. The item is knife. The location X is chest. The location Y is carryall.\nso the answer is [Q]",
+        "map": {
+            "Q": "A",
+            "W": "B"
+        }
+    },
+    {
+        "token_size": 371,
+        "user_input": "\n[Story]\nNeila and Karalynn were hanging out in the recreation room. They saw a chest and a carryall. They found a knife in the chest. Karalynn left the recreation room. Neila moved the knife to the carryall. Where is the knife currently?\n\n[Candidate Answers]\nM. chest\nV. carryall\n",
+        "output": "foundland\n\nPerson A is Neila. Person B is Karalynn. The item is knife. The location X is chest. The location Y is carryall.\nso the answer is [V]",
+        "map": {
+            "V": "A",
+            "M": "B"
+        }
+    },
+    {
+        "token_size": 371,
+        "user_input": "\n[Story]\nNeila and Karalynn were hanging out in the recreation room. They saw a chest and a carryall. They found a knife in the chest. Karalynn left the recreation room. Neila moved the knife to the carryall. Where is the knife currently?\n\n[Candidate Answers]\nQ. chest\nY. carryall\n",
+        "output": "foundland\n\nPerson A is Neila. Person B is Karalynn. The item is knife. The location X is chest. The location Y is carryall.\nso the answer is [Y]",
+        "map": {
+            "Y": "A",
+            "Q": "B"
+        }
+    },
+    {
+        "token_size": 372,
+        "user_input": "\n[Story]\nNeila and Karalynn were hanging out in the recreation room. They saw a chest and a carryall. They found a knife in the chest. Karalynn left the recreation room. Neila moved the knife to the carryall. Where is the knife currently?\n\n[Candidate Answers]\nI. chest\nQ. carryall\n",
+        "output": "system\nPerson A is Neila. Person B is Karalynn. The item is knife. The location X is chest. The location Y is carryall.\nso the answer is [Q]",
+        "map": {
+            "Q": "A",
+            "I": "B"
+        }
+    }
+]

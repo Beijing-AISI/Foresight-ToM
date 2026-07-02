@@ -1,0 +1,247 @@
+[
+    {
+        "story_index": 7,
+        "question_type": "1stB",
+        "story": "Norina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.",
+        "short_answer": "ruler",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 945,
+        "user_input": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nJ. coconut\nM. ruler\n",
+        "output": "\"user\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nJ. coconut\nM. ruler\n\n[Output]\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo the answer is [M].",
+        "map": {
+            "J": "A",
+            "M": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nNorina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.\n\n[Question]\n13. Could the coconut have any symbolic meaning for Norina?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "\n/story\nuser\n\n[Story]\nNorina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.\n\n[Question]\nCould the coconut have any symbolic meaning for Norina?\n\n[Output]\nThe coconut could symbolize unexpected discoveries or turning points in Norina's life. However, without more context, it's speculative."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n3. Could the chest have been mislabeled?"
+            },
+            {
+                "role": "assistant",
+                "content": "\"label on the chest says ruler. Norina opened the chest and found a coconut.\"\n\n[Output]\nYes, the chest could have been mislabeled. The label said \"ruler,\" but there was a coconut inside instead. So the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n10. What other items could have been mistakenly placed in the chest instead of a ruler?"
+            },
+            {
+                "role": "assistant",
+                "content": "user\n[Question]\n10. What other items could have been mistakenly placed in the chest instead of a ruler?\n\n[Output]\nOther items that could have been mistakenly placed in the chest instead of a ruler include various objects such as a book, a toy, a piece of clothing, or another small item. So the answer is [A, B, C, D].\n\nHowever, since the options provided do not match this format, let's assume the candidate answers are:\n\nA. book\nB. toy\nC. piece of clothing\nD. small tool\n\nSo the answer is [A, B, C, D]."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nJ. coconut\nM. ruler\n"
+            },
+            {
+                "role": "assistant",
+                "content": "\"user\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nJ. coconut\nM. ruler\n\n[Output]\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo the answer is [M]."
+            }
+        ]
+    },
+    {
+        "story_index": 7,
+        "question_type": "1stB",
+        "story": "Norina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.",
+        "short_answer": "ruler",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 958,
+        "user_input": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nE. coconut\nU. ruler\n",
+        "output": "\"user\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nE. coconut\nU. ruler\n\n[Output]\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo the answer is [U].",
+        "map": {
+            "E": "A",
+            "U": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nNorina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.\n\n[Question]\n14. What did Norina do after putting the chest back?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "note\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo the answer is [ ].\n\nBased on the story provided:\n\n[Story]\nNorina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.\n\n[Question]\nWhat did Norina do after putting the chest back?\n\n[Output]\nAfter closing and putting back the chest, the story doesn't mention what Norina did next. Therefore, based on the information given, we cannot determine what she did after putting the chest back.\nSo the answer is [ ]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n\"label on the chest says ruler\" suggests there might be something misleading or unexpected inside. This can lead to questions about the contents of the chest and why it's labeled as such. Here are some related questions:"
+            },
+            {
+                "role": "assistant",
+                "content": "why not provide the candidate answers for these questions?"
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n7. What did Jobina notice about the chest when she saw it?"
+            },
+            {
+                "role": "assistant",
+                "content": "--)\r\nuser\r\n[Question]\r\n7. What did Jobina notice about the chest when she saw it?\r\n    \r\n    [Candidate Answers]\r\n    A. It had a label saying \"ruler\"\r\n    B. It contained a coconut\r\n    C. It was open\r\n    D. It was closed\r\n\r\n[Output]\r\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\r\nSo the answer is [A]."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nE. coconut\nU. ruler\n"
+            },
+            {
+                "role": "assistant",
+                "content": "\"user\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nE. coconut\nU. ruler\n\n[Output]\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo the answer is [U]."
+            }
+        ]
+    },
+    {
+        "story_index": 7,
+        "question_type": "1stB",
+        "story": "Norina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.",
+        "short_answer": "ruler",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 1059,
+        "user_input": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nJ. ruler\nZ. coconut\n",
+        "output": "Assistant\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\n\nSo the answer is [Z].\n\nJobina would expect to find a ruler in the chest since that is what the label said. After opening the chest and finding a coconut instead, Jobina would likely be surprised. \n\nTherefore, the output is:\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo the answer is [Z].",
+        "map": {
+            "Z": "A",
+            "J": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nNorina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.\n\n[Question]\n5. How did Norina react when she realized there was no ruler inside?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "抔oriously, based on the story provided, Norina opened the chest expecting to find a ruler as indicated by the label, but instead found a coconut. Since the story doesn't explicitly mention how Norina reacted upon realizing there was no ruler inside, we can infer that she likely felt surprised or confused. However, without more specific details, we cannot describe her exact reaction with certainty.\n\nThe phrase \"reacted\" suggests an emotional or physical response, which isn't detailed in the story. Therefore, I'll provide a general description:\n\nNorina opened the chest expecting to find a ruler as indicated by the label, but instead found a coconut. She probably felt surprised or confused.\n\nSince there's no explicit reaction mentioned, this is the best inference we can make."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n15. Did Jobina ask Norina about the contents of the chest?"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nBased on the story provided, there is no indication that Jobina asked Norina about the contents of the chest. The story only states that Jobina entered the loft and saw the chest, but it does not mention any conversation between them regarding the contents.\n\nSo, the answer is:\nNo, Jobina did not ask Norina about the contents of the chest.\n\nTherefore, the output is:\nJobina did not ask Norina about the contents of the chest. So the answer is [None]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n6. Did Norina think someone might have played a trick by labeling the chest incorrectly?"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nBased on the story provided, there is no explicit indication that Norina thought someone might have played a trick by labeling the chest incorrectly. The story simply states that Norina found a coconut inside the chest labeled as a ruler.\n\nSo, the answer is:\nNo, the story does not indicate that Norina thought someone might have played a trick by labeling the chest incorrectly.\n\nTherefore, the output is:\nNo, Norina did not think someone might have played a trick by labeling the chest incorrectly. So the answer is [None]."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nJ. ruler\nZ. coconut\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\n\nSo the answer is [Z].\n\nJobina would expect to find a ruler in the chest since that is what the label said. After opening the chest and finding a coconut instead, Jobina would likely be surprised. \n\nTherefore, the output is:\nPerson A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\nSo the answer is [Z]."
+            }
+        ]
+    },
+    {
+        "story_index": 7,
+        "question_type": "1stB",
+        "story": "Norina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.",
+        "short_answer": "ruler",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 907,
+        "user_input": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nM. coconut\nV. ruler\n",
+        "output": "user\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nM. coconut\nV. ruler\n\n[Output]\nPerson A is Norina. Person B is Jobina. The container is a box. Item X is ruler. Item Y is coconut.\nSo the answer is [V].",
+        "map": {
+            "M": "A",
+            "V": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nNorina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.\n\n[Question]\n3. Could the chest have been mislabeled?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "initial_response\nThe chest could have been mislabeled because it says \"ruler\" on the label but contains a coconut instead. Therefore, the answer is that yes, the chest could have been mislabeled.\n\nSo the answer is [yes]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n5. How did Norina react when she realized there was no ruler inside?"
+            },
+            {
+                "role": "assistant",
+                "content": "\n这个地图上的故事和问题，请按照给定的格式输出答案。\n\n[Story]\nNorina发现阁楼里有一个箱子。箱上标签写着“尺子”，但Norina打开后发现里面是一颗椰子，而不是尺子。Norina关上了箱子并放回原处。Jobina随后进入阁楼看到了这个箱子。\n\n[Question]\n5. 当Norina意识到箱子里没有尺子时，她有什么反应？\n"
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n6. Did Norina think someone might have played a trick by labeling the chest incorrectly?"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\n[Story]\nNorina发现阁楼里有一个箱子。箱上标签写着“尺子”，但Norina打开后发现里面是一颗椰子，而不是尺子。Norina关上了箱子并放回原处。Jobina随后进入阁楼看到了这个箱子。\n\n[Question]\n6. Did Norina think someone might have played a trick by labeling the chest incorrectly?\n\nPerson A is Norina. Person B is Jobina. The container is a box. Item X is ruler. Item Y is coconut.\nSo the answer is [B]."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nM. coconut\nV. ruler\n"
+            },
+            {
+                "role": "assistant",
+                "content": "user\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nM. coconut\nV. ruler\n\n[Output]\nPerson A is Norina. Person B is Jobina. The container is a box. Item X is ruler. Item Y is coconut.\nSo the answer is [V]."
+            }
+        ]
+    },
+    {
+        "story_index": 7,
+        "question_type": "1stB",
+        "story": "Norina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.",
+        "short_answer": "ruler",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "token_size": 808,
+        "user_input": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nI. coconut\nX. ruler\n",
+        "output": "Person A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\n\nSo the answer is [X].",
+        "map": {
+            "I": "A",
+            "X": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nNorina found a chest in the loft. The label on the chest says ruler. Norina couldn’t see what was inside the chest. Norina opened the chest and found a coconut. There is no ruler in the chest. Norina closed the chest and put it back. Jobina entered the loft and saw the chest.\n\n[Question]\n3. Could the chest have been mislabeled?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "initial_response\nThe chest could have been mislabeled because it says \"ruler\" on the label but contains a coconut instead. Therefore, the answer is that yes, the chest could have been mislabeled.\n\nSo the answer is [yes]."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n10. What other items could have been mistakenly placed in the chest instead of a ruler?"
+            },
+            {
+                "role": "assistant",
+                "content": "user\n[Question]\n10. What other items could have been mistakenly placed in the chest instead of a ruler?\n\nOther possible items that could have been mistakenly placed in the chest instead of a ruler include various objects such as a book, a toy, a piece of clothing, or any small item that might resemble a ruler in size but has a different function or purpose.\n\nSo the answer is: Other possible items include a book, a toy, a piece of clothing, or any small object resembling a ruler."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n14. What did Norina do after putting the chest back?"
+            },
+            {
+                "role": "assistant",
+                "content": "Assistant\nAfter putting the chest back, Norina likely left the loft or continued with her activities.\n\nSo the answer is: Norina put the chest back and then [left the loft/continued her activities]."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Jobina opened the chest, what would Jobina expect to find in the chest?\n\n[Candidate Answers]\nI. coconut\nX. ruler\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Norina. Person B is Jobina. The container is a chest. Item X is ruler. Item Y is coconut.\n\nSo the answer is [X]."
+            }
+        ]
+    }
+]

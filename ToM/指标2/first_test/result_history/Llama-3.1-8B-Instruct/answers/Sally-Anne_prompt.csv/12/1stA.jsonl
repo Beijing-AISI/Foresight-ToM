@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 12,
+        "question_type": "1stA",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nFelicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate. After Hillary came back to the conservatory, where would Felicity look for the guava?\n\nA. crate\nB. bin\n\nAnswer:",
+        "short_answer": "crate",
+        "answer": "A",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 400,
+        "user_input": "\n[Story]\nFelicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate. After Hillary came back to the conservatory, where would Felicity look for the guava?\n\n[Candidate Answers]\nP. bin\nQ. crate\n",
+        "output": "assistant\n\nPerson A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nSo, the answer is [Q].",
+        "map": {
+            "Q": "A",
+            "P": "B"
+        }
+    },
+    {
+        "token_size": 400,
+        "user_input": "\n[Story]\nFelicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate. After Hillary came back to the conservatory, where would Felicity look for the guava?\n\n[Candidate Answers]\nA. crate\nH. bin\n",
+        "output": "assistant\n\nPerson A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nSo, the answer is [A]",
+        "map": {
+            "A": "A",
+            "H": "B"
+        }
+    },
+    {
+        "token_size": 400,
+        "user_input": "\n[Story]\nFelicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate. After Hillary came back to the conservatory, where would Felicity look for the guava?\n\n[Candidate Answers]\nD. bin\nE. crate\n",
+        "output": "assistant\n\nPerson A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nSo, the answer is [E].",
+        "map": {
+            "E": "A",
+            "D": "B"
+        }
+    },
+    {
+        "token_size": 400,
+        "user_input": "\n[Story]\nFelicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate. After Hillary came back to the conservatory, where would Felicity look for the guava?\n\n[Candidate Answers]\nS. bin\nT. crate\n",
+        "output": "assistant\n\nPerson A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nSo, the answer is [T].",
+        "map": {
+            "T": "A",
+            "S": "B"
+        }
+    },
+    {
+        "token_size": 400,
+        "user_input": "\n[Story]\nFelicity and Hillary were hanging out in the conservatory. They saw a bin and a crate. They found a guava in the bin. Hillary left the conservatory. Felicity moved the guava to the crate. After Hillary came back to the conservatory, where would Felicity look for the guava?\n\n[Candidate Answers]\nD. crate\nI. bin\n",
+        "output": "assistant\n\nPerson A is Felicity. Person B is Hillary. The item is guava. The location X is bin. The location Y is crate.\nSo, the answer is [D]",
+        "map": {
+            "D": "A",
+            "I": "B"
+        }
+    }
+]

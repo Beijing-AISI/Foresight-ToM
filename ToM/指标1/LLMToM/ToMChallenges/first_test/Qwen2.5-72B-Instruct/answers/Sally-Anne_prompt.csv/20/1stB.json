@@ -1,0 +1,48 @@
+[
+    {
+        "story_index": 20,
+        "question_type": "1stB",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nSabra and Meira were hanging out in the bank. They saw a knapsack and a box. They found a button in the knapsack. Meira left the bank. Sabra moved the button to the box. After Meira came back to the bank, where would Meira look for the button?\n\nA. box\nB. knapsack\n\nAnswer:",
+        "short_answer": "knapsack",
+        "answer": "B",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "user_input": "\n[Story]\nSabra and Meira were hanging out in the bank. They saw a knapsack and a box. They found a button in the knapsack. Meira left the bank. Sabra moved the button to the box. After Meira came back to the bank, where would Meira look for the button?\n\n[Candidate Answers]\nG. box\nP. knapsack\n",
+        "output": "Person A is Sabra. Person B is Meira. The item is button. The location X is knapsack. The location Y is box.\nSo, the answer is [P]",
+        "map": {
+            "G": "A",
+            "P": "B"
+        }
+    },
+    {
+        "user_input": "\n[Story]\nSabra and Meira were hanging out in the bank. They saw a knapsack and a box. They found a button in the knapsack. Meira left the bank. Sabra moved the button to the box. After Meira came back to the bank, where would Meira look for the button?\n\n[Candidate Answers]\nK. box\nM. knapsack\n",
+        "output": "Person A is Sabra. Person B is Meira. The item is button. The location X is knapsack. The location Y is box.\nSo, the answer is [M]",
+        "map": {
+            "K": "A",
+            "M": "B"
+        }
+    },
+    {
+        "user_input": "\n[Story]\nSabra and Meira were hanging out in the bank. They saw a knapsack and a box. They found a button in the knapsack. Meira left the bank. Sabra moved the button to the box. After Meira came back to the bank, where would Meira look for the button?\n\n[Candidate Answers]\nB. knapsack\nZ. box\n",
+        "output": "Person A is Sabra. Person B is Meira. The item is button. The location X is knapsack. The location Y is box.\nSo, the answer is [B]",
+        "map": {
+            "Z": "A",
+            "B": "B"
+        }
+    },
+    {
+        "user_input": "\n[Story]\nSabra and Meira were hanging out in the bank. They saw a knapsack and a box. They found a button in the knapsack. Meira left the bank. Sabra moved the button to the box. After Meira came back to the bank, where would Meira look for the button?\n\n[Candidate Answers]\nB. knapsack\nK. box\n",
+        "output": "Person A is Sabra. Person B is Meira. The item is button. The location X is knapsack. The location Y is box.\nSo, the answer is [B]",
+        "map": {
+            "K": "A",
+            "B": "B"
+        }
+    },
+    {
+        "user_input": "\n[Story]\nSabra and Meira were hanging out in the bank. They saw a knapsack and a box. They found a button in the knapsack. Meira left the bank. Sabra moved the button to the box. After Meira came back to the bank, where would Meira look for the button?\n\n[Candidate Answers]\nC. knapsack\nJ. box\n",
+        "output": "Person A is Sabra. Person B is Meira. The item is button. The location X is knapsack. The location Y is box.\nSo, the answer is [C]",
+        "map": {
+            "J": "A",
+            "C": "B"
+        }
+    }
+]

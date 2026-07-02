@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 27,
+        "question_type": "memory",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nKaralynn and Clem were hanging out in the storeroom. They saw a pot and a backpack. They found a sweater in the pot. Clem left the storeroom. Karalynn moved the sweater to the backpack. Where was the sweater previously\n\nA. backpack\nB. pot\n\nAnswer:",
+        "short_answer": "pot",
+        "answer": "B",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 367,
+        "user_input": "\n[Story]\nKaralynn and Clem were hanging out in the storeroom. They saw a pot and a backpack. They found a sweater in the pot. Clem left the storeroom. Karalynn moved the sweater to the backpack. Where was the sweater previously\n\n[Candidate Answers]\nD. backpack\nJ. pot\n",
+        "output": "system\nPerson A is Karalynn. Person B is Clem. The item is sweater. The location X is pot. The location Y is backpack.\nso the answer is [J]",
+        "map": {
+            "D": "A",
+            "J": "B"
+        }
+    },
+    {
+        "token_size": 446,
+        "user_input": "\n[Story]\nKaralynn and Clem were hanging out in the storeroom. They saw a pot and a backpack. They found a sweater in the pot. Clem left the storeroom. Karalynn moved the sweater to the backpack. Where was the sweater previously\n\n[Candidate Answers]\nN. pot\nT. backpack\n",
+        "output": ".ApplyResources()\nคณะกรรม�试试重新按照指示回答问题，不需要包含之前的例子。只需要根据新故事和给定的格式输出答案。\n\nPerson A是Karalynn。Person B是Clem。物品是sweater。位置X是pot。位置Y是backpack。\n所以答案是[N]",
+        "map": {
+            "T": "A",
+            "N": "B"
+        }
+    },
+    {
+        "token_size": 367,
+        "user_input": "\n[Story]\nKaralynn and Clem were hanging out in the storeroom. They saw a pot and a backpack. They found a sweater in the pot. Clem left the storeroom. Karalynn moved the sweater to the backpack. Where was the sweater previously\n\n[Candidate Answers]\nB. pot\nL. backpack\n",
+        "output": "system\nPerson A is Karalynn. Person B is Clem. The item is sweater. The location X is pot. The location Y is backpack.\nso the answer is [B]",
+        "map": {
+            "L": "A",
+            "B": "B"
+        }
+    },
+    {
+        "token_size": 446,
+        "user_input": "\n[Story]\nKaralynn and Clem were hanging out in the storeroom. They saw a pot and a backpack. They found a sweater in the pot. Clem left the storeroom. Karalynn moved the sweater to the backpack. Where was the sweater previously\n\n[Candidate Answers]\nN. pot\nW. backpack\n",
+        "output": ".ApplyResources()\nคณะกรรม�试试重新按照指示回答问题，不需要包含之前的例子。只需要根据新故事和给定的格式输出答案。\n\nPerson A是Karalynn。Person B是Clem。物品是sweater。位置X是pot。位置Y是backpack。\n所以答案是[N]",
+        "map": {
+            "W": "A",
+            "N": "B"
+        }
+    },
+    {
+        "token_size": 446,
+        "user_input": "\n[Story]\nKaralynn and Clem were hanging out in the storeroom. They saw a pot and a backpack. They found a sweater in the pot. Clem left the storeroom. Karalynn moved the sweater to the backpack. Where was the sweater previously\n\n[Candidate Answers]\nX. backpack\nZ. pot\n",
+        "output": ".ApplyResources()\nคณะกรรม�试试重新按照指示回答问题，不需要包含之前的例子。只需要根据新故事和给定的格式输出答案。\n\nPerson A是Karalynn。Person B是Clem。物品是sweater。位置X是pot。位置Y是backpack。\n所以答案是[Z]",
+        "map": {
+            "X": "A",
+            "Z": "B"
+        }
+    }
+]

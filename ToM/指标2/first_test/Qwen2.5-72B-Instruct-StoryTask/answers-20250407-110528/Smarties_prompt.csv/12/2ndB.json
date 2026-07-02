@@ -1,0 +1,242 @@
+[
+    {
+        "story_index": 12,
+        "question_type": "2ndB",
+        "story": "Felicity found a crate in the conservatory. The label on the crate says carrot. Felicity couldn’t see what was inside the crate. Felicity opened the crate and found a cup. There is no carrot in the crate. Felicity closed the crate and put it back. Hillary entered the conservatory and saw the crate.",
+        "short_answer": "carrot",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nAfter Hillary opened the crate, what would Hillary think Felicity would expect to find in the crate?\n\n[Candidate Answers]\nA. carrot\nJ. cup\n",
+        "output": "Person A is Felicity. Person B is Hillary. The item is cup. The location X is conservatory. The location Y is inside the crate.\nSo, the answer is [A].",
+        "map": {
+            "J": "A",
+            "A": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nFelicity found a crate in the conservatory. The label on the crate says carrot. Felicity couldn’t see what was inside the crate. Felicity opened the crate and found a cup. There is no carrot in the crate. Felicity closed the crate and put it back. Hillary entered the conservatory and saw the crate.\n\n[Question]\nWhy did Felicity close the crate and put it back after finding the cup?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Felicity closed the crate and put it back after finding the cup because she likely wanted to maintain the order and appearance of the conservatory, and possibly to avoid any confusion for others who might see the crate later. By putting it back, she ensured that the crate was in its original state, even though the contents did not match the label."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Hillary think when she sees the crate in the conservatory?"
+            },
+            {
+                "role": "assistant",
+                "content": "Hillary might think that the crate is supposed to contain carrots, as the label on the crate says \"carrot.\" She may be curious about why the crate is closed and might wonder if the carrots are inside or if there is something else in the crate. She might also be intrigued or confused if she decides to open the crate and finds a cup instead of carrots."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nDid Felicity or Hillary suspect any mischief or misunderstanding regarding the crate?"
+            },
+            {
+                "role": "assistant",
+                "content": "Felicity likely suspected a misunderstanding when she opened the crate and found a cup instead of carrots. She may have been surprised or curious about why the contents did not match the label. Hillary, on the other hand, might not have suspected any mischief or misunderstanding at first, as she only saw the crate with the label \"carrot\" and had no prior knowledge of its contents. However, if Hillary decides to open the crate and finds a cup, she might then become suspicious or curious about the discrepancy."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Hillary opened the crate, what would Hillary think Felicity would expect to find in the crate?\n\n[Candidate Answers]\nA. carrot\nJ. cup\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Felicity. Person B is Hillary. The item is cup. The location X is conservatory. The location Y is inside the crate.\nSo, the answer is [A]."
+            }
+        ]
+    },
+    {
+        "story_index": 12,
+        "question_type": "2ndB",
+        "story": "Felicity found a crate in the conservatory. The label on the crate says carrot. Felicity couldn’t see what was inside the crate. Felicity opened the crate and found a cup. There is no carrot in the crate. Felicity closed the crate and put it back. Hillary entered the conservatory and saw the crate.",
+        "short_answer": "carrot",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nAfter Hillary opened the crate, what would Hillary think Felicity would expect to find in the crate?\n\n[Candidate Answers]\nL. carrot\nU. cup\n",
+        "output": "Person A is Felicity. Person B is Hillary. The container is a crate. Item X is carrot. Item Y is cup.\nSo, the answer is [L].",
+        "map": {
+            "U": "A",
+            "L": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nFelicity found a crate in the conservatory. The label on the crate says carrot. Felicity couldn’t see what was inside the crate. Felicity opened the crate and found a cup. There is no carrot in the crate. Felicity closed the crate and put it back. Hillary entered the conservatory and saw the crate.\n\n[Question]\nWhy couldn't Felicity see what was inside the crate initially?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Felicity couldn't see what was inside the crate initially because the crate was closed, and the contents were not visible from the outside."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhy did Felicity close the crate and put it back?"
+            },
+            {
+                "role": "assistant",
+                "content": "Felicity closed the crate and put it back likely to maintain the order of the conservatory and ensure that the crate was returned to its original state after she had inspected its contents."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Felicity have expected to find in the crate based on the label?"
+            },
+            {
+                "role": "assistant",
+                "content": "Felicity might have expected to find a carrot in the crate based on the label."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Hillary opened the crate, what would Hillary think Felicity would expect to find in the crate?\n\n[Candidate Answers]\nL. carrot\nU. cup\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Felicity. Person B is Hillary. The container is a crate. Item X is carrot. Item Y is cup.\nSo, the answer is [L]."
+            }
+        ]
+    },
+    {
+        "story_index": 12,
+        "question_type": "2ndB",
+        "story": "Felicity found a crate in the conservatory. The label on the crate says carrot. Felicity couldn’t see what was inside the crate. Felicity opened the crate and found a cup. There is no carrot in the crate. Felicity closed the crate and put it back. Hillary entered the conservatory and saw the crate.",
+        "short_answer": "carrot",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nAfter Hillary opened the crate, what would Hillary think Felicity would expect to find in the crate?\n\n[Candidate Answers]\nF. cup\nM. carrot\n",
+        "output": "Person A is Felicity. Person B is Hillary. The container is a crate. Item X is carrot. Item Y is cup.\nSo, the answer is [M]",
+        "map": {
+            "F": "A",
+            "M": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nFelicity found a crate in the conservatory. The label on the crate says carrot. Felicity couldn’t see what was inside the crate. Felicity opened the crate and found a cup. There is no carrot in the crate. Felicity closed the crate and put it back. Hillary entered the conservatory and saw the crate.\n\n[Question]\nWhat did Felicity do after finding the cup in the crate?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Felicity closed the crate and put it back."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nDid Hillary open the crate to check its contents?"
+            },
+            {
+                "role": "assistant",
+                "content": "The story does not specify whether Hillary opened the crate to check its contents."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat did Felicity expect to find in the crate based on the label?"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Felicity. Person B is Hillary. The container is a crate. Item X is carrot. Item Y is cup.\nSo, the answer is [B]"
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Hillary opened the crate, what would Hillary think Felicity would expect to find in the crate?\n\n[Candidate Answers]\nF. cup\nM. carrot\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Felicity. Person B is Hillary. The container is a crate. Item X is carrot. Item Y is cup.\nSo, the answer is [M]"
+            }
+        ]
+    },
+    {
+        "story_index": 12,
+        "question_type": "2ndB",
+        "story": "Felicity found a crate in the conservatory. The label on the crate says carrot. Felicity couldn’t see what was inside the crate. Felicity opened the crate and found a cup. There is no carrot in the crate. Felicity closed the crate and put it back. Hillary entered the conservatory and saw the crate.",
+        "short_answer": "carrot",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nAfter Hillary opened the crate, what would Hillary think Felicity would expect to find in the crate?\n\n[Candidate Answers]\nH. cup\nW. carrot\n",
+        "output": "Person A is Felicity. Person B is Hillary. The item is carrot. The location X is the conservatory. The location Y is inside the crate.\nSo, the answer is [W]",
+        "map": {
+            "H": "A",
+            "W": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nFelicity found a crate in the conservatory. The label on the crate says carrot. Felicity couldn’t see what was inside the crate. Felicity opened the crate and found a cup. There is no carrot in the crate. Felicity closed the crate and put it back. Hillary entered the conservatory and saw the crate.\n\n[Question]\nWhat might Felicity and Hillary discuss about the crate?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Felicity and Hillary might discuss the contents of the crate and the discrepancy between the label and the actual item inside. They could talk about why there is a cup instead of a carrot and speculate on who might have placed the cup there or if the label was mistakenly put on the crate. They might also consider what to do with the crate and whether they should move it or label it correctly."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Felicity do the next time she sees the crate?"
+            },
+            {
+                "role": "assistant",
+                "content": "Felicity might check the crate again to see if the contents have changed or if there is any new information about why the label is incorrect. She could also consider relabeling the crate to accurately reflect its contents or discuss the situation with someone else to get more insight."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Felicity have expected to find in the crate based on the label?"
+            },
+            {
+                "role": "assistant",
+                "content": "Felicity might have expected to find a carrot in the crate based on the label."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Hillary opened the crate, what would Hillary think Felicity would expect to find in the crate?\n\n[Candidate Answers]\nH. cup\nW. carrot\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Felicity. Person B is Hillary. The item is carrot. The location X is the conservatory. The location Y is inside the crate.\nSo, the answer is [W]"
+            }
+        ]
+    },
+    {
+        "story_index": 12,
+        "question_type": "2ndB",
+        "story": "Felicity found a crate in the conservatory. The label on the crate says carrot. Felicity couldn’t see what was inside the crate. Felicity opened the crate and found a cup. There is no carrot in the crate. Felicity closed the crate and put it back. Hillary entered the conservatory and saw the crate.",
+        "short_answer": "carrot",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nAfter Hillary opened the crate, what would Hillary think Felicity would expect to find in the crate?\n\n[Candidate Answers]\nF. cup\nT. carrot\n",
+        "output": "Person A is Felicity. Person B is Hillary. The container is a crate. Item X is carrot. Item Y is cup.\nSo, the answer is [T].",
+        "map": {
+            "F": "A",
+            "T": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nFelicity found a crate in the conservatory. The label on the crate says carrot. Felicity couldn’t see what was inside the crate. Felicity opened the crate and found a cup. There is no carrot in the crate. Felicity closed the crate and put it back. Hillary entered the conservatory and saw the crate.\n\n[Question]\nDid Felicity and Hillary discuss the contents of the crate?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The story does not mention whether Felicity and Hillary discussed the contents of the crate. Therefore, based on the information provided, we cannot determine if they had a discussion about it."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nDid Hillary know what was inside the crate before she saw it?"
+            },
+            {
+                "role": "assistant",
+                "content": "The story does not provide any information about Hillary's knowledge of the crate's contents before she saw it. Therefore, based on the information given, we cannot determine if Hillary knew what was inside the crate before she saw it."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Hillary think when she sees the crate in the conservatory?"
+            },
+            {
+                "role": "assistant",
+                "content": "Hillary might be curious or surprised when she sees the crate in the conservatory, especially if she notices the label that says \"carrot\" but is not aware that the crate actually contains a cup. She might wonder why there is a crate there and what is inside it."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Hillary opened the crate, what would Hillary think Felicity would expect to find in the crate?\n\n[Candidate Answers]\nF. cup\nT. carrot\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Felicity. Person B is Hillary. The container is a crate. Item X is carrot. Item Y is cup.\nSo, the answer is [T]."
+            }
+        ]
+    }
+]

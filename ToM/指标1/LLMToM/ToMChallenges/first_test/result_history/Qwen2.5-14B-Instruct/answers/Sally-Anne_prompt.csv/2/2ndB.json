@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 2,
+        "question_type": "2ndB",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nSabra and Hillary were hanging out in the bedroom. They saw a briefcase and a bucket. They found a mitten in the briefcase. Hillary left the bedroom. Sabra moved the mitten to the bucket. After Hillary came back to the bedroom, where would Hillary think Sabra would look for the mitten?\n\nA. bucket\nB. briefcase\n\nAnswer:",
+        "short_answer": "briefcase",
+        "answer": "B",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 381,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the bedroom. They saw a briefcase and a bucket. They found a mitten in the briefcase. Hillary left the bedroom. Sabra moved the mitten to the bucket. After Hillary came back to the bedroom, where would Hillary think Sabra would look for the mitten?\n\n[Candidate Answers]\nD. bucket\nH. briefcase\n",
+        "output": "foundland\n\nPerson A is Sabra. Person B is Hillary. The item is mitten. The location X is briefcase. The location Y is bucket.\nso the answer is [H]",
+        "map": {
+            "D": "A",
+            "H": "B"
+        }
+    },
+    {
+        "token_size": 381,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the bedroom. They saw a briefcase and a bucket. They found a mitten in the briefcase. Hillary left the bedroom. Sabra moved the mitten to the bucket. After Hillary came back to the bedroom, where would Hillary think Sabra would look for the mitten?\n\n[Candidate Answers]\nA. briefcase\nN. bucket\n",
+        "output": "foundland\n\nPerson A is Sabra. Person B is Hillary. The item is mitten. The location X is briefcase. The location Y is bucket.\nso the answer is [A]",
+        "map": {
+            "N": "A",
+            "A": "B"
+        }
+    },
+    {
+        "token_size": 381,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the bedroom. They saw a briefcase and a bucket. They found a mitten in the briefcase. Hillary left the bedroom. Sabra moved the mitten to the bucket. After Hillary came back to the bedroom, where would Hillary think Sabra would look for the mitten?\n\n[Candidate Answers]\nC. bucket\nI. briefcase\n",
+        "output": "foundland\n\nPerson A is Sabra. Person B is Hillary. The item is mitten. The location X is briefcase. The location Y is bucket.\nso the answer is [I]",
+        "map": {
+            "C": "A",
+            "I": "B"
+        }
+    },
+    {
+        "token_size": 381,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the bedroom. They saw a briefcase and a bucket. They found a mitten in the briefcase. Hillary left the bedroom. Sabra moved the mitten to the bucket. After Hillary came back to the bedroom, where would Hillary think Sabra would look for the mitten?\n\n[Candidate Answers]\nJ. briefcase\nM. bucket\n",
+        "output": "foundland\n\nPerson A is Sabra. Person B is Hillary. The item is mitten. The location X is briefcase. The location Y is bucket.\nso the answer is [J]",
+        "map": {
+            "M": "A",
+            "J": "B"
+        }
+    },
+    {
+        "token_size": 381,
+        "user_input": "\n[Story]\nSabra and Hillary were hanging out in the bedroom. They saw a briefcase and a bucket. They found a mitten in the briefcase. Hillary left the bedroom. Sabra moved the mitten to the bucket. After Hillary came back to the bedroom, where would Hillary think Sabra would look for the mitten?\n\n[Candidate Answers]\nL. bucket\nX. briefcase\n",
+        "output": "foundland\n\nPerson A is Sabra. Person B is Hillary. The item is mitten. The location X is briefcase. The location Y is bucket.\nso the answer is [X]",
+        "map": {
+            "L": "A",
+            "X": "B"
+        }
+    }
+]

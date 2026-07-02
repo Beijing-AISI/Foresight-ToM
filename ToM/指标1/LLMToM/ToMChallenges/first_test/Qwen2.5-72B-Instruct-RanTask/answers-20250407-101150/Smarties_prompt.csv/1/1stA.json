@@ -1,0 +1,242 @@
+[
+    {
+        "story_index": 1,
+        "question_type": "1stA",
+        "story": "Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back. Juanita entered the attic and saw the bag.",
+        "short_answer": "vest",
+        "answer": "A",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nAfter Juanita opened the bag, what would Neila expect to find in the bag?\n\n[Candidate Answers]\nA. plate\nR. vest\n",
+        "output": "Person A is Neila. Person B is Juanita. The item is vest. The location X is attic. The location Y is inside the bag.\nSo, the answer is [A].",
+        "map": {
+            "R": "A",
+            "A": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nNeila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back. Juanita entered the attic and saw the bag.\n\n[Question]\nIs 2111159 a prime number?\n\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n\nHowever, the question about whether 2111159 is a prime number is unrelated to the story. To answer the question:\n\n2111159 is a prime number."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIn which year was the ancient Chinese poet Li Bai born?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The ancient Chinese poet Li Bai was born in the year 701."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat could be the possible causes of toothache?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Toothache can be caused by a variety of issues, including tooth decay, gum disease, a cracked tooth, an exposed tooth root, a sinus condition, or an abscess. Other possible causes include enamel erosion, a jaw joint disorder (TMJ), or bruxism (teeth grinding)."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Juanita opened the bag, what would Neila expect to find in the bag?\n\n[Candidate Answers]\nA. plate\nR. vest\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Neila. Person B is Juanita. The item is vest. The location X is attic. The location Y is inside the bag.\nSo, the answer is [A]."
+            }
+        ]
+    },
+    {
+        "story_index": 1,
+        "question_type": "1stA",
+        "story": "Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back. Juanita entered the attic and saw the bag.",
+        "short_answer": "vest",
+        "answer": "A",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nAfter Juanita opened the bag, what would Neila expect to find in the bag?\n\n[Candidate Answers]\nL. vest\nU. plate\n",
+        "output": "Person A is Neila. Person B is Juanita. The item is vest. The location X is attic. The location Y is inside the bag.\nSo, the answer is [U]. \n\n(Note: Neila would expect to find the plate, as that is what the label on the bag indicates, even though she previously found a vest inside.)",
+        "map": {
+            "L": "A",
+            "U": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nNeila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back. Juanita entered the attic and saw the bag.\n\n[Question]\n17592+56781=?\n\n"
+            },
+            {
+                "role": "assistant",
+                "content": "17592 + 56781 = 74373"
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIn which year was the ancient Chinese poet Li Bai born?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The ancient Chinese poet Li Bai was born in the year 701."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat could be the possible causes of toothache?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Toothache can be caused by several factors, including cavities, gum disease, a cracked tooth, an exposed tooth root, or a sinus condition. Other possible causes include tooth decay, an abscess, or a jaw disorder. Poor dental hygiene and certain lifestyle habits, such as grinding your teeth or eating very hard foods, can also contribute to tooth pain."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Juanita opened the bag, what would Neila expect to find in the bag?\n\n[Candidate Answers]\nL. vest\nU. plate\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Neila. Person B is Juanita. The item is vest. The location X is attic. The location Y is inside the bag.\nSo, the answer is [U]. \n\n(Note: Neila would expect to find the plate, as that is what the label on the bag indicates, even though she previously found a vest inside.)"
+            }
+        ]
+    },
+    {
+        "story_index": 1,
+        "question_type": "1stA",
+        "story": "Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back. Juanita entered the attic and saw the bag.",
+        "short_answer": "vest",
+        "answer": "A",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nAfter Juanita opened the bag, what would Neila expect to find in the bag?\n\n[Candidate Answers]\nL. plate\nZ. vest\n",
+        "output": "Person A is Neila. Person B is Juanita. The item is vest. The location X is attic. The location Y is inside the bag.\nSo, the answer is [Z].",
+        "map": {
+            "Z": "A",
+            "L": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nNeila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back. Juanita entered the attic and saw the bag.\n\n[Question]\n17592+56781=?\n\n"
+            },
+            {
+                "role": "assistant",
+                "content": "17592 + 56781 = 74373"
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhere does the phrase 'to be or not to be' come from?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIs 15972 a prime number?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "No, 15972 is not a prime number. It is divisible by 2, 3, 4, 6, 11, and other numbers."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Juanita opened the bag, what would Neila expect to find in the bag?\n\n[Candidate Answers]\nL. plate\nZ. vest\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Neila. Person B is Juanita. The item is vest. The location X is attic. The location Y is inside the bag.\nSo, the answer is [Z]."
+            }
+        ]
+    },
+    {
+        "story_index": 1,
+        "question_type": "1stA",
+        "story": "Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back. Juanita entered the attic and saw the bag.",
+        "short_answer": "vest",
+        "answer": "A",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nAfter Juanita opened the bag, what would Neila expect to find in the bag?\n\n[Candidate Answers]\nG. plate\nL. vest\n",
+        "output": "Person A is Neila. Person B is Juanita. The item is vest. The location X is attic. The location Y is inside the bag.\nSo, the answer is [L].",
+        "map": {
+            "L": "A",
+            "G": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nNeila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back. Juanita entered the attic and saw the bag.\n\n[Question]\nWhere is the origin of chocolate?\n\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The origin of chocolate can be traced back to the ancient civilizations of Mesoamerica, particularly the Olmec, Maya, and Aztec cultures. These civilizations cultivated cacao trees and used the beans to make a bitter drink, which was highly valued and often used in religious and cultural rituals."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n28992+99581=?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "28992 + 99581 = 128573"
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n17592+56781=?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "17592 + 56781 = 74373"
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Juanita opened the bag, what would Neila expect to find in the bag?\n\n[Candidate Answers]\nG. plate\nL. vest\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Neila. Person B is Juanita. The item is vest. The location X is attic. The location Y is inside the bag.\nSo, the answer is [L]."
+            }
+        ]
+    },
+    {
+        "story_index": 1,
+        "question_type": "1stA",
+        "story": "Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back. Juanita entered the attic and saw the bag.",
+        "short_answer": "vest",
+        "answer": "A",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nAfter Juanita opened the bag, what would Neila expect to find in the bag?\n\n[Candidate Answers]\nF. vest\nO. plate\n",
+        "output": "Person A is Neila. Person B is Juanita. The item is vest. The location X is attic. The location Y is attic.\nSo, the answer is [O]. \n\n(Note: Neila would expect to find a plate in the bag, based on the label, even though she had already found a vest inside when she opened it earlier.)",
+        "map": {
+            "F": "A",
+            "O": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nNeila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back. Juanita entered the attic and saw the bag.\n\n[Question]\n28992+99581=?\n\n"
+            },
+            {
+                "role": "assistant",
+                "content": "28992 + 99581 = 128573"
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nIn which year was the ancient Chinese poet Li Bai born?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Li Bai, the ancient Chinese poet, was born in the year 701."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\n17592+56781=?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "17592 + 56781 = 74373"
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nAfter Juanita opened the bag, what would Neila expect to find in the bag?\n\n[Candidate Answers]\nF. vest\nO. plate\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Neila. Person B is Juanita. The item is vest. The location X is attic. The location Y is attic.\nSo, the answer is [O]. \n\n(Note: Neila would expect to find a plate in the bag, based on the label, even though she had already found a vest inside when she opened it earlier.)"
+            }
+        ]
+    }
+]

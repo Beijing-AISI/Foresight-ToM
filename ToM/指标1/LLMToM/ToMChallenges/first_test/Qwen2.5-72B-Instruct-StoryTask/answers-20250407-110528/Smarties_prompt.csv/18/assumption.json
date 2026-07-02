@@ -1,0 +1,242 @@
+[
+    {
+        "story_index": 18,
+        "question_type": "assumption",
+        "story": "Daphene found a case in the market. The label on the case says peach. Daphene couldn’t see what was inside the case. Daphene opened the case and found a cardigan. There is no peach in the case. Daphene closed the case and put it back. Melania entered the market and saw the case.",
+        "short_answer": "peach",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhat was supposed to be in the case?\n\n[Candidate Answers]\nD. peach\nN. cardigan\n",
+        "output": "Person A is Daphene. Person B is Melania. The item is peach. The location X is the market. The location Y is the case.\nSo, the answer is [D].",
+        "map": {
+            "N": "A",
+            "D": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nDaphene found a case in the market. The label on the case says peach. Daphene couldn’t see what was inside the case. Daphene opened the case and found a cardigan. There is no peach in the case. Daphene closed the case and put it back. Melania entered the market and saw the case.\n\n[Question]\nWhat did Melania think when she saw the case?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Since the story does not provide specific details about what Melania thought when she saw the case, we can only infer based on the context. Melania likely saw the case labeled \"peach\" and may have been curious or surprised to see that it contained a cardigan instead of a peach. However, without more information, we cannot determine her exact thoughts."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhy did Daphene close the case and put it back?"
+            },
+            {
+                "role": "assistant",
+                "content": "Daphene closed the case and put it back because she had already discovered that the contents of the case did not match the label, and there was no further action or need for her to keep the case open. She likely wanted to leave it as she found it, perhaps out of respect for the owner or the market's arrangement."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat was Daphene's reaction when she found a cardigan instead of a peach?"
+            },
+            {
+                "role": "assistant",
+                "content": "The story does not explicitly mention Daphene's reaction when she found a cardigan instead of a peach. However, it can be inferred that she was likely surprised or curious, given the unexpected contents of the case. She may have felt a mix of confusion and amusement at the mismatch between the label and the actual item."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the case?\n\n[Candidate Answers]\nD. peach\nN. cardigan\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Daphene. Person B is Melania. The item is peach. The location X is the market. The location Y is the case.\nSo, the answer is [D]."
+            }
+        ]
+    },
+    {
+        "story_index": 18,
+        "question_type": "assumption",
+        "story": "Daphene found a case in the market. The label on the case says peach. Daphene couldn’t see what was inside the case. Daphene opened the case and found a cardigan. There is no peach in the case. Daphene closed the case and put it back. Melania entered the market and saw the case.",
+        "short_answer": "peach",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhat was supposed to be in the case?\n\n[Candidate Answers]\nG. peach\nQ. cardigan\n",
+        "output": "Person A is Daphene. Person B is Melania. The container is a case. Item X is peach. Item Y is cardigan.\nSo, the answer is [G].",
+        "map": {
+            "Q": "A",
+            "G": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nDaphene found a case in the market. The label on the case says peach. Daphene couldn’t see what was inside the case. Daphene opened the case and found a cardigan. There is no peach in the case. Daphene closed the case and put it back. Melania entered the market and saw the case.\n\n[Question]\nWhat might Melania think when she sees the case?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Melania might think that the case is labeled incorrectly since the label says \"peach\" but Daphene found a cardigan inside. She might be curious about what is actually inside the case and wonder why it was labeled as something it is not."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat could have motivated Daphene to open the case in the first place?"
+            },
+            {
+                "role": "assistant",
+                "content": "Daphene might have been curious about the contents of the case because it was labeled as containing a peach, which is unusual for a case. She might have been intrigued by the possibility of finding a fresh peach inside or simply wanted to verify if the label was accurate. Additionally, she might have been interested in the case itself or thought it could be useful for her."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhy couldn't Daphene see what was inside the case before opening it?"
+            },
+            {
+                "role": "assistant",
+                "content": "Daphene couldn’t see what was inside the case before opening it because the case was likely closed and opaque, preventing her from seeing the contents through the exterior."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the case?\n\n[Candidate Answers]\nG. peach\nQ. cardigan\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Daphene. Person B is Melania. The container is a case. Item X is peach. Item Y is cardigan.\nSo, the answer is [G]."
+            }
+        ]
+    },
+    {
+        "story_index": 18,
+        "question_type": "assumption",
+        "story": "Daphene found a case in the market. The label on the case says peach. Daphene couldn’t see what was inside the case. Daphene opened the case and found a cardigan. There is no peach in the case. Daphene closed the case and put it back. Melania entered the market and saw the case.",
+        "short_answer": "peach",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhat was supposed to be in the case?\n\n[Candidate Answers]\nE. peach\nI. cardigan\n",
+        "output": "Person A is Daphene. Person B is Melania. The item is a cardigan. The location X is the market. The location Y is the case.\nSo, the answer is [E]",
+        "map": {
+            "I": "A",
+            "E": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nDaphene found a case in the market. The label on the case says peach. Daphene couldn’t see what was inside the case. Daphene opened the case and found a cardigan. There is no peach in the case. Daphene closed the case and put it back. Melania entered the market and saw the case.\n\n[Question]\nWhat could be the significance of the cardigan in the case?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The significance of the cardigan in the case is not explicitly stated in the story. However, it could suggest that the case was mislabeled, or it might indicate that the cardigan was placed there intentionally, possibly by someone who wanted to hide or transport it discreetly. Without more context, it's difficult to determine a specific significance, but it could be a personal item, a gift, or something of value to the person who placed it there."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat could be the reason for the label on the case being incorrect?"
+            },
+            {
+                "role": "assistant",
+                "content": "The label on the case being incorrect could be due to a few reasons. It might have been a mistake, where the label was accidentally placed on the wrong case. Alternatively, someone could have intentionally mislabeled the case to conceal its contents, perhaps to avoid drawing attention or for some other hidden purpose. Another possibility is that the contents of the case were changed, but the label was not updated. Without more information, it's hard to pinpoint the exact reason, but these are some plausible explanations."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Daphene have expected to find in the case based on the label?"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Daphene. Person B is Melania. The item is a cardigan. The location X is the market. The location Y is the case.\nSo, the answer is [B]\n\nHowever, to directly answer the question:\n\nDaphene might have expected to find a peach in the case based on the label."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the case?\n\n[Candidate Answers]\nE. peach\nI. cardigan\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Daphene. Person B is Melania. The item is a cardigan. The location X is the market. The location Y is the case.\nSo, the answer is [E]"
+            }
+        ]
+    },
+    {
+        "story_index": 18,
+        "question_type": "assumption",
+        "story": "Daphene found a case in the market. The label on the case says peach. Daphene couldn’t see what was inside the case. Daphene opened the case and found a cardigan. There is no peach in the case. Daphene closed the case and put it back. Melania entered the market and saw the case.",
+        "short_answer": "peach",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhat was supposed to be in the case?\n\n[Candidate Answers]\nH. peach\nL. cardigan\n",
+        "output": "Person A is Daphene. Person B is Melania. The item is peach. The location X is the market. The location Y is the case.\nSo, the answer is [H].",
+        "map": {
+            "L": "A",
+            "H": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nDaphene found a case in the market. The label on the case says peach. Daphene couldn’t see what was inside the case. Daphene opened the case and found a cardigan. There is no peach in the case. Daphene closed the case and put it back. Melania entered the market and saw the case.\n\n[Question]\nDid Daphene or Melania report the incorrect label to the market staff?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The story does not mention whether Daphene or Melania reported the incorrect label to the market staff. Therefore, we cannot determine who, if anyone, reported it based on the information provided."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nDid Melania notice the case Daphene had opened?"
+            },
+            {
+                "role": "assistant",
+                "content": "The story mentions that Melania entered the market and saw the case, but it does not specify whether Melania noticed that the case had been opened by Daphene. Therefore, we cannot determine if Melania noticed the case Daphene had opened based on the information provided."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Daphene have thought about the person who labeled the case incorrectly?"
+            },
+            {
+                "role": "assistant",
+                "content": "Daphene might have thought that the person who labeled the case incorrectly was careless or made a mistake. She might have felt confused or frustrated upon discovering that the label did not match the contents of the case."
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the case?\n\n[Candidate Answers]\nH. peach\nL. cardigan\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Daphene. Person B is Melania. The item is peach. The location X is the market. The location Y is the case.\nSo, the answer is [H]."
+            }
+        ]
+    },
+    {
+        "story_index": 18,
+        "question_type": "assumption",
+        "story": "Daphene found a case in the market. The label on the case says peach. Daphene couldn’t see what was inside the case. Daphene opened the case and found a cardigan. There is no peach in the case. Daphene closed the case and put it back. Melania entered the market and saw the case.",
+        "short_answer": "peach",
+        "answer": "B",
+        "system_input": "\n    The story is about Person A found a container. The label on the container says item X, but there’s no item X in the\n    container. Person A opened the container and found item Y. Later, Person B entered the room and saw the container.\n    \n    [Story]\n    Neila found a bag in the attic. The label on the bag says plate. Neila couldn’t see what was inside the bag. Neila opened the bag and found a vest. There is no plate in the bag. Neila closed the bag and put it back.\n    \n    [Question]\n    Where does the phrase 'to be or not to be' come from?\n    \n    [Output]\n    The phrase 'to be or not to be' comes from William Shakespeare's play Hamlet.\n    \n    [Question]\n    Where was supposed to be in the bag?\n    \n    [Candidate Answers]\n    A. vest\n    B. plate\n    \n    [Output]\n    Person A is Neila. Person B is Juanita. The container is a bag. Item X is plate. Item Y is vest.\n    So, the answer is [A]\n    \n    Read and understand the examples above. \n    Story and questions are given and outputs are required.\n    Strictly follow the Note to provide outputs.\n    \n    Note:\n    (1) When there are no [Candidate Answers] following the [Question], answer the question freely, but be careful not exceed 200 words.\n    \n    (2) When there are [Candidate Answers] following the [Question], The output should strictly follow the format:\n        Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n        And finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n    ",
+        "user_input": "\n[Question]\nWhat was supposed to be in the case?\n\n[Candidate Answers]\nL. cardigan\nM. peach\n",
+        "output": "Person A is Daphene. Person B is Melania. The container is a case. Item X is peach. Item Y is cardigan.\nSo, the answer is [M]",
+        "map": {
+            "L": "A",
+            "M": "B"
+        },
+        "conversation_history": [
+            {
+                "role": "user",
+                "content": "\n[Story]\nDaphene found a case in the market. The label on the case says peach. Daphene couldn’t see what was inside the case. Daphene opened the case and found a cardigan. There is no peach in the case. Daphene closed the case and put it back. Melania entered the market and saw the case.\n\n[Question]\nWas Daphene surprised to find a cardigan instead of peaches?\n"
+            },
+            {
+                "role": "assistant",
+                "content": "The story does not explicitly state whether Daphene was surprised to find a cardigan instead of peaches. However, given the context, it is reasonable to infer that Daphene might have been surprised because the label on the case indicated it should contain peaches, but she found a cardigan instead."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Melania have thought about the case?"
+            },
+            {
+                "role": "assistant",
+                "content": "The story does not provide specific information about what Melania thought about the case. However, given that the label on the case says \"peach\" and Melania saw the case, she might have assumed that the case contained peaches, without knowing that it actually contained a cardigan."
+            },
+            {
+                "role": "user",
+                "content": "[Question]\nWhat might Daphene have expected to find inside the case?"
+            },
+            {
+                "role": "assistant",
+                "content": "Daphene might have expected to find peaches inside the case, given that the label on the case said \"peach.\""
+            },
+            {
+                "role": "user",
+                "content": "\n[Question]\nWhat was supposed to be in the case?\n\n[Candidate Answers]\nL. cardigan\nM. peach\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Person A is Daphene. Person B is Melania. The container is a case. Item X is peach. Item Y is cardigan.\nSo, the answer is [M]"
+            }
+        ]
+    }
+]

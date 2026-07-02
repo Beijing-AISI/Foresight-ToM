@@ -1,0 +1,53 @@
+[
+    {
+        "story_index": 4,
+        "question_type": "2ndA",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nClio and Daphene were hanging out in the garage. They saw a rack and a backpack. They found a bottle in the rack. Daphene left the garage. Clio moved the bottle to the backpack. After Daphene came back to the garage, where would Clio think Daphene would look for the bottle?\n\nA. backpack\nB. rack\n\nAnswer:",
+        "short_answer": "rack",
+        "answer": "B",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "token_size": 383,
+        "user_input": "\n[Story]\nClio and Daphene were hanging out in the garage. They saw a rack and a backpack. They found a bottle in the rack. Daphene left the garage. Clio moved the bottle to the backpack. After Daphene came back to the garage, where would Clio think Daphene would look for the bottle?\n\n[Candidate Answers]\nD. rack\nS. backpack\n",
+        "output": "foundland\n\nPerson A is Clio. Person B is Daphene. The item is bottle. The location X is rack. The location Y is backpack.\nso the answer is [D]",
+        "map": {
+            "S": "A",
+            "D": "B"
+        }
+    },
+    {
+        "token_size": 383,
+        "user_input": "\n[Story]\nClio and Daphene were hanging out in the garage. They saw a rack and a backpack. They found a bottle in the rack. Daphene left the garage. Clio moved the bottle to the backpack. After Daphene came back to the garage, where would Clio think Daphene would look for the bottle?\n\n[Candidate Answers]\nE. backpack\nM. rack\n",
+        "output": "foundland\n\nPerson A is Clio. Person B is Daphene. The item is bottle. The location X is rack. The location Y is backpack.\nso the answer is [M]",
+        "map": {
+            "E": "A",
+            "M": "B"
+        }
+    },
+    {
+        "token_size": 383,
+        "user_input": "\n[Story]\nClio and Daphene were hanging out in the garage. They saw a rack and a backpack. They found a bottle in the rack. Daphene left the garage. Clio moved the bottle to the backpack. After Daphene came back to the garage, where would Clio think Daphene would look for the bottle?\n\n[Candidate Answers]\nB. backpack\nP. rack\n",
+        "output": "foundland\n\nPerson A is Clio. Person B is Daphene. The item is bottle. The location X is rack. The location Y is backpack.\nso the answer is [P]",
+        "map": {
+            "B": "A",
+            "P": "B"
+        }
+    },
+    {
+        "token_size": 383,
+        "user_input": "\n[Story]\nClio and Daphene were hanging out in the garage. They saw a rack and a backpack. They found a bottle in the rack. Daphene left the garage. Clio moved the bottle to the backpack. After Daphene came back to the garage, where would Clio think Daphene would look for the bottle?\n\n[Candidate Answers]\nM. rack\nX. backpack\n",
+        "output": "foundland\n\nPerson A is Clio. Person B is Daphene. The item is bottle. The location X is rack. The location Y is backpack.\nso the answer is [M]",
+        "map": {
+            "X": "A",
+            "M": "B"
+        }
+    },
+    {
+        "token_size": 384,
+        "user_input": "\n[Story]\nClio and Daphene were hanging out in the garage. They saw a rack and a backpack. They found a bottle in the rack. Daphene left the garage. Clio moved the bottle to the backpack. After Daphene came back to the garage, where would Clio think Daphene would look for the bottle?\n\n[Candidate Answers]\nK. backpack\nN. rack\n",
+        "output": "foundlandessler\nPerson A is Clio. Person B is Daphene. The item is bottle. The location X is rack. The location Y is backpack.\nso the answer is [N]",
+        "map": {
+            "K": "A",
+            "N": "B"
+        }
+    }
+]

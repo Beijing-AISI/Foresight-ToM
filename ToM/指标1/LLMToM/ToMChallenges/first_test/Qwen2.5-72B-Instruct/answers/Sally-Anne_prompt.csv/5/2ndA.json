@@ -1,0 +1,48 @@
+[
+    {
+        "story_index": 5,
+        "question_type": "2ndA",
+        "story": "Choose the correct answer from A or B for the following question:\nQuestion:\nMelania and Krysta were hanging out in the living room. They saw a rack and a crate. They found a zucchini in the rack. Krysta left the living room. Melania moved the zucchini to the crate. After Krysta came back to the living room, where would Melania think Krysta would look for the zucchini?\n\nA. crate\nB. rack\n\nAnswer:",
+        "short_answer": "rack",
+        "answer": "B",
+        "system_input": "\nThe story is about two people (Person A and Person B) found an item in location X. Person B left the room and\nPerson A moved the item to location Y.\n\n[Story]\nNeila and Juanita were hanging out in the attic. They saw a closet and a cabinet. They found a towel in the closet. Juanita left the attic. Neila moved the towel to the cabinet. After Juanita came back to the attic, where was the towel previously?\n\n[Candidate Answers]\nA. cabinet\nB. closet\n\n[Output]\nPerson A is Neila. Person B is Juanita. The item is towel. The location X is closet. The location Y is cabinet.\nSo, the answer is [B]\n\nRead and understand the example above. Then a new story will be given, strictly follow the Note to provide an answer.\nNote:\n(1) Ensure the thought chain has exactly 1 steps. The output should strictly follow the example's format:\n    Person A is ... Person B is ... The item is ... The location X is ... The location Y is ...\n\n(2) Finally, enclose the answer index in square brackets, the output format is: so the answer is [answer index].\n",
+        "user_input": "\n[Story]\nMelania and Krysta were hanging out in the living room. They saw a rack and a crate. They found a zucchini in the rack. Krysta left the living room. Melania moved the zucchini to the crate. After Krysta came back to the living room, where would Melania think Krysta would look for the zucchini?\n\n[Candidate Answers]\nU. rack\nX. crate\n",
+        "output": "Person A is Melania. Person B is Krysta. The item is zucchini. The location X is rack. The location Y is crate.\nSo, the answer is [U]",
+        "map": {
+            "X": "A",
+            "U": "B"
+        }
+    },
+    {
+        "user_input": "\n[Story]\nMelania and Krysta were hanging out in the living room. They saw a rack and a crate. They found a zucchini in the rack. Krysta left the living room. Melania moved the zucchini to the crate. After Krysta came back to the living room, where would Melania think Krysta would look for the zucchini?\n\n[Candidate Answers]\nK. rack\nW. crate\n",
+        "output": "Person A is Melania. Person B is Krysta. The item is zucchini. The location X is rack. The location Y is crate.\nSo, the answer is [K]",
+        "map": {
+            "W": "A",
+            "K": "B"
+        }
+    },
+    {
+        "user_input": "\n[Story]\nMelania and Krysta were hanging out in the living room. They saw a rack and a crate. They found a zucchini in the rack. Krysta left the living room. Melania moved the zucchini to the crate. After Krysta came back to the living room, where would Melania think Krysta would look for the zucchini?\n\n[Candidate Answers]\nK. crate\nL. rack\n",
+        "output": "Person A is Melania. Person B is Krysta. The item is zucchini. The location X is rack. The location Y is crate.\nSo, the answer is [L]",
+        "map": {
+            "K": "A",
+            "L": "B"
+        }
+    },
+    {
+        "user_input": "\n[Story]\nMelania and Krysta were hanging out in the living room. They saw a rack and a crate. They found a zucchini in the rack. Krysta left the living room. Melania moved the zucchini to the crate. After Krysta came back to the living room, where would Melania think Krysta would look for the zucchini?\n\n[Candidate Answers]\nA. crate\nT. rack\n",
+        "output": "Person A is Melania. Person B is Krysta. The item is zucchini. The location X is rack. The location Y is crate.\nSo, the answer is [T]",
+        "map": {
+            "A": "A",
+            "T": "B"
+        }
+    },
+    {
+        "user_input": "\n[Story]\nMelania and Krysta were hanging out in the living room. They saw a rack and a crate. They found a zucchini in the rack. Krysta left the living room. Melania moved the zucchini to the crate. After Krysta came back to the living room, where would Melania think Krysta would look for the zucchini?\n\n[Candidate Answers]\nD. crate\nH. rack\n",
+        "output": "Person A is Melania. Person B is Krysta. The item is zucchini. The location X is rack. The location Y is crate.\nSo, the answer is [H]",
+        "map": {
+            "D": "A",
+            "H": "B"
+        }
+    }
+]

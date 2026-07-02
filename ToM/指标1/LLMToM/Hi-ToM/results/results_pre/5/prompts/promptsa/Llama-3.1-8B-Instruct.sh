@@ -1,0 +1,12 @@
+python3 /mnt/home/liweiyi/LLM/generate_answers.py \
+    --input_path "/mnt/home/liweiyi/LLM/Hi-ToM_data" \
+    --output_path "/mnt/home/liweiyi/LLM/results/prompts/promptsa" \
+    --output_folder "Llama-3.1-8B-Instruct" \
+    --prompts_path /mnt/home/liweiyi/LLM/results/prompts/promptsa/promptsa.py \
+    --prompt_type "CoT" \
+    --use_local \
+    --local_model_path "/mnt/home/liweiyi/Model/meta-llama/Llama-3.1-8B-Instruct" \
+    --try_times 5 \
+    --seed 101 \
+    --token_size 8000 \
+    --device_map "cuda:4" \
